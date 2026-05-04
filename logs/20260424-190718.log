@@ -1,0 +1,47 @@
+WARNING : Could not find a target 'html', but found a target 'web' with format='html'; using this target.
+INFO    : Building target web
+INFO    : XSL conversion of /workspaces/pretext/Math-234-topics/source/main.ptx by /root/.ptx/2.37.1/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : successful application of /root/.ptx/2.37.1/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : Generating any needed assets.
+INFO    : Finished generating assets.
+
+INFO    : Preparing to build into /workspaces/pretext/Math-234-topics/output/web.
+INFO    : discovering source file's directory name: /workspaces/pretext/Math-234-topics/source
+INFO    : verifying and expanding input directory: /workspaces/pretext/Math-234-topics/source/../generated-assets
+INFO    : input directory expanded to absolute path: /workspaces/pretext/Math-234-topics/generated-assets
+INFO    : verifying and expanding input directory: /workspaces/pretext/Math-234-topics/source/../assets
+INFO    : input directory expanded to absolute path: /workspaces/pretext/Math-234-topics/assets
+INFO    : XSL conversion of /workspaces/pretext/Math-234-topics/source/main.ptx by /root/.ptx/2.37.1/core/xsl/utilities/report-publisher-variables.xsl
+INFO    : successful application of /root/.ptx/2.37.1/core/xsl/utilities/report-publisher-variables.xsl
+INFO    : Downloading rs services file from https://runestone.academy/cdn/runestone/latest/webpack_static_imports.xml.
+INFO    : Runestone Services via online CDN query: version 7.13.5
+INFO    : Downloading Runestone Services, version 7.13.5
+INFO    : Extracting Runestone Services from archive file
+INFO    : Building custom css theme: theme-default-modern
+INFO    : converting /workspaces/pretext/Math-234-topics/source/main.ptx to HTML in /ptx-seuf898n
+INFO    : XSL conversion of /workspaces/pretext/Math-234-topics/source/main.ptx by /root/.ptx/2.37.1/core/xsl/pretext-html.xsl
+INFO    : messages from the log for XSL processing:
+WARNING : * PTX:WARNING: In a section containing subsections, any content that is not inside a subsection needs to be inside an <introduction> and/or  <conclusion>.
+INFO    : *              located within: "The definition of the dot product" (title)
+INFO    : *              located within: "sec-" (xml:id), "Vector Projection" (title)
+INFO    : *              located within: "Calculating the Cross Product" (title)
+INFO    : *              located within: "Lines" (title)
+INFO    : *              located within: "Intersection of two lines" (title)
+INFO    : *              located within: "Distance between two lines" (title)
+INFO    : *              located within: "Distance from a point to a line" (title)
+INFO    : *              located within: "sec-Planes" (xml:id), "Planes" (title)
+INFO    : *              located within: "Distance from a point to a plane" (title)
+INFO    : *              located within: "Intersection of two Planes" (title)
+INFO    : *              located within: "sec-Traces" (xml:id), "Traces" (title)
+INFO    : *              located within: "Cylinders" (title)
+INFO    : * PTX:INFO:   checking all deprecated elements.
+INFO    : successful application of /root/.ptx/2.37.1/core/xsl/pretext-html.xsl
+INFO    : Removing temporary directory /ptx-seuf898n
+INFO    : Removing temporary directory /ptx-tclfe6ju
+INFO    : 
+Finished build for target web. Run `pretext view web` to see the results.
+
+INFO    : 
+Success!  Built requested target(s) without errors.
+
+INFO    : 

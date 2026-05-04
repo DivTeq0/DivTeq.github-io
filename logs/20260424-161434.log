@@ -1,0 +1,5 @@
+WARNING : Could not find a target 'html', but found a target 'web' with format='html'; using this target.
+INFO    : Found PreTeXt web server at localhost:8128
+INFO    : Server is already available at https://supreme-sniffle-jr7xj59j59x3prx9-8128.app.github.dev
+INFO    : Now opening browser for target `web` at https://supreme-sniffle-jr7xj59j59x3prx9-8128.app.github.dev/output/web
+INFO    : 

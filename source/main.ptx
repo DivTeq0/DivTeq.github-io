@@ -5,18 +5,1403 @@
   <xi:include href="./docinfo.ptx" />
 
   <book xml:id="my-great-book">
-    <title>My Great Book</title>
-    <subtitle>An example to get you started</subtitle>
+    <title>Math 234 Topics</title>
+    
+    
 
     <!-- Include frontmatter -->
     <xi:include href="./frontmatter.ptx" />
-
     <!-- Include chapters -->
-    <xi:include href="./ch-chapter-title.ptx" />
+    <!--xi:include href="./ch-chapter-title.ptx" -->
+    
+    <chapter>
+      <title>The Dot Product</title>
+      
+    
+      
+        <section>
+          <title>The definition of the dot product</title>
+          <p>
+            The dot product of a vector with itself is defined as
+            <md>
+              {\bf a}\cdot {\bf a}=|{\bf a}|^2
+            </md>
+            <p> If</p>
+           <md>
+            {\bf a}=a_1{\bf i}+a_2{\bf j}+a_3{\bf k}=\langle a_1,a_2,a_3\rangle \qquad {\bf b}=b_1{\bf i}+b_2{\bf j}+b_3{\bf k}=\langle b_1,b_2,b_3\rangle
+           </md>
+           <p> Thus </p>
+           <md>
+            <mrow>{\bf a}\cdot{\bf b} \amp = \frac{1}{2}(|{\bf a}+{\bf b}|^2-|{\bf a}|^2-|{\bf b}|^2)</mrow>
+            <mrow> \amp = \frac{1}{2}((a_1+b_1)^2+(a_2+b_2)^2+(a_3+b_3)^2-a_1^2-a_2^2-a_3^2-b_1^2-b_2^2-b_3^2)</mrow>
+            <mrow> \amp = a_1b_1+a_2b_2+a_3b_3 </mrow>
+           </md>
+          </p>
+          <p>
+            Consider the triangle illustrated
+          </p>
+          <image source="Dotproduct.png">
+            <shortdescription>A triangle</shortdescription>
+          </image>
+          <md>
+            |{\bf c}|^2 = ({\bf a}-{\bf b})\cdot({\bf a}-{\bf b}) =|{\bf a}|^2+|{\bf b^2}-2{\bf a}\cdot{\bf b}
+          </md>
+          <p>
+            Recalling the law of cosines for the triangle
+          </p>
+          <md>
+            c^2=a^2+b^2-2ab\cos\theta
+          </md>
+          <p>
+            Comparing the two leads to
+          </p>
+          <md>
+            {\bf a}\cdot{\bf b}=|{\bf a}|\,|{\bf b}|\,\cos\theta
+          </md>
+          <subsection>
+              <title>Example </title>
+              <p>
+                Find the angle between the vectors
+              </p>
+              <md>
+                {\bf a}=\langle 2,-2,1\rangle \qquad {\bf b}=\langle 4,-5,-3\rangle
+              </md>
+              <md>
+                \cos\theta = \frac{{\bf a}\cdot{\bf b}}{|{\bf a}||{\bf b}|}=\frac{15}{3(5\sqrt{2})}=\frac{1}{\sqrt{2}}\quad\Rightarrow\quad \theta=\frac{\pi}{4}
+              </md>  
+          </subsection>
+          <subsection>
+            <title>Example</title>
+            <p>
+              Show that the following vectors are orthogonal
+            </p>
+            <md>
+              {\bf a}=\langle 5,2,-4\rangle \qquad {\bf b}=\langle 2,-1,-2\rangle
+            </md>
+            <md>
+              {\bf a}\cdot{\bf b}=5(2)+2(-1)-4(2)=10-2-8=0
+            </md>
+          </subsection>
+        </section>
+        <section xml:id="sec-">
+          <title>Vector Projection</title>
+          <p>
+            In many applications of vectors it is useful to be able to express a vector as the sum of vectors parallel and perpendicular to a given vector
+          </p>
+          <image source="projection.png">
+            <shortdescription>Vector projection</shortdescription>
+          </image>
+          <p>
+            Note that since <m>{\bf b}_\parallel</m> is parallel to <m>{\bf a}</m>
+          </p>
+          <md>
+            {\bf b}_\parallel=\lambda {\bf a}
+          </md>
+          <md>
+            {\bf b}={\bf b}_\perp +{\bf b}_\parallel={\bf b}_\perp+\lambda {\bf a}
+          </md>
+          <p>
+            Then
+          </p>
+          <md>
+            {\bf a}\cdot{\bf b}= \lambda {\bf a}\cdot{\bf a}+{\bf a}\cdot{\bf b}_\perp=\lambda {\bf a}\cdot{\bf a}\quad \Rightarrow\quad \lambda=\frac{{\bf a}\cdot{\bf b}}{{\bf a}\cdot{\bf a}}
+          </md>
+          <p>
+              then
+          </p>
+          <md>
+            {\bf b}_\parallel=\left(\frac{{\bf a}\cdot{\bf b}}{{\bf a}\cdot{\bf a}} \right){\bf a}
+          </md>
+          <p>
+            The scalar projection is the magnitude of this vector
+          </p>
+          <md>
+            \mbox{Scalar projection}=\frac{{\bf a}\cdot{\bf b}}{|{\bf a}|}
+          </md>
+          <subsection> 
+            <title>Example</title>
+            <p>
+              Given the vectors
+            </p>
+            <md>
+              {\bf a}=\langle 2,-2,1\rangle \qquad {\bf b}=\langle 4,-5,-3\rangle
+            </md>
+            <p>
+              find the components of <m> {\bf b}</m> parallel and perpendicular to <m>{\bf a}</m>
+            </p>
+            <md>
+              {\bf b}_\parallel=\left(\frac{{\bf a}\cdot{\bf b}}{{\bf a}\cdot{\bf a}} \right){\bf a}=\frac{15}{9}\langle 2,-2,1\rangle =\left\langle\frac{10}{3},-\frac{10}{3},\frac{5}{3}\right\rangle
+            </md>
+            <md>
+              {\bf b}_\perp={\bf b}-{\bf b}_\parallel =\langle 4,-5,-3\rangle-\left\langle\frac{10}{3},-\frac{10}{3},\frac{5}{3}\right\rangle=\left\langle\frac{2}{3},-\frac{5}{3},-\frac{14}{3}\right\rangle
+            </md>
 
+          </subsection>
+        </section>
+        <section>
+        <title>Problems</title>
+          <exercise>
+            <p>
+              Given the vectors
+            </p>
+            <md>
+              {\bf a}=\langle 2,10,-11\rangle \qquad {\bf b}=\langle 2,2,1\rangle
+            </md>
+            <ul>
+              <li>
+                <p>
+                  Find the angle between the vectors
+                </p>
+              </li>
+              <li>
+                <p>
+                  Express <m>{\bf a}</m> in terms of vectors parallel and perpendicular to <m>{\bf b}</m>
+                </p>
+              </li>
+            </ul>
+            <answer>
+              <p>
+                <ul>
+                  <li>
+                    <p>
+                      <md>
+                        \theta=\cos^{-1}\left(\frac{13}{45}\right) 
+                      </md>
+                      
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      <md>
+                        {\bf a}_\parallel =\frac{13}{9}\langle 2,2,1\rangle \quad {\bf a}_\perp=\frac{1}{9}\langle -8,64,-112\rangle
+                      </md>
+                    
+                    </p>
+                  </li>
+                </ul>
+              </p>
+            </answer>
+          </exercise>
+          <exercise>
+            <p>
+              Show that the points <m>P(3,5,6),Q(1,27),R(6,1,0)</m> are the vertices of a right triangle
+            </p>
+            <answer>
+              <p>
+                <md>
+                  \overrightarrow{PQ}\cdot\overrightarrow{PR}=\langle -2,-3,1\rangle \cdot\langle 3,-4,-6\rangle = 0
+                </md>
+                
+              </p>
+            </answer>
+          </exercise>
+          <exercise>
+            <p>
+              What is the angle between the vector from the origin to the point <m>P(1,3,-1)</m> and the vector from <m>P</m> to the point <m>Q(4,4,1)</m>?
+            </p>
+            <answer>
+              <p>
+                <md>
+                  \langle 1,3,-1\rangle \cdot\langle 3,1,2\rangle =4 \qquad |\langle 1,3,-1\rangle|=\sqrt{11} \quad |\langle 3,1,2\rangle|=\sqrt{14}
+                </md>
+                <md>
+                  \theta=\cos^{-1}\left(\frac{4}{\sqrt{11}\sqrt{14}}\right)
+                </md>
+                
+              </p>
+            </answer>
+          </exercise>
+          <exercise>
+            <p>
+              Find the distance from the point <m>P(1,4,-2)</m> to the line through the points <m>Q(3,2,2)</m> and <m>R(-3,-1,0)</m>
+            </p>
+            <answer>
+              <p>
+                <md>
+                  \overrightarrow{QP}_\parallel =\left( \frac{\overrightarrow{QP}\cdot\overrightarrow{QR}}{\overrightarrow{QR}\cdot\overrightarrow{QR}}\right)\overrightarrow{QR}=\frac{14}{49}\overrightarrow{QR}=\frac{2}{7} \overrightarrow{QR}
+                </md>
+                <md>
+                  \overrightarrow{QP}_\perp=\overrightarrow{QP}-\frac{2}{7} \overrightarrow{QR}
+                </md>
+                <md>
+                  <mrow>\overrightarrow{QP}_\perp|^2 \amp = (\overrightarrow{QP}-\frac{2}{7} \overrightarrow{QR})\cdot(\overrightarrow{QP}-\frac{2}{7} \overrightarrow{QR})  </mrow>
+                  <mrow> \amp = \overrightarrow{QP}\cdot\overrightarrow{QP}-2\left(\frac{2}{7}\right) \overrightarrow{QP}\cdot\overrightarrow{QR}+\left(\frac{2}{7} \right)^2\overrightarrow{QR})\cdot\overrightarrow{QR}</mrow>
+                  <mrow> \amp = 24-2\left(\frac{2}{7}\right)(14)+\left(\frac{2}{7} \right)^249=20</mrow>
+                </md>
+              </p>
+              <p>
+                So the distance is <m>\sqrt{20}</m>
+              </p>
+            </answer>
+          </exercise>
+          <exercise>
+            <p>
+              Find a vector that is perpendicular to both of the vectors<m>{\bf a}=\langle 1,2,1\rangle \qquad {\bf b}=\langle 3,-4,2\rangle</m>
+            </p>
+            <answer>
+              <p>
+                Let <m>{\bf c}=\langle c_1,c_2,c_3\rangle</m> then
+              </p>
+              <md>
+                {\bf c}\cdot{\bf a}=0 \quad\Rightarrow\quad c_1+2c_2+c_3=0 
+              </md>
+              <md>
+                {\bf c}\cdot{\bf b}=0 \quad\Rightarrow\quad 3c_1-4c_2+2c_3=0
+              </md>
+              
+              <p>
+                Let <m>c_2=1</m> then
+              </p>
+              <md>
+                c_1+c_3=-2 \quad 3c_1+2c_3=4 \quad\Rightarrow\quad c_1=8 \quad c_3=-10
+              </md>
+              <p>
+                So the answer is any vector of the form <m>k\langle 8,1,-10\rangle</m>
+              </p>
+            </answer>
+          </exercise>
+          <exercise>
+            <p>
+              For a parallelogram show the sum of the squares of the lengths of the diagonals is equal to the sum of the squares of the lengths of the sides.
+            </p>
+            <answer>
+              <p>
+                <md>
+                  <mrow> \mbox{Sum}= \amp |{\bf a}+{\bf b}|^2+|{\bf a}-{\bf b}|^2</mrow>
+                  <mrow> =\amp ({\bf a}+{\bf b})\cdot({\bf a}+{\bf b})+({\bf a}-{\bf b})\cdot({\bf a}-{\bf b})</mrow>
+                  <mrow> = \amp {\bf a}\cdot{\bf a}+2 {\bf a}\cdot{\bf b}+ {\bf b}\cdot{\bf b}+ {\bf a}\cdot{\bf a}-2 {\bf a}\cdot{\bf b}+ {\bf b}\cdot{\bf b}</mrow>
+                  <mrow> = \amp 2|{\bf a}|^2+2|{\bf b}|^2</mrow>
+                </md>
+                
+              </p>
+            </answer>
+          </exercise>
+          <exercise>
+            <p>
+              Show that the diagonals of a rhombus (a parallelogram with equal length sides) are orthogonal.
+            </p>
+            <answer>
+              <p>
+                <md>
+                  ({\bf a}+{\bf b})\cdot({\bf a}-{\bf b})={\bf a}\cdot{\bf a}-{\bf b}\cdot{\bf b}=|{\bf a}|^2-|{\bf b}|^2=0
+                </md>
+                Since 
+                <md>|{\bf a}|=|{\bf b}|</md>
+              </p>
+            </answer>
+          </exercise>
+        </section>
+    </chapter>
+    <chapter>
+      <title> The Cross Product</title>
+      <section>>
+        <title>Properties of the Cross Product</title>
+        <p>
+          The cross product of two vectors (in <m>\mathbb{R}^3\)),  \({\bf a}\times{\bf b}</m>, is a vector with the properties
+        </p>
+        <ul>
+          <li>
+            <p>
+              <m>{\bf a}\times{\bf b}</m> is orthogonal to both <m>{\bf a}\) and \({\bf b}</m>
+            </p>
+          </li>
+          <li>
+            <p>
+              <m>|{\bf a}\times{\bf b}|</m> is the area of the parallelogram with sides <m>{\bf a},{\bf b}</m>
+            </p>
+          </li>
+          <li>
+            <p>
+              <m>{\bf a},{\bf b},{\bf a}\times{\bf b}</m> form a right handed triad.
+            </p>
+          </li>
+        </ul>
+        <image source="acrossb.png" width="60%">
+          <shortdescription><m>{\bf a}\times{\bf b}</m></shortdescription>
+        </image>
+        <p>
+          If <m>\theta</m> is the angle between <m>{\bf a}</m> and <m>{\bf b}</m> then the second property implies
+        </p>
+        <md>
+          |{\bf a}\times{\bf b}|=\mbox{Area}=|{\bf a}|h=|{\bf a}||{\bf b}|\sin\thet
+        </md>
+        <image source="parallelogramarea.png" width="50%">
+          <shortdescription>Parallelogram area</shortdescription>
+        </image>
+        <p>
+          To find the direction of <m>{\bf a}\times{\bf b}</m>, use the right hand rule. Using your right hand in the position illustrated, your thumb gives the direction of the cross product.
+        </p>
+        <image source="righthandrule.png" width="40%">
+          <shortdescription>Right Hand Rule</shortdescription>
+        </image>
+        <p>
+          One consequence of this is that the cross product is anti commutative.
+        </p>
+        <md>
+          {\bf b}\times{\bf a}=-{\bf a}\times{\bf b}
+        </md>
+        <p>
+          Another consequence is that if <m>{\bf a}</m> and <m>{\bf b}</m> are parallel (or antiparallel) then 
+          <md>{\bf a}\times{\bf b}=0</md>
+        </p>
+      </section>
+      <section>
+        <title>Calculating the Cross Product</title>
+        <p>
+          One way to calculate the components of <m>{\bf a}\times{\bf b}</m> is to use the cross products of the basis vectors
+        </p>
+        <md>
+          {\bf i}\times{\bf j}={\bf k} \qquad {\bf j}\times{\bf k}={\bf i}\qquad {\bf k}\times{\bf i}={\bf j}
+        </md>
+        <md>
+          <mrow> {\bf a}\times{\bf b} = \amp (a_1{\bf i}+a_2{\bf j}+a_3{\bf k})\times(b_1{\bf i}+b_2{\bf j}+b_3{\bf k})</mrow>
+          <mrow> = \amp (a_2b_3-a_3b_2){\bf i}+(a_3b_1-a_1b_3){\bf j}+(a_1b_2-a_2b_1){\bf k}</mrow>
+        </md>
+        <p>
+          The usual method is to express it as a determinant
+        </p>
+        <md>
+          <mrow> {\bf a}\times{\bf b}\amp = \left|\begin{array}{ccc}{\bf i} \amp {\bf j} \amp {\bf k} \\ a_1 \amp a_2 \amp a_3 \\ b_1 \amp b_2 \amp b_3\end{array}\right|</mrow>
+          <mrow> \amp = {\bf i}\left|\begin{array}{cc}a_2 \amp a_3 \\ b_2 \amp b_3\end{array}\right|-{\bf j}\left|\begin{array}{cc}a_1 \amp a_3 \\ b_1 \amp b_3\end{array}\right|+{\bf k}\left|\begin{array}{cc}a_1 \amp a_2 \\ b_1 \amp b_2\end{array}\right|</mrow>
+        
+        </md>
+        <p>
+          The coefficient of each vector is obtained by eliminating the column of the vector in the array, noting that the <m>{\bf j}</m> component is negative. The <m>2\times 2</m> determinants are calculated by
+        </p>
+        <md>
+          \left|\begin{array}{cc}p \amp q \\ r \amp s\end{array}\right|=ps-qr
+        </md>
+        <subsection>
+          <title>Example</title>
+          <p>
+            Find <m>{\bf a}\times{\bf b}</m> given
+          </p>
+          <md>
+            {\bf a}=\langle 1, -1 ,3\rangle \qquad {\bf b}=\langle 2,1,-2 \rangle
+          </md>
+          <md>
+            <mrow>{\bf a}\times{\bf b} \amp = \left|\begin{array}{ccc}{\bf i} \amp {\bf j} \amp {\bf k} \\ 1 \amp -1 \amp 3 \\ 2 \amp 1 \amp -2\end{array}\right|</mrow>
+            <mrow> \amp = {\bf i}((-1)(-2)-3(1))-{\bf j}((1)(-2)-3(2))+{\bf k}(1(1)-(-1)(2))</mrow>
+            <mrow> \amp = \langle -1,8,3\rangle</mrow>
+          </md>
+          
+        </subsection>
+        <subsection>
+          <title>Example</title>
+          <p>
+            Find the area of the triangle with vertices <m>P(2,-1,2),Q(3,3,4),R(-1,0,3)</m>
+          </p>
+          <md>
+            \overrightarrow{PQ}\times\overrightarrow{PR}=\left|\begin{array}{ccc}{\bf i} \amp {\bf j} \amp {\bf k} \\ 1 \amp 4 \amp 2 \\ -3 \amp 1 \amp 1\\\end{array}\right|=\langle 2,-7,13 \rangle
+          </md>
+          <md>
+            \mbox{Area}=\frac{1}{2}\sqrt{4+49+169}=\frac{1}{2}\sqrt{222}
+          </md>
+          
+        </subsection>
+      </section>
+      <section>
+        <title>The Scalar Triple Product</title>
+        <image source="Tripleproduct.png" width="40%">
+          <shortdescription>The triple product</shortdescription>
+        </image>
+        <p>
+          The signed volume of the parallelpiped with sides with three vectors <m>{\bf a},{\bf b},{\bf c}</m> is
+        </p>
+        <md>
+          \mbox{Volume}={\bf a}\times{\bf b}\cdot{\bf c}
+        </md>
+        <p>
+          The volume will be positive if it is a right handed triad, negative it it's left handed. The scalar triple product has the properties
+        </p>
+        <md>
+          {\bf a}\times{\bf b}\cdot{\bf c}={\bf b}\times{\bf c}\cdot{\bf a}={\bf c}\times{\bf a}\cdot{\bf b}=-{\bf a}\times{\bf c}\cdot{\bf b}=-{\bf b}\times{\bf a}\cdot{\bf c}=-{\bf c}\times{\bf b}\cdot{\bf a}
+        </md>
+        <p>
+          If the three vectors lie in the same plane then
+        </p>
+        <md>
+          {\bf a}\times{\bf b}\cdot{\bf c}=0
+        </md>
+        <p>
+          Another use of the triple product is to express a vector as a combination of three given vectors
+        </p>
+        <md>
+          \alpha{\bf a}+\beta{\bf b}+\gamma{\bf c}={\bf d}
+        </md>
+        <p>
+          Crossing the equation with <m>{\bf b}</m> followed by dotting it with <m>{\bf c}</m> gives
+        </p>
+        <md>
+          \alpha {\bf a}\times{\bf b}\cdot{\bf c}={\bf d}\times{\bf b}\cdot{\bf c}\quad\Rightarrow\quad \alpha=\frac{{\bf d}\times{\bf b}\cdot{\bf c}}{{\bf a}\times{\bf b}\cdot{\bf c}}
+        </md>
+        <p>
+          Similarly
+        </p>
+        <md>
+          \beta =\frac{{\bf d}\times{\bf c}\cdot{\bf a}}{{\bf b}\times{\bf c}\cdot{\bf a}}\qquad \gamma=\frac{{\bf d}\times{\bf a}\cdot{\bf b}}{{\bf c}\times{\bf a}\cdot{\bf b}}
+        </md>
+        <p>
+          In linear algebra this method is known as Cramers's rule
+        </p>
+      </section>
+      <section>
+        <title>Problems</title>
+        <exercise>
+          <p>
+            Given
+            <md>
+              {\bf a}=\langle 1,1,1\rangle \qquad {\bf b}=\langle 1,-2,1\rangle
+            </md>
+            <li>
+              <p>
+              (a) Show <m>{\bf a}</m> and <m>{\bf b}</m> are orthogonal.
+              </p>
+            </li>
+            <li>
+              <p>
+                (b) Find a unit vector <m>{\bf c}</m> orthogonal to both <m>{\bf a}</m> and <m>{\bf b}</m>.
+              </p>
+            </li>
+            <li>
+              <p>
+                (c) Given <m>{\bf v}=\langle 1,2,3\rangle</m> find <m>\alpha,\beta,\gamma</m> if
+              </p>
+              <md>
+                {\bf v}=\alpha{\bf a}+\beta{\bf b}+\gamma{\bf c}
+              </md>
+              
+            </li>
 
+          </p>
+          <answer>
+            <p>
+              <md>
+                (a)\quad {\bf a}\cdot{\bf b}=1-2+1=0
+              </md>
+              <md>
+                (b) \quad {\bf a}\times{\bf b}=\left|\begin{array}{ccc} {\bf i}\amp {\bf j}\amp {\bf k} \\ 1 \amp 1\amp 1 \\ 1\amp -2 \amp 1\end{array}\right|=\langle 3,0,-3\rangle
+              </md>
+              <md>
+                  {\bf c}=\frac{{\bf a}\times{\bf b}}{|{\bf a}\times{\bf b}|}= \frac{1}{\sqrt{2}}\langle 1,0,-1\rangle
+              </md>
+              <md>
+                <mrow> \amp {\bf v}\cdot{\bf a}=\alpha\,{\bf a}\cdot{\bf a}\quad \Rightarrow\quad 6=3\alpha \quad \Rightarrow\quad \alpha =2</mrow>
+                <mrow> \amp {\bf v}\cdot{\bf b}=\beta\,{\bf b}\cdot{\bf b}\quad \Rightarrow\quad 0=\beta</mrow>
+                <mrow> \amp {\bf v}\cdot{\bf c}=\gamma\,{\bf c}\cdot{\bf c}\quad \Rightarrow\quad \gamma=-\sqrt{2}</mrow>
+              </md>
+              
+            </p>
+          </answer>
+        </exercise>
+        <exercise>
+          <p>
+            Find the area of the parallelogram with sides
+            <md>
+              {\bf a}=\langle 3,1,-2\rangle \qquad {\bf b}=\langle 4,-1,1\rangle
+            </md>
+          </p>
+          <answer>
+            <p>
+              <md>
+                {\bf a}\times{\bf b}=\left|\begin{array}{ccc} {\bf i}\amp {\bf j}\amp {\bf k} \\ 3 \amp 1\amp -2 \\ 4\amp -1 \amp 1\end{array}\right|=\langle 1,-11,-7\rangle
+              </md>
+              <md>
+                \mbox{Area}=|{\bf a}\times{\bf b}|=\sqrt{1+121+49}=\sqrt{171}
+              </md>
+              
+            </p>
+          </answer>
+        </exercise>
+        <exercise>
+          <p>
+            Find the volume of the parallelepiped with sides
+          </p>
+          <md>
+            {\bf a}=\langle 1,1,1\rangle \qquad {\bf b}=\langle 3,5,7\rangle\qquad {\bf c}=\langle 2,-3,-3\rangle
+          </md>
+          <answer>
+            <p>
+              <md>
+                <mrow>{\bf a}\cdot({\bf b}\times {\bf c}) \amp =\left|\begin{array}{ccc} 1\amp 1\amp 1 \\ 3 \amp 5\amp 7 \\ 2\amp -3 \amp -3\end{array}\right|</mrow>
+                <mrow> \amp = 1\left|\begin{array}{cc} 5 \amp 7\\-3\amp -3\end{array}\right|-1\left|\begin{array}{cc} 3 \amp 7\\2\amp -3\end{array}\right|+1\left|\begin{array}{cc} 3 \amp 5\\2\amp -3\end{array}\right|</mrow>
+                <mrow> \amp =6+23-19=10</mrow>
+              </md>
+              
+            </p>
+          </answer>
+        </exercise>
+        <exercise>
+          <p>
+            Find the area of the triangle with vertices <m>P=(1,0,-1)\qquad Q=(4,-1,-2)\qquad R=(2,2,0)</m>
+          </p>
+          <answer>
+            <p>
+              <md>
+              \overrightarrow{PQ}\times \overrightarrow{PR}=\left|\begin{array}{ccc} {\bf i}\amp {\bf j}\amp {\bf k} \\ 3 \amp -1\amp -1 \\ 1\amp 2 \amp 1\end{array}\right|=\langle 1,-4,7\rangle
+              </md>
+              <md>
+                \mbox{Area}=\frac{1}{2}|\overrightarrow{PR}\times \overrightarrow{PQ}|=\frac{\sqrt{66}}{2}
+              </md>
+              
+            </p>
+          </answer>
+        </exercise>
+        <exercise>
+          <p>
+            Solve the equation
+          </p>
+          <md>
+            \alpha{\bf a}+\beta{\bf b}+\gamma{\bf c}=\langle -2,8,4\rangle
+          </md>
+          <p>
+            where
+          </p>
+          <md>
+            {\bf a}=\langle -1,1,4\rangle \quad {\bf b}=\langle 2,0,2\rangle\quad {\bf c}=\langle 1.3,-1\rangle
+          </md>
+          <answer>
+            <p>
+              <md>
+                <mrow> {\bf a}\cdot({\bf b}\times {\bf c}) \amp =\left|\begin{array}{ccc} -1\amp 1\amp 4 \\ 2 \amp 0\amp 2 \\ 1\amp 3 \amp -1\end{array}\right| =34</mrow>   
+                <mrow> {\bf d}\cdot({\bf b}\times {\bf c}) \amp =\left|\begin{array}{ccc} -2\amp 8\amp 4 \\ 2 \amp 0\amp 2 \\ 1\amp 3 \amp -1\end{array}\right| =68</mrow>
+                <mrow> {\bf d}\cdot({\bf c}\times {\bf a}) \amp =\left|\begin{array}{ccc} -2\amp 8\amp 4 \\ 1 \amp 3\amp -1 \\ -1\amp 1 \amp 4\end{array}\right| =-34</mrow>
+                <mrow> {\bf d}\cdot({\bf a}\times {\bf b}) \amp =\left|\begin{array}{ccc} -2\amp 8\amp 4 \\ -1 \amp 1\amp 4 \\ 2\amp 0 \amp 2\end{array}\right| =68</mrow>
+              </md>
+              <md>
+                \alpha=\frac{68}{34}=2\quad \beta=\frac{-34}{34}=-1 \quad \gamma=\frac{68}{34}=2
+              </md>
+              
+            </p>
+          </answer>
+        </exercise>
+        <exercise>
+          <p>
+            Find two unit vectors orthogonal to each other and also orthogonal to
+            <md>
+              {\bf v}=\langle 2,2,-1\rangle
+            </md>
+            <answer>
+              <p>
+                Choose
+                <md>
+                  {\bf v}_1=\langle 1,0,2\rangle \quad\Rightarrow\quad \hat{\bf v}_1=\frac{1}{\sqrt{5}}\langle 1,0,2\rangle
+                </md>
+                <md>
+                  {\bf v}\times{\bf v}_1=
+                </md>
+                
+              </p>
+            </answer>
+          </p>
+        </exercise>
+        <exercise>
+          <p>
+            Given
+            <md>
+              {\bf a}=\langle 1,3,2\rangle \quad {\bf b}=\langle 3,4,1\rangle\quad {\bf c}=\langle -4.3,7\rangle
+            </md>
+            (a) Show that the vectors lie in the same plane.
+            (b) Find <m>\alpha,\beta</m> so that
+            <md>
+              \alpha{\bf a}+\beta{\bf b}={\bf c}
+            </md>
+            <answer>
+              <p>
+                (a)
+                <md>
+                  <mrow>{\bd a}\cdot({\bf b}\times{\bf c}) \amp = \left|\begin{array}{ccc} 1\amp 3\amp 2 \\ 3 \amp 4\amp 1 \\ -4\amp 3 \amp 7\end{array}\right|</mrow>
+                  <mrow> \amp =1((4)(7)-3(1))-3((3)(1)-(-4)(7))+2(3(4)-(-4)(3))</mrow>
+                  <mrow> \amp =25-75+50=0</mrow>
+                </md>
+                (b) Using the cross product
+                <md>
+                  \beta {\bf a}\times{\bf b}={\bf a}\times {\bf c} \qquad \alpha {\bf b}\times{\bf a}={\bf b}\times {\bf c}
+                </md>
+                <md>
+                  {\bf a}\times{\bf b}=-{\bf b}\times{\bf a}=\left|\begin{array}{ccc} {\bf i}\amp {\bf j}\amp {\bf k} \\ 1 \amp 3\amp 2 \\ 3\amp 4 \amp 1\end{array}\right|=\langle -5,5,-5\rangle
+                </md>
+                <md>
+                  {\bf a}\times{\bf c}=\left|\begin{array}{ccc} {\bf i}\amp {\bf j}\amp {\bf k} \\ 1 \amp 3\amp 2 \\ -4\amp 3 \amp 7\end{array}\right|=\langle 15,-15,15\rangle
+                </md>
+                <md>
+                  {\bf b}\times{\bf c}=\left|\begin{array}{ccc} {\bf i}\amp {\bf j}\amp {\bf k} \\ 3 \amp 4\amp 1 \\ -4\amp 3 \amp 7\end{array}\right|=\langle 25,-25,25\rangle
+                </md>
+                So <m>\alpha = 5,\beta=-3</m>
+              </p>
+            </answer>
+          </p>
+        </exercise>
+      </section>
+
+      
+      
+    </chapter>
+    <chapter>
+      <title>Lines and Planes</title>
+      <section>
+        <title>Lines</title>
+        <p>
+          
+        
+          Let the two points be <m>A</m> and <m>B</m> with corresponding vectors <m>{\bf a}</m> and <m>{\bf b}</m>, then if <m>R</m> is on the line through <m>A</m> and <m>B</m> then the vectors <m>\overrightarrow{AR}</m> and <m>\overrightarrow{AB}</m> are parallel.
+          <md>
+            \overrightarrow{AR}=t\overrightarrow{AB} \quad\Rightarrow\quad {\bf r}-{\bf a}=t({\bf b}-{\bf a})\quad\Rightarrow \quad {\bf r}={\bf a}+t({\bf b}-{\bf a})
+          </md>
+          <image source="MVGA1line.png">
+            <shortdescription>A line through two points</shortdescription>
+          </image>
+          If
+          <md>
+            {\bf a}=\langle a_1,a_2,a_3\rangle \qquad {\bf b}=\langle b_1,b_2,b_3\rangle
+          </md>
+          Then the line can be also expressed in the symmetric form
+          <md>
+            t=\frac{x-a_1}{b_1-a_1}=\frac{y-a_2}{b_2-a_2}=\frac{z-a_3}{b_3-a_3}
+          </md>
+        </p>
+        <subsection>
+          <title>Example</title>
+          <p>
+           Find the equation of the line through the points <m>A(1,-1,3)</m> and <m>B(2,1,-1)</m>
+           The corresponding vectors are
+            <md>
+              {\bf a}=\langle 1,-1,3\rangle \qquad {\bf b}=\langle 2,1,-1\rangle
+            </md>
+            <md>
+              {\bf b}-{\bf a}=\langle 1,2,-4 \rangle
+            </md>
+            Then the parametric equation for the line is
+            <md>
+                {\bf r}=\langle 1,-1,3\rangle+t\langle 1,2,-4 \rangle \qquad x=1+t \quad y=-1+2t \quad z=3-4t
+            </md>
+            and the symmetric form is
+            <md>
+                 x-1=\frac{y+1}{2}=\frac{z-3}{-4}
+            </md>
+          </p>
+          </subsection>
+        
+        
+      </section>
+      <section>
+        <title>Intersection of two lines</title>
+        <p>
+        In <m>\mathbb{R}^3</m> two lines will not intersect in general. If the lines are given as
+        <md>
+            {\bf r}_1={\bf a}+s{\bf u} \qquad {\bf r}_2={\bf b}+t{\bf v}
+        </md>
+          The two lines will intersect id there are values of <m>s,t</m> so the <m>{\bf r}_1={\bf r}_2</m>
+        <md>
+            {\bf a}+s{\bf u}={\bf b}+t{\bf v}\quad\Rightarrow\quad ({\bf b}-{\bf a})\times{\bf v}=s{\bf u}\times{\bf v}
+        </md>
+      </p>
+        <subsection>
+          <title>Example</title>
+          <p>
+              Find the intersection point of the two lines
+            <md>
+                {\bf r}_1=\langle 1,4,1\rangle+s\langle 2,-3,-3 \rangle\qquad {\bf r}_2=\langle 5,-2,2\rangle+t\langle 2,-3,4 \rangle
+            </md>
+            <md>
+                ({\bf b}-{\bf a})\times{\bf v}=\left|\begin{array}{ccc}{\bf i} \amp {\bf j} \amp {\bf k} \\ 4 \amp -6 \amp 1 \\ 2 \amp -3 \amp 4\end{array}\right|=\langle -21,-14,0\rangle
+            </md>
+            <md>
+                {\bf u}\times{\bf v}=\left|\begin{array}{ccc}{\bf i} \amp {\bf j} \amp {\bf k} \\ 2 \amp -3 \amp -3 \\ 2 \amp -3 \amp 4\end{array}\right|=\langle -21,-14,0\rangle
+            </md>
+          </p>
+          <p>
+              So <m>s=1</m> and the intersection point is
+            <md>
+                \langle 1,4,1\rangle+\langle 2,-3,-3 \rangle=\langle 3,1,-2 \rangle
+            </md>
+              
+          </p>
+        </subsection>
+      
+      </section>
+      <section>
+        <title>Distance between two lines</title>
+        <p>
+          <image source="distancebetweentwolines.png">
+            <shortdescription>Distance between two lines</shortdescription>
+          </image>
+          If the lines are given as
+          <md>
+            {\bf r}_1={\bf a}+s{\bf u} \qquad {\bf r}_2={\bf b}+t{\bf v}
+          </md>
+          The distance will be the scalar projection of the vector between a point on each of the lines, perpendicular to both lines
+          <md>
+            \mbox{Distance}=\frac{|({\bf a}-{\bf b})\cdot({\bf u}\times{\bf v})|}{|{\bf u}\times{\bf v}|}
+          </md>
+        </p>
+        <subsection xml:id="subsec-Example">
+          <title>Example</title>
+          Let the lines be
+          <md>
+            {\bf r}_1=\langle 2,5,1\rangle+s\langle 3,2,-1 \rangle\qquad {\bf r}_2=\langle 4,5,-2\rangle+t\langle -4,2,1\rangle
+          </md>
+          <md>
+            {\bf u}\times{\bf v}=\left|\begin{array}{ccc}{\bf i} \amp {\bf j} \amp {\bf k} \\ 3 \amp 2 \amp -1 \\ -4 \amp 2 \amp 1\end{array}\right|=\langle 4,1,14\rangle\qquad |{\bf u}\times{\bf v}|=\sqrt{213}
+          </md>
+          <md>
+            ({\bf b}-{\bf a})\cdot({\bf u}\times{\bf v})=-34 \quad\Rightarrow\quad \mbox{Distance}=\frac{34}{\sqrt{213}}
+          </md>
+          
+        </subsection>
+        
+      </section>
+      <section>
+        <title>Distance from a point to a line</title>
+        <p>
+          <image source="pointline.png">
+            <shortdescription>Distance from a point to a line</shortdescription>
+          </image>
+          If the equation of the line is
+          <md>
+            {\bf r}={\bf a}+t{\bf v}
+          </md>
+          then the area of the parallelogram is
+          <md>
+            \mbox{Area}=|({\bf p}-{\bf a})\times{\bf v}|=h|{\bf v}| \quad\Rightarrow\quad h=\frac{|({\bf p}-{\bf a})\times{\bf v}|}{|{\bf v}|}
+          </md>
+        </p>
+          <subsection>
+          <title>Example</title>
+          <p>
+              Find the distance from the point <m>P(1,4,-2)</m> to the line through the points <m>Q(3,2,2)</m> and <m>R(-3,-1,0)</m>.
+            
+          <md>
+              {\bf v}=\overrightarrow{QR}=\langle -6,-3,-2\rangle \qquad {\bf p}={\bf a}=\overrightarrow{QP}=\langle -2,2,-4\rangle
+          </md>
+          <md>
+              ({\bf p}-{\bf a})\times{\bf v}=\left|\begin{array}{ccc}{\bf i} \amp {\bf j} \amp {\bf k} \\ -2 \amp 2 \amp -4 \\ -6 \amp -3 \amp -2\end{array}\right|=\langle -16,20,18\rangle
+          </md>
+          <md>
+              h=\frac{|({\bf p}-{\bf a})\times{\bf v}|}{|{\bf v}|}=\frac{\sqrt{980}}{7}=2\sqrt{5}
+          </md>
+          </p>
+          </subsection>
+        
+      </section>
+      <section xml:id="sec-Planes">
+        <title>Planes</title>
+        <p>
+          <image source="Plane.png">
+            <shortdescription>A plane with vectors</shortdescription>
+          </image>
+          If <m>A,B,C</m> are three points on a plane and <m>R</m> is any other point on the plane then the three vectors <m>{\bf b}-{\bf a},{\bf c}-{\bf a},{\bf r}-{\bf a}</m> lie in the plane then
+          <md>
+            ({\bf b}-{\bf a})\times({\bf c}-{\bf a})\cdot({\bf r}-{\bf a})=0={\bf n}\cdot({\bf r}-{\bf a})
+          </md>
+          where the normal to the plane is <m>{\bf n}=({\bf b}-{\bf a})\times({\bf c}-{\bf a})</m>
+          If <m>{\bf n}=\langle n_1,n_2,n_3\rangle</m> then the equation of the plane is
+          <md>
+            {\bf n}\cdot{\bf r}={\bf n}\cdot{\bf a} \quad\Rightarrow\quad n_1x+n_2y+n_3z=k={\bf n}\cdot{\bf a}
+          </md>
+        </p>
+        <subsection>
+          <title>Example</title>
+          <p>
+          Find the equation of the plane containing the points <m>A(1,-1,0),B(2,2,1),C(3,0,-2)</m>.  
+          </p>
+          <md>
+            {\bf n}=({\bf b}-{\bf a})\times({\bf c}-{\bf a})=\left|\begin{array}{ccc}{\bf i} \amp {\bf j} \amp {\bf k} \\ 1 \amp 3 \amp 1 \\ 2 \amp 1 \amp -2\end{array}\right|=\langle -7,4,5\rangle
+          </md>
+          The equation of the plane is
+          <md>
+            -7x+4y-5z=\langle -7,4,-5  \rangle\cdot\langle 1,-1,0  \rangle=-11
+          </md>
+          
+        </subsection>
+        
+      </section>
+      <section>
+        <title>Distance from a point to a plane</title>
+        <p>
+          The distance will the scalar projection of a vector from the plane to the point in the direction of the normal.
+          <image source="distancepointplane.png">
+            <shortdescription>Diagram displaying the parallel projection of the vector from a point in the plane to the point onto the normal for the plane</shortdescription>
+          </image>
+          <md>
+            \mbox{Distance}=|({\bf p}-{\bf a})_\parallel|=\frac{|{\bf n}\cdot({\bf p}-{\bf a})|}{|{\bf n}|}=\frac{|{\bf n}\cdot{\bf p}-{\bf n}\cdot{\bf a}|}{|{\bf n}|}
+          </md>
+        </p>
+          <subsection>
+            <title>Example</title>
+            <p>
+              Find the distance from the point <m>P(4,6,2)</m> to the plane <m>x+2y+4z=12</m>
+              <md>
+                {\bf n}=\langle 1,2,4\rangle\quad \Rightarrow\quad \mbox{Distance}=\frac{|\langle 1,2,4\rangle\cdot\langle 4,6,2\rangle-12|}{|\langle 1,2,4\rangle|}=\frac{12}{\sqrt{21}}
+              </md>
+              
+            </p>
+          </subsection>
+        
+        
+      </section>
+      <section>
+        <title>Intersection of two Planes</title>
+        <p>
+          The intersection line lies in both planes so will be orthogonal to both normals. The direction of the line will be <m>{\bf v}={\bf n}_1\times{\bf n}_2</m>. We just need then to find a point that lies on both planes.
+          <image source="Planeintersection.png">
+            <shortdescription>Depicting the line of intersection of two plane together with the plane normals and the direction vector for the line</shortdescription>
+          </image>
+        </p>
+        <subsection>
+          <title>Example</title>
+          <p>
+          Find the line of intersection of the planes <m>2x+3y+6z=12</m> and  <m>x+y+4z=4</m>
+          <md>
+            {\bf v}={\bf n}_1\times{\bf n}_2 = \left|\begin{array}{ccc}{\bf i} \amp {\bf j} \amp {\bf k} \\ 2 \amp 3 \amp 6 \\ 1 \amp 1 \amp 4\end{array}\right|=\langle 6,-2,-1  \rangle
+          </md>
+          Now put <m>z=0</m> in the plane equations
+          <md>
+            2x+3y=12 \qquad x+y=4\quad\Rightarrow\quad x=0\quad y=4
+          </md>
+          So the equation of the line is
+          <md>
+            {\bf r}=\langle 0,4,0  \rangle+t\langle 6,-2,-1  \rangle
+          </md>
+  
+          </p>
+          
+        </subsection>
+      </section>
+      <section>
+        <title>Problems</title>
+          <exercise>
+            <p>
+            Find the point on the line <m>{\bf r}=\langle 6+2t,2+t,-4-t\rangle</m> closest to the origin
+            </p>
+          </exercise>
+          <answer>
+            <p>
+              The point will correspond to the projection of <m>{\bf a}=\langle 6,2,-4\rangle</m> orthogonal to the direction <m>{\bf v}=\langle 2,1,-1\rangle</m>.
+              <md>
+                {\bf a}_\parallel=\left(\frac{{\bf a}\cdot{\bf v}}{{\bf v}\cdot{\bf v}}\right){\bf v}=\frac{18}{6}\langle 2,2,-1\rangle=\langle 6,3,-3\rangle
+              </md>
+              <md>
+                {\bf a}_\perp=\langle 6,2,-4\rangle-\langle 6,3,-3\rangle=\langle 0,-1,-1\rangle
+              </md>
+              
+            </p>
+          </answer>
+          <exercise>
+            <p>
+              (a) Find the equation of the plane containing the point <m>(1,-1,3)</m> and the line <m>{\bf r}=\langle 2-t,1+2t,3-2t\rangle</m>.
+              (b) Find the distance from the point <m>(4,1,-6)</m> to the plane
+            </p>
+          </exercise>
+          <answer>
+            <p>
+              (a) Two vectors that lie in the plane are <m>\langle 2,1,3\rangle-\langle 1,-1,3\rangle=\langle 1,2,0\rangle</m> and <m>\langle -1,2,-2\rangle</m>. A normal to the plane is
+              <md>
+                {\bf n}=\left|\begin{array}{ccc}{\bf i} \amp {\bf j} \amp {\bf k} \\ 1 \amp 2 \amp 0 \\ -1 \amp 2 \amp -2\end{array}\right|=\langle -4,2,4\rangle
+              </md>
+              The equation of the plane is
+              <md>
+                -4x+2y+4z=\langle -4,2,4\rangle\cdot\langle 1,-1,3\rangle=6 \quad\Rightarrow\quad -2x+y+2z=3
+              </md>
+              (b) The distance will be
+              <md>
+                \mbox{Distance}=\frac{|\langle 4,1,-6\rangle\cdot\langle -2,1,2\rangle-3|}{|\langle -2,1,2\rangle|}=\frac{22}{3}
+              </md>
+              
+            </p>
+          </answer>
+          <exercise>
+            <p>
+              Find the components of the vector <m>{\bf v}=\langle 5,6,4\rangle</m> parallel and perpendicular to the plane <m>2x+2y-z=0</m>.
+            </p>
+          </exercise>
+          <answer>
+            <p>
+              A normal vector is <m>{\bf n}=\langle 2,2,-1\rangle</m> then
+              <md>
+                {\bf v}_\parallel=\left(\frac{{\bf v}\cdot{\bf n}}{{\bf n}\cdot{\bf n}}\right){\bf n}=2{\bf n}
+              </md>
+              <md>
+                {\bf v}_\perp={\bf v}-2{\bf n}=\langle 1,2,6\rangle
+              </md>
+              
+            </p>
+          </answer>
+          <exercise>
+            <p>
+              Show that the points <m>A(1,3,1),B(2,-1,0),C(1,1,3),D(2,2,-3)</m> are coplanar
+            </p>
+          </exercise>
+          <answer>
+            <p>
+              They will be coplanar if <m>\overrightarrow{AB}\cdot\overrightarrow{AC}\times\overrightarrow{AD}=0</m>
+            </p>
+            <md>
+              <mrow>\overrightarrow{AB}\cdot\overrightarrow{AC}\times\overrightarrow{AD}\amp =\left|\begin{array}{ccc}1 \amp -4 \amp -1 \\ 0 \amp -2 \amp 2 \\ 1 \amp -1 \amp -4\end{array}\right|</mrow>
+              <mrow> \amp =1\left|\begin{array}{cc} -2 \amp 2\\ -1\amp -4\end{array}\right|+1\left|\begin{array}{cc} -4 \amp -1\\ -2\amp 2\end{array}\right|=10-10=0</mrow>
+            </md>
+            
+          </answer>
+          <exercise>
+            <p>
+              Calculate the distance between the line through the points <m>(1,0,-2)</m> and <m>(0,1,-3)</m> and the line through the points <m>(-1,-1,0)</m> and <m>(1,-1,1)</m>
+            </p>
+          </exercise>
+          <answer>
+            <p>
+              The equations of the two lines are
+              <md>
+                <mrow> \amp {\bf r}_1=\langle 1,0,2\rangle +s\langle -1,1,-1\rangle = {\bf a}+s{\bf u}</mrow>
+                <mrow> \amp {\bf r}_2=\langle -1,-1,0\rangle +t\langle 2,0,1\rangle = {\bf b}+t{\bf v}</mrow>
+              </md>
+              <md>
+               {\bf u}\times{\bf v}=\left|\begin{array}{ccc}{\bf i} \amp {\bf j}\amp {\bf k} \\ -1 \amp 1 \amp -1 \\ 2 \amp 0 \amp -1\end{array}\right| = \langle 1,-1,-2\rangle
+              </md>
+              <md>
+                \mbox{Distance}=\frac{|({\bf a}-{\bf b})\cdot({\bf u}\times{\bf v})|}{|{\bf u}\times{\bf v}|}=\frac{|\langle 2,1,-2\rangle\cdot\langle 1,-1,-2\rangle|}{|\langle 1,-1,-2\rangle|}=\frac{5}{\sqrt{6}}
+              </md>
+              
+            </p>
+          </answer>
+          <exercise>
+            <p>
+              (a) Find the equation of the line of intersection of the planes
+              <md>
+                3x+2y+z=12 \qquad x+4y+z=8
+              </md>
+              
+            </p>
+            <p>
+              (b) Find the point of intersection of the line from part (a) and the plane <m>5x+2y+z=8</m>
+            </p>
+          </exercise>
+          <answer>
+            <p>
+              (a) The direction of the line will be perpendicular to both the plane normals
+              <md>
+                {\bf v}={\bf n}_1\times{\bf n}_2=\left|\begin{array}{ccc}{\bf i} \amp {\bf j}\amp {\bf k} \\ 3 \amp 2 \amp 1 \\ 1 \amp 4 \amp 1\end{array}\right| = \langle -2,-2,10\rangle
+              </md>
+              To determine the intersection point of the line with the <m>yz</m> plane set <m>x=0</m>
+              <md>
+                2y+z=12\quad 4y+z=8 \quad\Rightarrow\quad y=-2 \quad z=16
+              </md>
+              So the equation of the line is
+              <md>
+                {\bf r}=\langle 0,-2,16\rangle +t\langle -2,-2,10\rangle
+              </md>
+              (b) Substituting the equation of the line into the equation of the plane
+              <md>
+                5(-2t)+2(-2-2t)+16+10t=8 \quad\Rightarrow\quad t=1
+              </md>
+              So the intersection point is <m>(-2,-4,26)</m>
+              
+            </p>
+          </answer>
+        
+      </section>
+    </chapter>
+    <chapter>
+      <title>Cylinders and Quadrics</title>
+      <section xml:id="sec-Traces">
+        <title>Traces</title>
+        <p>
+          One method of visualizing surfaces in three dimensions is to examine the curves of interesection of the surface with planes parallel to the coordinate planes, known as traces
+        </p>
+        <subsection>
+          <title>Example</title>
+          <p>
+            Consider the surface <m>z=x^2-y^2</m>. Some of the traces are
+          </p>
+          <sidebyside widths="30% 30% 30%">
+            <image source="xtraces.png">
+              <shortdescription>The <m>x</m> traces for <m>z=x^2-y^2</m>. They are downward opening parabolas</shortdescription>
+            </image>
+            <image source="ytraces.png">
+              <shortdescription>The <m>y</m> traces for <m>z=x^2-y^2</m>. They are upward opening parabolas</shortdescription>
+            </image>
+            <image source="ztraces.png">
+              <shortdescription>The <m>y</m> traces for <m>z=x^2-y^2</m>. They are hyperbolas</shortdescription>
+            </image>
+          </sidebyside>
+          <p>
+            Here is a graph of the surface with the traces superimposed
+            <image source="traceexample.png" width="60%">
+              <shortdescription>The graph of <m>z=x^2-y^2</m>with traces drawn on the graph</shortdescription>
+            </image>
+          </p>
+          
+        </subsection>
+      </section>
+      <section>
+        <title>Conic Sections</title>
+        <p>
+          Conic sections are plane curves given by equations that are quadratic in <m>x</m> and <m>y</m>. Translations anr rotations will reduce them to the standard forms.
+          <sidebyside widths="40% 40%">
+            <image source="Qcircle.png">
+              <shortdescription>A circle centered at the origin with radius <m>r</m></shortdescription>
+            </image>
+            <image source="Qellipse.png">
+              <shortdescription>An ellipse centered at the origin with semimajor axis <m>a</m> and semiminor axis <m>b</m></shortdescription>
+            </image>
+          </sidebyside>
+          <sidebyside widths="40% 40%">
+            <image source="Qparabola.png">
+              <shortdescription>A parabola with equation <m>y=x^2/(4a)</m></shortdescription>
+            </image>
+            <image source="Qhyperbola.png">
+              <shortdescription>A hrperbola with equation<m>x^2/a^2-y^2/b^2=1</m>with asymptotes <m>y=\pm bx/a</m></shortdescription>
+            </image>
+          </sidebyside>
+          They are known as conic sections as they occur as the curves of intersection of a plane with a double cone
+          <sidebyside widths="40% 40%">
+            <image source="coniccircle.png">
+              <shortdescription>A circle formed by the intersection of a horizontal plane with a double cone</shortdescription>
+            </image>
+            <image source="conicellipse.png">
+              <shortdescription>An ellipse formed by the intersection of a non horizontal plane with one of the cones</shortdescription>
+            </image>
+          </sidebyside>
+          <sidebyside widths="40% 40%">
+            <image source="conicparabola.png">
+              <shortdescription>A parabola form by intersecting one of the cones with a plane parallel to its side</shortdescription>
+            </image>
+            <image source="conichyperbola.png">
+              <shortdescription>A hyperbola formed by a plane intersecting both cones</shortdescription>
+            </image>
+          </sidebyside>
+
+        </p>
+        
+      </section>
+      <section>
+        <title>Cylinders</title>
+        <p>
+          Cylinders are surfaces that have a constant cross section. The most common type has one of the variables <m>x,y,z</m> missing.
+        </p>
+          <subsection>
+          <title>Example</title>
+          <p>
+            This is a graph of <m>y=z^2</m>
+            <image source="paracyl.png" width="60%">
+              <shortdescription>The graph of <m>y=z^2</m>illustrating that the crossections at constant values of <m>x</m> are similar parabolas</shortdescription>
+            </image>
+            The cross sections at constant values of <m>x</m> are similar parabolas
+          </p>
+          
+        </subsection>
+        <p>
+         Other expressions give rise to cylinders. Functions of the form <m>f(ax+by+cz,dx+ey+fz)=</m> constant also give rise to cylinders.
+        </p>
+         <subsection>
+          <title>Example</title>
+          <p>
+            This is a graph of <m>(x+y)^2+(y-z)^2=9</m>.
+            <image source="ellipticcylinder.png" width="60%">
+              <shortdescription>The graph of <m>(x+y)^2+(y-z)^2=9</m> with constant elliptic cross sections</shortdescription>
+            </image>
+            The intersection of the graph with planes perpendicular to the line <m>{\bf r}=\langle -1,1,1\rangle</m> give rise to constant ellipses          
+          </p>
+          
+        </subsection>
+        
+      </section>
+      <section xml:id="sec-Quadrics">
+        <title>Quadrics</title>
+        <p>
+          Quadric surfaces have equations that are quadratic in <m>x,y,z.</m>. The basic types have the forms
+          <md>
+            I: ax^2+by^2+cz^2=1 \qquad \mbox{or}\qquad II: ax^2+by^2+cz=d
+          </md>
+          The third possibility of having only one of the variables quadratic gives rise to parabolic cylinders. Traces of the surfaces will be conic sections
+        </p>
+        <section>
+          <title>Ellipsoids</title>
+          <p>
+            Ellipsoids have equations of the form
+            <md>
+              ax^2+by^2+cz^2=1 \qquad a,b,c \gt 0
+            </md>
+            The traces are ellipses
+            <md>
+              ax^2+by^2+cz_0^2=1\quad ax^2+by_0^2+cz^2=1 \quad ax_0^2+by^2+cz^2=1
+            </md>
+
+            <image source="Qellipsoid.png" width="60%">
+              <shortdescription>An ellipsoid centered at the origin</shortdescription>
+            </image>
+
+            <image source="Qellipsoid.png" width="0%">
+              <shortdescription>An ellipsoid centered at the origin</shortdescription>
+            </image>
+                        
+          </p>
+          
+            
+        </section>
+        <section>
+          <title>Hyperboloids of one sheet</title>
+          <p>
+            These have equations of the form
+            <md>
+              ax^2+by^2+cz^2=1\quad a,b \gt 0,c \lt 0
+            </md>
+            The horizontal traces are ellipses <m>ax^2+by^2=1-cz_0^2</m> with radii increasing as you move away from the <m>xy</m> plane. The vertical traces are hyperbolas.
+            <md>
+              ax^2+cz^2=1-by_0^2 \qquad by^2+cz^2=1-ax_0^2
+            </md>
+            <image source="Qhyper1.png" width="60%">
+              <shortdescription>A hyperboloid of one sheet</shortdescription>
+            </image>
+            <image source="Qhyper1.png" width="0%">
+              <shortdescription>A hyperboloid of one sheet</shortdescription>
+            </image>
+          </p>
+          
+        </section>
+        
+        <section>
+          <title>Hyperboloids of two sheets</title>
+          <p>
+            These have equations of the form
+            <md>
+              ax^2+by^2+cz^2=1 \quad a,b \lt o,c\gt 0
+            </md>
+            The horizontal traces are ellipses <m>ax^2+by^2=1-cz_0^2</m> with radii increasing as you move away from the <m>xy</m> plane. There are no taces until <m>cz_0^1-1\gt 0</m>. The vertical traces
+            <md>
+              ax^2+cz^2=1-by_0^2 \qquad by^2+cz^2=1-ax_0^2
+            </md>
+            are hyperbolas.
+            <image source="Qhyper2.png" width="60%">
+              <shortdescription>A hyperboloid of two sheets</shortdescription>
+            </image>
+          </p>
+          
+        </section>
+        <section xml:id="sec-Paraboloids">
+          <title>Paraboloids</title>
+          <p>
+            Paraboloids have equations of the form
+            <md>
+              ax^2+by^2+cz=d \qquad a,b \gt 0
+            </md>
+            The horizontal traces are ellipses with radii increasing as you move away from the <m>xy</m> plane with <m>d-cz_0 \gt 0</m>
+            <md>
+              ax^2+by^2=-cz_0
+            </md>
+            The vertical traces are parabolas
+            <md>
+              ax^2+cz=d-by_0^2 \qquad by^2+cz=1-ax_0^2
+            </md>
+            <image source="Qparaboloid.png" width="60%">
+              <shortdescription>A paraboloid with axis the <m>z</m>axis</shortdescription>
+            </image>
+            <image source="Qparaboloid.png" width="0%">
+              <shortdescription>A paraboloid with axis the <m>z</m>axis</shortdescription>
+            </image>
+          </p>
+          
+        </section>
+        <section>
+          <title>Hyperbolic paraboloids</title>
+          <p>
+            Their equations have the form
+            <md>
+              ax^2+by^2+cz=d \qquad a \gt o,b\lt o \,\mbox{or}\, a\lt 0, b\gt 0
+            </md>
+            The vertical traces are parabolas
+            <md>
+              ax^2+cz=d-by_0^2 \qquad by^2+cz=d-ax_0^2
+            </md>
+            The horizontal traces are hyperbolas
+            <md>
+              ax^2+by^2=d-cz_0
+            </md>
+            <image source="Qhyperpara.png" width="60%">
+              <shortdescription>(Graph of a hyberbolic paraboloid, shaped like a saddle or a Pringles chip</shortdescription>
+            </image>
+            <image source="Qhyperpara.png" width="0%">
+              <shortdescription>(Graph of a hyberbolic paraboloid, shaped like a saddle or a Plingles chip</shortdescription>
+            </image>
+          </p>
+          
+        </section>
+      </section>
+    </chapter>
+    <chapter>
+      <title>Curves in <m>\mathbb{R}^3</m></title>
+      <section>
+        <title>Parametric equations</title>
+        <p>
+          Curves in the plane can be specified in three different ways
+          <md>
+            <mrow>\amp \mbox{As a graph :} \quad y=f(x)</mrow>
+            <mrow>\amp \mbox{Intrinsically :} \quad f(x,y)=0</mrow>
+            <mrow> \amp\mbox{Parametrically :}\quad x=f(t)\quad y=g(t)</mrow>
+          </md>
+          Parametric equations are the most useful way to describe a curve. The graph <m>y=f(x)</m> can be parametrized trivially as
+          <md>
+            {\bf r}=\langle x,y\rangle =\langle t,f(t)\rangle
+          </md>
+          Implicit descriptions of curves don't always represent functions. As an example the circle
+          <md>
+            x^2+y^2=a^2
+          </md>
+          isn't the graph of a function (it is the graph of two functions <m>y=\pm \sqrt{a^2-x^2}</m>). However the circle can be descibed parametrically by a vector function
+          <md>
+            {\bf r}=\langle x,y\rangle =\langle a\cos t,a\sin t\rangle \qquad 0\lt t\lt 2\pi
+          </md>
+          One feature that parametric curves have that graphs generally don't have is an orientation. As the parameter increases, the point moves along the curve.
+          </p>
+          <subsection>
+            <title>Example</title>
+            <p>
+              Consider the parametric curve
+              <md>
+                {\bf r}(t)=\langle 3\sec t,3\tan t\rangle \qquad-\frac{\pi}{2}\leq t\leq \frac{\pi}{2}
+              </md>
+              The cartesian equation for the curve is
+              <md>
+                x^2-y^2=9\sec^2 t-9\tan^2 t=9(\sec^2t-\tan^2t)=9
+              </md>
+              Since <m>\sec t>0</m> and <m>\tan t</m> is increasing on the interval <m>(-\pi/2,\pi/2)</m>, the parametric curve is the positive half of the hyperbola with the orientation shown below.
+              <image source="parametrichyperbola.png" width="80%">
+                <shortdescription>A graph of the parametric curve <m>{\bf r}(t)=\langle 3\sec t,3\tan t\rangle \qquad-\frac{\pi}{2}\leq t\leq \frac{\pi}{2}</m> as half of a hyperbola with an upward orientation</shortdescription>
+              </image>
+            </p>
+          </subsection>
+        <p>
+          Polar curves can also be expressed in parametric form. The curve <m>r=f(\theta)</m> can be represented parametrically with <m>\theta</m> as the parameter
+          <md>
+            {\bf r}=\langle x,y\rangle = \langle r\cos\theta,r\sin\theta\rangle = \langle f(\theta)\cos\theta,f(\theta)\sin\theta\rangle)
+          </md>
+          
+        </p>  
+        <p>
+          The first two representations for curves don't generalize to <m>\mathbb{R}^3</m>. Graphs of functions, <m>z=f(x,y)</m> and equations of the form <m>f(x,y,z)=0</m> are surfaces not curves. Parametric equations still represent curves. A paramerized curve in <m>\mathbb{R}^3</m> is given by
+          <md>
+            {\bf r}(t)=\langle x,y,z\rangle =\langle x(t),y(t),z(t)\rangle \qquad a\leq t\leq b
+          </md>
+        </p>
+        <p>
+          A parametrization that will be useful later in the course is the line segment from a point with position vector <m>{\bf a}</m> to a point with position vector <m>{\bf b}</m> is paranetrized as
+          <md>
+            {\bf r}(t)={\bf a}+t({\bf b}-{\bf a})=(1-t){\bf a}+t{\bf b}\qquad 0\leq t\leq 1
+          </md>
+          
+        </p>
+        <subsection>
+          <title>Example</title>
+          <p>
+            A helix has a parametrization
+          <md>
+            {\bf r}(t)=\langle a\cos(\omega t),a\sin(\omega t),bt\rangle \qquad a,b,\omega >0
+          </md>
+          The curve moves along the cylinder <m>x^2+y^2=a^2</m> counterclockwise while moving in the positive <m>z</m> direction
+          </p>
+          <image source="Helix.png">
+            <shortdescription>A helix with the curve moving upwards and also moving counterclockwise along the cylinder when viewed from above</shortdescription>
+          </image>
+        </subsection>
+         
+        
+      </section>
+      <section xml:id="sec-Tangents">
+        <title>Tangents</title>
+        <p>
+          To find a vector tangent to a given curve, we will proceed analogously to single variable calculus. To find the tangent at a point, choose a nearby poit and calculate the vector joining them. As the neaby point moves closer to the given point the vector joining them becomes closer to pointing in the tangent direction.
+
+        </p>
+        <image source="curvetangent.png" width="60%">
+          <shortdescription>Two points on a parametrized curve and the vector joinig them</shortdescription>
+        </image>
+        <p>
+          <md>
+          \mbox{Tangent vector}=\lim_{h\to  0}\frac{{\bf r}(t+h)-{\bf r}(t)}{h}={\bf r}'(t)
+          </md>
+        </p>
+        <subsection>
+        <title>Example</title>
+        
+        <p>
+        Find the equation of the tangent line to the curve
+        <md>
+          {\bf r}(t)=\langle e^{2t-1},\sin(\pi t)+2,4t^2-2t\rangle \qquad 0\leq t\leq 2
+        </md>
+        at the point <m>(1,3,0)</m>
+        </p>
+        <p>
+        The point corresponds to <m>t=1/2</m>. So the equation of the tangent line will be
+        <md>
+          {\bf t}(u)={\bf r}\left(\frac{1}{2}\right)+u\,{\bf r}'\left(\frac{1}{2}\right)
+        </md>
+        <md>
+          {\bf r}'(t)=\langle 2e^{2t-2},\pi \cos(\pi t),8t-2\rangle \quad\Rightarrow\quad {\bf r}'\left(\frac{1}{2}\right)=\langle 2,0,2\rangle
+        </md>
+        and the equation of the tangent line is
+        <md>
+          {\bf t}(u)=\langle 1,3,0\rangle +u\langle 2,0,2\rangle=\langle 1+2u,3,2u\rangle
+        </md>
+        
+        </p>
+
+        
+      </subsection>
+      </section>
+      <section >
+        <title>Arc Length</title>
+        <p>
+          To calculate the length of a parametrized curve
+          <md>
+            {\bf r}(t)=\langle x(t),y(t),z(t)\rangle \qquad a\leq t\leq b
+          </md>
+          Partition the interval <m>[a,b]</m> into <m>n</m> subintervals <m>a\lt t_1\lt t_2\lt \cdots\lt t_{n-1}\lt b</m>. The length of the curve can be approximated by summing the lengths of the vectors <m>{\bf r}(t_{i+1})-{\bf r}(t_i)</m>
+          <md>
+            s=\mbox{Arc length}\approx \sum_{i=0}^{n-1}|{\bf r}(t_{i+1})-{\bf r}(t_i)|
+          </md>
+          Letting <m>\Delta t_i=(t_{i+1}-t_i)</m>
+          <md>
+            s=\approx \sum_{i=0}^{n-1}|\frac{{\bf r}(t_{i+1})-{\bf r}(t_i)}{t_{i+1}-t_i}|\Delta t_i
+          </md>
+          Taking the limits <m>n\to\infty,\Delta t_i\to 0</m>, the arc length becomes an integral
+          <md>
+            s=\int_a^b|{\bf r}'(t)|\,dt \quad \Leftrightarrow \quad \frac{ds}{dt}=|{\bf r}'(t)|
+          </md>
+          
+        </p>
+        <subsection>
+          <title>Example</title>
+          <p>
+            Find the length of the curve
+            <md>
+              {\bf r}(t)=\langle \cos t+t\sin t, \sin t-t\cos t, t^2\rangle\qquad o\lt t\lt \frac{\pi}{2}
+            </md>
+            <md>
+              {\bf r}'(t)=\langle t\cos t, t\sin t, 2t\rangle
+            </md>
+            <md>
+              |{\bf r}'(t)|=\sqrt{(t\cos t)^2+(t\sin t)^2+(2t)^2}=\sqrt{5}\,t
+            </md>
+            <md>
+              s=\int_0^{\pi/2}\sqrt{5}\, t\,dt=\frac{\sqrt{5}\pi^2}{8}
+            </md>
+            
+          </p>
+          
+        </subsection>
+      </section>
+      <section xml:id="sec-Curvature">
+        <title>Curvature</title>
+        <p>
+          
+        </p>
+        
+      </section>
+      
+
+    </chapter>
     <!-- Include backmatter -->
     <xi:include href="./backmatter.ptx" />
 
-  </book>
+ </book>
 </pretext>
+

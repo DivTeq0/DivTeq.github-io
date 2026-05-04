@@ -4,3 +4,22 @@ INFO    : Since no target was supplied, we will use "web".
 INFO    : Staging latest build located in `/workspaces/pretext/Math-234-topics/output/web` at `/workspaces/pretext/Math-234-topics/output/stage`.
 INFO    : 
 INFO    : Initializing project with Git.
+INFO    : Successfully initialized new Git repository!
+INFO    : Preparing to deploy from active `main` git branch.
+
+INFO    : Changes to project source since last commit detected.
+WARNING : Don't forget to either add and commit the changes to your source with git, or run `pretext deploy -u` to have these changes updated automatically.
+WARNING : Just deploying your built project will not save changes to your source on GitHub.`
+WARNING : Remote GitHub repository is not yet configured.
+
+INFO    : And if you haven't already, create a remote GitHub repository for this project at:
+INFO    :     https://github.com/new
+INFO    : (Do NOT check any "initialize" options.)
+INFO    : On the next page, copy the "HTTPS" version of the URL in the "Quick Setup" section.
+ERROR   : list index out of range
+INFO    : 
+----------------------------------------------------
+INFO    : While running pretext, the following errors occurred:
+
+INFO    : (see log messages above or in the 'logs' folder for more information)
+INFO    : ----------------------------------------------------
