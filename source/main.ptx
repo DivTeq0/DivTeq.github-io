@@ -41,7 +41,7 @@
             Consider the triangle illustrated
           </p>
           <image source="Dotproduct.png">
-            <shortdescription>A triangle</shortdescription>
+            <shortdescription>A triangle composed of three vectors {\bf a},{\bf b}, and {\bf c}={\bf a}-{\bf b} together with the angle theta between {\bf a} and {\bf b}</shortdescription>
           </image>
           <md>
             |{\bf c}|^2 = ({\bf a}-{\bf b})\cdot({\bf a}-{\bf b}) =|{\bf a}|^2+|{\bf b^2}-2{\bf a}\cdot{\bf b}
@@ -54,13 +54,13 @@
           </md>
           <p>
             Comparing the two leads to
-          </p>
+          
           <md>
             {\bf a}\cdot{\bf b}=|{\bf a}|\,|{\bf b}|\,\cos\theta
           </md>
-          <subsection>
-              <title>Example </title>
-              <p>
+          </p>
+          <example>
+            <p>
                 Find the angle between the vectors
               </p>
               <md>
@@ -68,11 +68,11 @@
               </md>
               <md>
                 \cos\theta = \frac{{\bf a}\cdot{\bf b}}{|{\bf a}||{\bf b}|}=\frac{15}{3(5\sqrt{2})}=\frac{1}{\sqrt{2}}\quad\Rightarrow\quad \theta=\frac{\pi}{4}
-              </md>  
-          </subsection>
-          <subsection>
-            <title>Example</title>
-            <p>
+              </md>
+
+            </example>
+            <example>
+              <p>
               Show that the following vectors are orthogonal
             </p>
             <md>
@@ -81,7 +81,11 @@
             <md>
               {\bf a}\cdot{\bf b}=5(2)+2(-1)-4(2)=10-2-8=0
             </md>
-          </subsection>
+            </example>      
+          
+          
+            
+        
         </section>
         <section xml:id="sec-">
           <title>Vector Projection</title>
@@ -89,7 +93,7 @@
             In many applications of vectors it is useful to be able to express a vector as the sum of vectors parallel and perpendicular to a given vector
           </p>
           <image source="projection.png">
-            <shortdescription>Vector projection</shortdescription>
+            <shortdescription>A diagram showing the components of a vector {\bf b} parallel and perpendicular to a vector {\bf a}</shortdescription>
           </image>
           <p>
             Note that since <m>{\bf b}_\parallel</m> is parallel to <m>{\bf a}</m>
@@ -118,8 +122,7 @@
           <md>
             \mbox{Scalar projection}=\frac{{\bf a}\cdot{\bf b}}{|{\bf a}|}
           </md>
-          <subsection> 
-            <title>Example</title>
+          <example>
             <p>
               Given the vectors
             </p>
@@ -136,7 +139,8 @@
               {\bf b}_\perp={\bf b}-{\bf b}_\parallel =\langle 4,-5,-3\rangle-\left\langle\frac{10}{3},-\frac{10}{3},\frac{5}{3}\right\rangle=\left\langle\frac{2}{3},-\frac{5}{3},-\frac{14}{3}\right\rangle
             </md>
 
-          </subsection>
+          </example>
+          
         </section>
         <section>
         <title>Problems</title>
@@ -297,7 +301,7 @@
       <section>>
         <title>Properties of the Cross Product</title>
         <p>
-          The cross product of two vectors (in <m>\mathbb{R}^3\)),  \({\bf a}\times{\bf b}</m>, is a vector with the properties
+          The cross product of two vectors in <m>\mathbb{R}^3,{\bf a}\times{\bf b}</m>, is a vector with the properties
         </p>
         <ul>
           <li>
@@ -326,13 +330,13 @@
           |{\bf a}\times{\bf b}|=\mbox{Area}=|{\bf a}|h=|{\bf a}||{\bf b}|\sin\thet
         </md>
         <image source="parallelogramarea.png" width="50%">
-          <shortdescription>Parallelogram area</shortdescription>
+          <shortdescription>A diagram of a parallelogram with sides vectors {\bf a} and {\bf b}. also the included angle <m>\theta</m> and the height <m>h=|{\bf b}|\sin\theta</m></shortdescription>
         </image>
         <p>
           To find the direction of <m>{\bf a}\times{\bf b}</m>, use the right hand rule. Using your right hand in the position illustrated, your thumb gives the direction of the cross product.
         </p>
         <image source="righthandrule.png" width="40%">
-          <shortdescription>Right Hand Rule</shortdescription>
+          <shortdescription>A diagram of a right hand demonstrating the Right Hand Rule to get the direction of <m>{\bf a}\times{\bf b}</m></shortdescription>
         </image>
         <p>
           One consequence of this is that the cross product is anti commutative.
@@ -371,8 +375,7 @@
         <md>
           \left|\begin{array}{cc}p \amp q \\ r \amp s\end{array}\right|=ps-qr
         </md>
-        <subsection>
-          <title>Example</title>
+        <example>
           <p>
             Find <m>{\bf a}\times{\bf b}</m> given
           </p>
@@ -384,10 +387,8 @@
             <mrow> \amp = {\bf i}((-1)(-2)-3(1))-{\bf j}((1)(-2)-3(2))+{\bf k}(1(1)-(-1)(2))</mrow>
             <mrow> \amp = \langle -1,8,3\rangle</mrow>
           </md>
-          
-        </subsection>
-        <subsection>
-          <title>Example</title>
+        </example>
+        <example>
           <p>
             Find the area of the triangle with vertices <m>P(2,-1,2),Q(3,3,4),R(-1,0,3)</m>
           </p>
@@ -397,16 +398,16 @@
           <md>
             \mbox{Area}=\frac{1}{2}\sqrt{4+49+169}=\frac{1}{2}\sqrt{222}
           </md>
-          
-        </subsection>
+        </example>
+         
       </section>
       <section>
         <title>The Scalar Triple Product</title>
         <image source="Tripleproduct.png" width="40%">
-          <shortdescription>The triple product</shortdescription>
+          <shortdescription>A diagram of a parallelepiped with edges vectors {\bf a},{\bf b},{\bf c}. The triple product gives its volume</shortdescription>
         </image>
         <p>
-          The signed volume of the parallelpiped with sides with three vectors <m>{\bf a},{\bf b},{\bf c}</m> is
+          The signed volume of the parallelepiped with sides with three vectors <m>{\bf a},{\bf b},{\bf c}</m> is
         </p>
         <md>
           \mbox{Volume}={\bf a}\times{\bf b}\cdot{\bf c}
@@ -649,7 +650,7 @@
             \overrightarrow{AR}=t\overrightarrow{AB} \quad\Rightarrow\quad {\bf r}-{\bf a}=t({\bf b}-{\bf a})\quad\Rightarrow \quad {\bf r}={\bf a}+t({\bf b}-{\bf a})
           </md>
           <image source="MVGA1line.png">
-            <shortdescription>A line through two points</shortdescription>
+            <shortdescription>Demonstrating a line through two points {\bf a} and {\bf b}</shortdescription>
           </image>
           If
           <md>
@@ -660,8 +661,7 @@
             t=\frac{x-a_1}{b_1-a_1}=\frac{y-a_2}{b_2-a_2}=\frac{z-a_3}{b_3-a_3}
           </md>
         </p>
-        <subsection>
-          <title>Example</title>
+        <example>
           <p>
            Find the equation of the line through the points <m>A(1,-1,3)</m> and <m>B(2,1,-1)</m>
            The corresponding vectors are
@@ -680,8 +680,7 @@
                  x-1=\frac{y+1}{2}=\frac{z-3}{-4}
             </md>
           </p>
-          </subsection>
-        
+        </example>
         
       </section>
       <section>
@@ -695,9 +694,8 @@
         <md>
             {\bf a}+s{\bf u}={\bf b}+t{\bf v}\quad\Rightarrow\quad ({\bf b}-{\bf a})\times{\bf v}=s{\bf u}\times{\bf v}
         </md>
-      </p>
-        <subsection>
-          <title>Example</title>
+        </p>
+        <example>
           <p>
               Find the intersection point of the two lines
             <md>
@@ -717,14 +715,15 @@
             </md>
               
           </p>
-        </subsection>
+        </example>
+        
       
       </section>
       <section>
         <title>Distance between two lines</title>
         <p>
           <image source="distancebetweentwolines.png">
-            <shortdescription>Distance between two lines</shortdescription>
+            <shortdescription>A diagram showing the distance between two lines as the projection of a vector between the the lines orthogonal to the plane formed by the two directions </shortdescription>
           </image>
           If the lines are given as
           <md>
@@ -735,8 +734,7 @@
             \mbox{Distance}=\frac{|({\bf a}-{\bf b})\cdot({\bf u}\times{\bf v})|}{|{\bf u}\times{\bf v}|}
           </md>
         </p>
-        <subsection xml:id="subsec-Example">
-          <title>Example</title>
+        <example>
           Let the lines be
           <md>
             {\bf r}_1=\langle 2,5,1\rangle+s\langle 3,2,-1 \rangle\qquad {\bf r}_2=\langle 4,5,-2\rangle+t\langle -4,2,1\rangle
@@ -747,15 +745,15 @@
           <md>
             ({\bf b}-{\bf a})\cdot({\bf u}\times{\bf v})=-34 \quad\Rightarrow\quad \mbox{Distance}=\frac{34}{\sqrt{213}}
           </md>
-          
-        </subsection>
+        </example>
+        
         
       </section>
       <section>
         <title>Distance from a point to a line</title>
         <p>
           <image source="pointline.png">
-            <shortdescription>Distance from a point to a line</shortdescription>
+            <shortdescription>Showing how to calculate the distance from a point to a line by find the area of a parallelogram formed by a vector from the point to a point on the line and the line's direction</shortdescription>
           </image>
           If the equation of the line is
           <md>
@@ -766,8 +764,7 @@
             \mbox{Area}=|({\bf p}-{\bf a})\times{\bf v}|=h|{\bf v}| \quad\Rightarrow\quad h=\frac{|({\bf p}-{\bf a})\times{\bf v}|}{|{\bf v}|}
           </md>
         </p>
-          <subsection>
-          <title>Example</title>
+        <example>
           <p>
               Find the distance from the point <m>P(1,4,-2)</m> to the line through the points <m>Q(3,2,2)</m> and <m>R(-3,-1,0)</m>.
             
@@ -781,14 +778,15 @@
               h=\frac{|({\bf p}-{\bf a})\times{\bf v}|}{|{\bf v}|}=\frac{\sqrt{980}}{7}=2\sqrt{5}
           </md>
           </p>
-          </subsection>
-        
+
+        </example>
+          
       </section>
       <section xml:id="sec-Planes">
         <title>Planes</title>
         <p>
           <image source="Plane.png">
-            <shortdescription>A plane with vectors</shortdescription>
+            <shortdescription>A plane with points with three position vectors, {\bf a},{\bf b},{\bf c} showing the vectors {\bf b}-{\bf a},{\bf c}-{\bf a} in the plane and the normal <m>{\bf n}=({\bf b}-{\bf a})\times({\bf c}-{\bf a})</m></shortdescription>
           </image>
           If <m>A,B,C</m> are three points on a plane and <m>R</m> is any other point on the plane then the three vectors <m>{\bf b}-{\bf a},{\bf c}-{\bf a},{\bf r}-{\bf a}</m> lie in the plane then
           <md>
@@ -800,8 +798,7 @@
             {\bf n}\cdot{\bf r}={\bf n}\cdot{\bf a} \quad\Rightarrow\quad n_1x+n_2y+n_3z=k={\bf n}\cdot{\bf a}
           </md>
         </p>
-        <subsection>
-          <title>Example</title>
+        <example>
           <p>
           Find the equation of the plane containing the points <m>A(1,-1,0),B(2,2,1),C(3,0,-2)</m>.  
           </p>
@@ -812,8 +809,7 @@
           <md>
             -7x+4y-5z=\langle -7,4,-5  \rangle\cdot\langle 1,-1,0  \rangle=-11
           </md>
-          
-        </subsection>
+        </example>
         
       </section>
       <section>
@@ -827,17 +823,16 @@
             \mbox{Distance}=|({\bf p}-{\bf a})_\parallel|=\frac{|{\bf n}\cdot({\bf p}-{\bf a})|}{|{\bf n}|}=\frac{|{\bf n}\cdot{\bf p}-{\bf n}\cdot{\bf a}|}{|{\bf n}|}
           </md>
         </p>
-          <subsection>
-            <title>Example</title>
-            <p>
+        <example>
+          <p>
               Find the distance from the point <m>P(4,6,2)</m> to the plane <m>x+2y+4z=12</m>
               <md>
                 {\bf n}=\langle 1,2,4\rangle\quad \Rightarrow\quad \mbox{Distance}=\frac{|\langle 1,2,4\rangle\cdot\langle 4,6,2\rangle-12|}{|\langle 1,2,4\rangle|}=\frac{12}{\sqrt{21}}
               </md>
               
             </p>
-          </subsection>
-        
+        </example>
+          
         
       </section>
       <section>
@@ -848,8 +843,7 @@
             <shortdescription>Depicting the line of intersection of two plane together with the plane normals and the direction vector for the line</shortdescription>
           </image>
         </p>
-        <subsection>
-          <title>Example</title>
+        <example>
           <p>
           Find the line of intersection of the planes <m>2x+3y+6z=12</m> and  <m>x+y+4z=4</m>
           <md>
@@ -865,8 +859,8 @@
           </md>
   
           </p>
-          
-        </subsection>
+        </example>
+        
       </section>
       <section>
         <title>Problems</title>
@@ -1007,8 +1001,7 @@
         <p>
           One method of visualizing surfaces in three dimensions is to examine the curves of interesection of the surface with planes parallel to the coordinate planes, known as traces
         </p>
-        <subsection>
-          <title>Example</title>
+        <example>
           <p>
             Consider the surface <m>z=x^2-y^2</m>. Some of the traces are
           </p>
@@ -1029,8 +1022,9 @@
               <shortdescription>The graph of <m>z=x^2-y^2</m>with traces drawn on the graph</shortdescription>
             </image>
           </p>
-          
-        </subsection>
+
+        </example>
+        
       </section>
       <section>
         <title>Conic Sections</title>
@@ -1078,8 +1072,7 @@
         <p>
           Cylinders are surfaces that have a constant cross section. The most common type has one of the variables <m>x,y,z</m> missing.
         </p>
-          <subsection>
-          <title>Example</title>
+        <example>
           <p>
             This is a graph of <m>y=z^2</m>
             <image source="paracyl.png" width="60%">
@@ -1088,12 +1081,12 @@
             The cross sections at constant values of <m>x</m> are similar parabolas
           </p>
           
-        </subsection>
+        </example>
+          
         <p>
          Other expressions give rise to cylinders. Functions of the form <m>f(ax+by+cz,dx+ey+fz)=</m> constant also give rise to cylinders.
         </p>
-         <subsection>
-          <title>Example</title>
+        <example>
           <p>
             This is a graph of <m>(x+y)^2+(y-z)^2=9</m>.
             <image source="ellipticcylinder.png" width="60%">
@@ -1101,8 +1094,8 @@
             </image>
             The intersection of the graph with planes perpendicular to the line <m>{\bf r}=\langle -1,1,1\rangle</m> give rise to constant ellipses          
           </p>
-          
-        </subsection>
+        </example>
+         
         
       </section>
       <section xml:id="sec-Quadrics">
@@ -1252,8 +1245,7 @@
           </md>
           One feature that parametric curves have that graphs generally don't have is an orientation. As the parameter increases, the point moves along the curve.
           </p>
-          <subsection>
-            <title>Example</title>
+          <example>
             <p>
               Consider the parametric curve
               <md>
@@ -1268,7 +1260,8 @@
                 <shortdescription>A graph of the parametric curve <m>{\bf r}(t)=\langle 3\sec t,3\tan t\rangle \qquad-\frac{\pi}{2}\leq t\leq \frac{\pi}{2}</m> as half of a hyperbola with an upward orientation</shortdescription>
               </image>
             </p>
-          </subsection>
+          </example>
+          
         <p>
           Polar curves can also be expressed in parametric form. The curve <m>r=f(\theta)</m> can be represented parametrically with <m>\theta</m> as the parameter
           <md>
@@ -1289,8 +1282,7 @@
           </md>
           
         </p>
-        <subsection>
-          <title>Example</title>
+        <example>
           <p>
             A helix has a parametrization
           <md>
@@ -1301,7 +1293,7 @@
           <image source="Helix.png">
             <shortdescription>A helix with the curve moving upwards and also moving counterclockwise along the cylinder when viewed from above</shortdescription>
           </image>
-        </subsection>
+        </example>
          
         
       </section>
@@ -1319,18 +1311,16 @@
           \mbox{Tangent vector}=\lim_{h\to  0}\frac{{\bf r}(t+h)-{\bf r}(t)}{h}={\bf r}'(t)
           </md>
         </p>
-        <subsection>
-        <title>Example</title>
-        
+        <example>
         <p>
-        Find the equation of the tangent line to the curve
-        <md>
+          Find the equation of the tangent line to the curve
+          <md>
           {\bf r}(t)=\langle e^{2t-1},\sin(\pi t)+2,4t^2-2t\rangle \qquad 0\leq t\leq 2
-        </md>
-        at the point <m>(1,3,0)</m>
+          </md>
+          at the point <m>(1,3,0)</m>
         </p>
         <p>
-        The point corresponds to <m>t=1/2</m>. So the equation of the tangent line will be
+          The point corresponds to <m>t=1/2</m>. So the equation of the tangent line will be
         <md>
           {\bf t}(u)={\bf r}\left(\frac{1}{2}\right)+u\,{\bf r}'\left(\frac{1}{2}\right)
         </md>
@@ -1344,8 +1334,8 @@
         
         </p>
 
+        </example>
         
-      </subsection>
       </section>
       <section >
         <title>Arc Length</title>
@@ -1368,8 +1358,7 @@
           </md>
           
         </p>
-        <subsection>
-          <title>Example</title>
+        <example>
           <p>
             Find the length of the curve
             <md>
@@ -1386,18 +1375,1378 @@
             </md>
             
           </p>
-          
-        </subsection>
+        </example>
+        
       </section>
       <section xml:id="sec-Curvature">
         <title>Curvature</title>
         <p>
+          Given a curve in <m>\mathbb{R}^2</m>
+          <md>
+            {\bf r}=\langle x(t),y(t)\rangle
+          </md>
+          The angle the curve makes with the positive <m>x</m> direction, <m>\psi</m> is given by
+          <md>
+            \tan\psi =\frac{dy}{dx}=\frac{y'}{x'}\quad\Rightarrow\quad \psi=\tan^{-1}\left(\frac{y'}{x'}\right)
+          </md>
+           The curvature is defined to be the rate of change of <m>\psi</m> with respect to the arc length.
+           <md>
+            \kappa=\frac{d\psi}{ds}=\left.\frac{d\psi}{dt}\middle/ \frac{ds}{dt}\right.
+           </md>
+           <image source="curvature2d.png" width="80%">
+            <shortdescription>A 2d curve with a tangent line and the angle the tangent line makes with the positive <m>x</m> axis</shortdescription>
+           </image>
+           <image source="curvature2d.png" width="0%">
+            <shortdescription>A 2d curve with a tangent line and the angle the tangent line makes with the positive <m>x</m> axis</shortdescription>
+           </image>
+           <md>
+            \kappa=\frac{1}{\sqrt{x'^2+y'^2}}\frac{1}{1+(y'/x')^2}\frac{x'y''-y'x''}{x'^2}=\frac{x'y''-y'x''}{(x'^2+y'^2)^{3/2}}
+           </md>
+           If the curve is given as <m>y=f(x)</m>, the curvature has the simpler form
+           <md>
+            \kappa=\frac{f'''}{(1+f'^2)^{3/2}}
+           </md>
+          </p>
+          <example>
+            <p>
+            Find the curvature of the cycloid
+            <md>
+              {\bf r}=a\langle t-\sin t,1-\cos t\rangle 
+            </md>
+            <md>
+              <mrow>x'^2+y'^2 \amp = a^2((1-\cos t)^2+\sin^2t)=2a^2(1-\cos t)</mrow>
+              <mrow>x'y''-y'x'' \amp = a^2(1-\cos t)\cos t-\sin t(\sin t)=a^2(\cos t -1)</mrow>
+              <mrow>\kappa \amp = \frac{a^2(\cos t-1)}{(2a^2(1-\cos t))^{3/2}}=-\frac{1}{2\sqrt{2}\,a\sqrt{1-\cos t}}</mrow>
+            </md>
+            </p>
+          </example>
+          <p>
+            In <m>\mathbb{R}^3</m>, a curve's direction will be given by the unit tangent vector
+            <md>
+              {\bf T}=\frac{{\bf r}'(t)}{|{\bf r}'(t)|}=\frac{d{\bf r}}{ds}
+            </md>
+            Since <m>{\bf T}</m> is a unit vector the only way it can vary is by changing direction.
+            <md>
+              {\bf T}\cdot{\bf T}=1 \quad\Rightarrow\quad {\bf T}\cdot{\bf T}'=0
+            </md>
+            So the the derivative of <m>{\bf T}</m> is orthogonal to <m>{\bf T}</m>. Define the curvature vector to be the derivative of <m>{\bf T}</m> with respect to arc length.
+            <md>
+              \frac{d{\bf T}}{ds}=\kappa{\bf N}\qquad \kappa=\left|\frac{d{\bf T}}{ds}\right|
+            </md>
+            <m>{\bf N}</m> is called the unit normal vector and <m>\kappa</m> is the curvature. Curves are usually not parametrized by arc length. The curvature and and unit normal can be calculated using the chain rule.
+            <md>
+              \frac{d{\bf T}}{ds}=\frac{1}{ds/dt}\frac{d{\bf T}}{dt}
+            </md>
+           </p>
+           <example>
+            <p>
+              Find the unit tangent, unit normal, and curvature of the curve
+              <md>
+                {\bf r}-\langle e^t\cos t,e^t\sin t,\sqrt{2}e^t\rangle
+              </md>
+              <md>
+                <mrow>{\bf r}'(t) \amp = e^t\langle \cos t-\sin t,\sin t+\cos t,\sqrt{2}\rangle</mrow>
+                <mrow> |{\bf r}'(t)| \amp = e^t\sqrt{(\cos t-\sin t)^2+(\sin t+\cos t)^2+2}=2e^t</mrow>
+                <mrow>{\bf T} \amp =\frac{{\bf r}'(t)}{|{\bf r}'(t)|}=\frac{1}{2}\langle \cos t-\sin t,\sin t+\cos t,\sqrt{2}\rangle </mrow>
+              </md>
+              <md>
+                \frac{d{\bf T}}{dt}=\frac{1}{2}\langle -\cos t-\sin t,-\sin t+\cos t,0\rangle
+              </md>
+              <md>
+                \kappa=\frac{1}{|{\bf r}'(t)|}\left|\frac{d{\bf T}}{dt}\right|=\frac{1}{2e^t}\sqrt{(-\cos t-\sin t)^2+(-\sin t+\cos t)^2}=\frac{\sqrt{2}}{2e^t}
+              </md>
+              <md>
+                {\bf N}=\left.\frac{d{\bf T}}{dt}\middle/ \left|\frac{d{\bf T}}{dt}\right|\right.=\frac{1}{\sqrt{2}}\langle -\cos t-\sin t,-\sin t+\cos t,0\rangle
+              </md>
+              
+            </p>
+           </example>
+           <example>
+            <p>
+              Find the unit tangent, unit normal and curvature of the curve
+              <md>
+                {\bf r}=\langle t^2+2,t^2-4t,2t\rangle
+              </md>
+              <md>
+                <mrow>{\bf r}' \amp = \langle 2t,2t-4,2\rangle</mrow>
+                <mrow>|{\bf r}'| \amp = \sqrt{4t^2+4(t-2)^2+4}=2\sqrt{2t^2-4t+5}</mrow>
+                <mrow>{\bf T} \amp =\frac{1}{\sqrt{2t^2-4t+5}}\langle t,t-2,1\rangle</mrow>
+              </md>
+              <md>
+                <mrow>{\bf T}' \amp =\frac{\langle 1,1,0\rangle}{\sqrt{2t^2-4t+5}}-\frac{(4t-4)\langle t,t-2,1\rangle}{2(2t^2-4t+5)^{3/2}}</mrow>
+                <mrow> \amp =\frac{1}{(2t^2-4t+5)^{3/2}}((2t^2-4t+5)\langle 1,1,9\rangle-(2t-2)\langle t,t-2,1)</mrow>
+                <mrow> \amp =\frac{1}{(2t^2-4t+5)^{3/2}}\langle 5-2t,1+2t,2-2t\rangle</mrow>
+              </md>
+              <md>
+                <mrow> |{\bf T}'|\amp =\frac{1}{(2t^2-4t+5)^{3/2}}\sqrt{(5-2t)^2+(1_2t)^2+(2-2t)^2}</mrow>
+                <mrow> \amp =\frac{\sqrt{12t^2-24t+30}}{(2t^2-4t+5)^{3/2}}=\frac{\sqrt{6}\sqrt{2t^2-4t+5}}{(2t^2-4t+5)^{3/2}}</mrow>
+                <mrow> \amp =\frac{\sqrt{6}}{2t^2-4t+5}</mrow>
+              </md>
+              <md>
+                {\bf N}=\frac{{\bf T}'}{|{\bf T}'|}=\frac{\langle 5-2t,1+2t,2-2t\rangle}{\sqrt{6}\sqrt{2t^2-4t+5}}
+              </md>
+              <md>
+                \kappa=\frac{{\bf T}'}{|{\bf r}'|}=\frac{\sqrt{6}}{2(2t^2-4t+5)^{3/2}}
+              </md>
+              
+              
+              
+            </p>
+           </example>
+           
+      </section>
+      <section>
+        <title>More Curvature</title>
+        <p>
+          The plane containing <m>{\bf T}</m> and <m>{\bf N}</m> is called the osculating plane. The normal to this plane
+          <md>
+            {\bf B}={\bf T}\times{\bf N}
+          </md>
+          is called the binormal. The circle tangent at the point is called the osculating circle. It has a radius of <m>1/\kappa</m>.
+          <image source="TNOsculating.png" width="80%">
+            <shortdescription>A curve with the unit tangent and unit normal displayed together with the osculating circle and its radius</shortdescription>
+          </image>
+        </p>
+        <p>
+          As evidenced by the second example in the previous section, the straightforward way to find the curvature and normal can involve some complicated differentiation. There is an indirect way to do the calculations which is often more efficient.
+          <md>
+            <mrow>{\bf r}'' \amp = (|{\bf r}'|{\bf T})'=\|{\bf r}'|'{\bf T}+|{\bf r}'|{\bf T}''</mrow>
+            <mrow> \amp =|{\bf r}'|'{\bf T}+|{\bf r}'|(|{\bf r}'|\kappa {\bf N}</mrow>
+          </md>
+          <md>
+            <mrow>{\bf r}'\times {\bf r}'' \amp = |{\bf r}'|{\bf T}\times (|{\bf r}'|'{\bf T}+\kappa|{\bf r}'|^2 {\bf N})</mrow>
+            <mrow> \amp =\kappa |{\bf r}'|^3 {\bf B}</mrow>
+          </md>
+          So
+          <md>
+            \kappa=\frac{|{\bf r}'\times{\bf r}''|}{|{\bf r}'|^3}\qquad {\bf B}=\frac{{\bf r}'\times{\bf r}''}{|{\bf r}'\times{\bf r}''|}\
+          </md>
+          and <m>{\bf N}</m> can be calculated as <m>{\bf N}={\bf B}\times{\bf T}</m>
+        </p>
+        <example>
+          <p>
+            Find the unit tangent, unit normal, binormal and curvature of the curve
+            <md>
+              {\bf r}=\langle e^t,\sqrt{2}t,e^{-t}\rangle
+            </md>
+            <md>
+              {\bf r}'=\langle e^t,\sqrt{2},-e^{-t}\rangle \quad |{\bf r}'|=\sqrt{e^{2t}+2+e^{-2t}}= e^t+e^{-t}\quad {\bf r}''=\langle e^t,0,e^{-t}\rangle
+            </md>
+            <md>
+              {\bf r}'\times{\bf r}''=\left|\begin{array}{ccc} {\bf i}\amp {\bf j}\amp {\bf k} \\ e^t \amp \sqrt{2}\amp -e^{-t} \\ e^t \amp 0\amp e^{-t}\end{array}\right|=\langle \sqrt{2}e^{-t},-2,-\sqrt{2}e^t\rangle
+            </md>
+            <md>
+              |{\bf r}'\times{\bf r}''|=\sqrt{2e^{-2t}+4+2e^{2t}}=\sqrt{2}(e^t+e^{-t}) 
+            </md>
+            <md>
+              \kappa=\frac{\sqrt{2}(e^t+e^{-t})}{(e^t+e^{-t})^3}=\frac{\sqrt{2}}{(e^t+e^{-t})^2}
+            </md>
+            
+            <md>
+              {\bf T}=\frac{\langle e^t,\sqrt{2},-e^{-t}\rangle}{e^t+e^{-t}}\qquad {\bf B}=\frac{\langle e^{-t},-\sqrt{2},-e^{t}\rangle}{e^t+e^{-t}}
+            </md>
+            <md>
+              <mrow>{\bf N} \amp = {\bf B}\times{\bf T}=\frac{1}{(e^t+e^{-t})^2}\left|\begin{array}{ccc} {\bf i}\amp {\bf j}\amp {\bf k} \\ e^{-t} \amp -\sqrt{2}\amp -e^{t} \\ e^t \amp \sqrt{2}\amp -e^{-t}\end{array}\right|</mrow>
+              <mrow> \amp =\frac{\langle \sqrt{2}(e^t+e^{-t}),-e^{2t}+e^{-2t},\sqrt{2}(e^t+e^{-t})\rangle}{(e^t+e^{-t})^2}</mrow>
+              <mrow> \amp =\frac{\langle \sqrt{2},-e^{t}+e^{-t},\sqrt{2}\rangle}{e^t+e^{-t}}</mrow>
+            </md>
+          </p>
+        </example>
+        <example>
+          <p>
+            Find the unit tangent, unit normal, binormal and curvature of the curve
+            <md>
+              {\bf r}=\langle 3t^2,3t-t^3,3t+t^3\rangle
+            </md>
+            <md>
+              <mrow>{\bf r}' \amp =\langle 6t,3-3t^2,3+3t^2\rangle=3\langle 2t,1-t^2,1+t^2\rangle</mrow>
+              <mrow>|{\bf r}'|' \amp = 3\sqrt{4t^2+(1-t^2)^2+(1+t^2)^2}=3\sqrt{2}(t^2+1)</mrow>
+              <mrow>{\bf r}'' \amp =\langle 6,-6t,6t\rangle = 6\langle 1,-t,t\rangle</mrow>
+              <mrow>{\bf T} \amp =\frac{1}{\sqrt{2}(t^2+1)}\langle 2t,1-t^2,1+t^2\rangle</mrow>
+            </md>
+            <md>
+              {\bf r}'\times{\bf r}''=18\left|\begin{array}{ccc} {\bf i}\amp {\bf j}\amp {\bf k} \\ 2t \amp 1-t^2\amp 1+t^2 \\ 1 \amp -t\amp t\end{array}\right|=18\langle 2t,1-t^2,-1-t^2\rangle
+            </md>
+            <md>
+              |{\bf r}'\times{\bf r}''|=18\sqrt{2}(t^2+1) \quad\Rightarrow\quad \kappa = \frac{18\sqrt{2}(t^2+1)}{(3\sqrt{2}(t^2+1))^3}=\frac{1}{3(t^2+1)}
+            </md>
+            <md>
+              {\bf B}=\frac{1}{\sqrt{2}(t^2+1)}\langle 2t,1-t^2,-1-t^2\rangle
+            </md>
+            <md>
+              <mrow>{\bf N} \amp ={\bf B}\times{\bf T}=\frac{1}{2(t^2+1)^2}\left|\begin{array}{ccc} {\bf i}\amp {\bf j}\amp {\bf k} \\ 2t \amp 1-t^2\amp -1-t^2 \\ 2t \amp 1-t^2\amp 1+t^2\end{array}\right|</mrow>
+              <mrow> \amp = \frac{1}{2(t^2+1)^2}\langle 2(1-t^4),-2t(1+t^2),0\rangle=\frac{\langle 1-t^2,-2t,0\rangle}{t^2+1}
+              </mrow>
+            </md>
+          </p>
+        </example>
+        
+      </section>
+      <section>
+        <title>Problems</title>
+        <exercise>
+          <p>
+            (a) Find the length of the curve 
+            <md>
+              {\bf r}=\langle 2t^2+1, \frac{2t^3}{3},1-t^2\rangle \qquad 0\leq t\leq 2
+            </md>
+            (b) Find the equation of the tangent line to the curve at the point<m>(3,2/3,0)</m>
+          </p>
           
+        </exercise>
+        <answer>
+          <p>
+            (a)
+            <md>
+              {\bf r}'=\langle 4t,2t^2,-2t\rangle \quad |{\bf r'}|=2\sqrt{4t^2+t^4+t^2}=2t\sqrt{t^2+5}
+            </md>
+            <md>
+              \mbox{Arc length}=\int_0^22t\sqrt{t^2+5}\,dt=\left[\frac{2}{3}(t^2+5)^{3/2}\right]_0^2=\frac{2}{3}(27-5^{3/2})
+            </md>
+            (b) The point corresponds to <m>t=1</m> so the tangent line will be
+            <md>
+              {\bf l}(u)={\bf r}(1)+u{\bf r}'(1)=\left\langle 3,\frac{2}{3},0\right\rangle +u\langle 4,2,-2\rangle
+            </md>
+            
+          
+          </p>
+        </answer>
+        <exercise>
+          <p>
+            Find the unit tangent, unit normal, binormal, and curvature for the curve
+            <md>
+              {\bf r}=\langle 6t,3t^2,t^3\rangle
+            </md>
+            
+          </p>
+        </exercise>
+        <answer>
+          <p>
+            <md>
+              {\bf r}'=\langle 6,6t,3t^2\rangle=3\langle 2,2t,t^2\rangle  \qquad |{\bf r}'|=3(t^2+2)
+            </md>
+            <md>
+              {\bf r}''=\langle 0,6,6t\rangle
+            </md>
+            <md>
+              {\bf r}'\times{\bf r}''=18\left|\begin{array}{ccc} {\bf i}\amp {\bf j}\amp {\bf k} \\ 2 \amp 2t\amp t^2 \\ 0 \amp 1\amp t\end{array}\right|=18\langle t^2,-2t,2\rangle
+            </md>
+            <md>
+              |{\bf r}'\times{\bf r}''|=18(t^2+2)\quad\Rightarrow \quad \kappa=\frac{18(t^2+2)}{27(t^2+2)^3)}=\frac{2}{3(t^2+2)^2}
+            </md>
+            <md>
+              {\bf T}=\frac{\langle 2,2t,t^2\rangle}{t^2+2}\qquad {\bf B}=\frac{\langle t^2,-2t,2\rangle}{t^2+2}
+            </md>
+            <md>
+              <mrow>{\bf N} \amp ={\bf B}\times{\bf T}=\frac{2}{(t^2+2)^2}\left|\begin{array}{ccc} {\bf i}\amp {\bf j}\amp {\bf k} \\ t^2 \amp -2t\amp 2 \\ 2 \amp 2t\amp t^2\end{array}\right|</mrow>
+              <mrow> \amp =\frac{\langle -4t-2t^3,4-t^4,2t^3+4t\rangle}{(t^2+2)^2}=\frac{\langle -2t,2-t^2,2t\rangle}{t^2+2}</mrow>
+            </md>
+            
+          </p>
+        </answer>
+        <exercise>
+          <p>
+            Find the unit tangent, unit normal, binormal, and curvature of the curve
+            <md>
+              {\bf r}=\langle\cos t+t\sin t,\sin t-t\cos t,t^2\rangle
+            </md>
+            
+          </p>
+        </exercise>
+        <answer>
+          <p>
+            <md>
+              <mrow>{\bf r}' \amp = \langle t\cos t,t\sin t,2t\rangle \qquad |{\bf r}'|=\sqrt{5}t</mrow>
+              <mrow>{\bf T} \amp = \frac{1}{\sqrt{5}}\langle \cos t,\sin t,2\rangle</mrow>
+              <mrow>{\bf T}' \amp =\frac{1}{\sqrt{5}}\langle -\sin t,\cos t,0\rangle </mrow>
+              <mrow>{\bf N} \amp =\frac{{\bf T}'}{|{\bf T}'|}=\langle -\sin t,\cos t,0\rangle</mrow>
+              <mrow>\kappa \amp = \frac{{\bf T}'}{|{\bf r}'|}=\frac{1}{5t}</mrow>
+            </md>
+            <md>
+              <mrow>{\bf B} \amp ={\bf T}\times{\bf N}=\frac{1}{\sqrt{5}}\left|\begin{array}{ccc} {\bf i}\amp {\bf j}\amp {\bf k} \\ \cos t \amp \sin t\amp 2 \\ -\sin t \amp \cos t\amp 0\end{array}\right|</mrow>
+              <mrow> \amp ==\frac{\langle -2\cos t,-2\sin t,1\rangle}{\sqrt{5}}</mrow>
+            </md>
+          </p>
+        </answer>
+        <exercise>
+          <p>
+            (a) Show that the curve
+            <md>
+              {\bf r}=\langle 2t,\cos 2t,-\cos 2t\rangle
+            </md>
+            lies in a plane
+          </p>
+          <p>
+            (b) Find the equation of the plane
+          </p>
+        </exercise>
+        <answer>
+          <p>
+            (a)
+            <md>
+              {\bf r}'=\langle 2,-2\sin 2t,2\sin 2t\rangle \qquad {\bf r}''=\langle 0,-4\cos 2t,4\cos 2t 2t\rangle
+            </md>
+            <md>
+              {\bf r}'\times{\bf r}''=\left|\begin{array}{ccc} {\bf i}\amp {\bf j}\amp {\bf k} \\ 2 \amp -2\sin 2t\amp 2\sin 2t \\ 0 \amp -4\cos 2t\amp 4\cos 2t\end{array}\right|=\langle 0, -8\cos 2t,-8\cos 2t\rangle
+            </md>
+            <md>
+              {\bf B}=\frac{{\bf r}'\times{\bf r}''}{|{\bf r}'\times{\bf r}''|}=\frac{1}{\sqrt{2}}\langle 0,-1,-1\rangle
+            </md>
+            The binormal is constant so the osculating plane is also
+          </p>
+          <p>
+            (b)
+            <md>
+              {\bf r}(0)=\langle 0,1,-1\rangle
+            </md>
+            So the equation of the plane is
+            <md>
+              \langle 0,-1,-1\rangle\cdot\langle x,y-1,z+1\rangle =0\quad\Rightarrow\quad y+z=0
+            </md>
+            
+          </p>
+        </answer>
+        <exercise>
+          <p>
+            Parametrize the curve of intersection of the two surfaces
+          <md>
+            x^2+y^2-2x+4y=4 \qquad z=x^2+y^3
+          </md>
+          </p>
+          
+          
+        </exercise>
+        <answer>
+          <p>
+            The cylinder equation can be rewritten as
+            <md>
+              (x-1)^2+(y+2)^2=9
+            </md>
+            which can be parametrized as
+            <md>
+              x=1+3\cos t\quad y=-2+3\sin t \qquad 0\leq t\leq 2\pi
+            </md>
+            Substituting into the equation for the paraboloid
+            <md>
+              z=(3\cos t+1)^2+(3\sin t-2)^2=14+6\cos t-12\sin t
+            </md>
+            The curve can be parametrized as
+            <md>
+              {\bf r}=\langle 1+3\cos t,-2+3\sin t,14+6\cos t-12\sin t\rangle \quad o\leq t\leq 2\pi
+            </md>
+            
+          </p>
+        </answer>
+        <exercise>
+          <p>
+            Find the unit tangent, unit norma, binormal, and curvature of the curve
+          <md>
+            {\bf r}\langle \ln(1+t^2),t-2\tan^{-1}t,t\rangle
+          </md>
+          </p>
+          
+          
+        </exercise>
+        <answer>
+          <p>
+            <md>
+              <mrow>{\bf r}'= \amp \left\langle \frac{2t}{1+t^2},1-\frac{2}{1+t^2},1\right\rangle=\frac{\langle 2t,t^2-1,t^2+1\rangle}{(1+t^2)}</mrow>
+              <mrow>|{\bf r}'|= \amp \frac{1}{(t^2+1)}\sqrt{4t^2+(t^2-1)^2+t^2+1)^2}=\sqrt{2}\amp </mrow>
+              <mrow>{\bf T} =\amp \frac{\langle 2t,t^2-1,t^2+1\rangle}{(1+t^2)}=\frac{1}{\sqrt{2}}\left\langle \frac{2t}{1+t^2},1-\frac{2}{1+t^2},1\right\rangle</mrow>
+              <mrow>{\bf T}'= \amp \frac{1}{\sqrt{2}}\left\langle \frac{2}{1+t^2}-\frac{4t}{(1+t^2)^2},\frac{4t^2}{(1+t^2)^2},0\right\rangle=\frac{\langle 2-2t^2,4t,0\rangle}{\sqrt{2}(1+t^2)^2}</mrow>
+              <mrow>{\bf N}= \amp \frac{{\bf T}'}{|{\bf T}'|}=\frac{\langle 1-t^2,2t,0\rangle}{1+t^2}</mrow>
+              <mrow>\kappa = \amp \frac{{\bf T}'}{|{\bf r}'|}=\frac{1}{1+t^2}</mrow>
+            </md>
+            <md>
+              <mrow>{\bf B} =\amp {\bf T}\times{\bf N}=\frac{1}{\sqrt{2}(1+t^2)^2}\left|\begin{array}{ccc} {\bf i}\amp {\bf j}\amp {\bf k} \\ 2t \amp t^2-1\amp t^2+1 \\ 1-t^2 \amp 2t\amp 0\end{array}\right|</mrow>
+              <mrow>= \amp \frac{\langle -2t(1+t^2),1-t^4,(1+t^2)^2\rangle}{\sqrt{2}(1+t^2)^2}=\frac{\langle -2t,1-t^2,1+t^2\rangle}{\sqrt{2}(1+t^2)}</mrow>
+            </md>
+            
+          </p>
+        </answer>
+      </section>
+
+    </chapter>
+    <chapter>
+      <title>Limits in <m>\mathbb{R}^2</m></title>
+      <section xml:id="sec-Limits">
+        <title>Limits</title>
+        <p>
+        The definition of a limit in <m>\mathbb{R}^2</m> is analogous to the definition in single variable calculus. In the definition replace the open interval <m>|x-a|\lt \delta</m> by the open disk <m>|{\bf r}-{\bf a}|\lt \delta</m>
+      </p>
+      <p>
+        Formally a function <m>f({\bf r})</m> has a limit <m>L</m>, if given an <m>\epsilon \gt 0</m> there exists a <m>\delta\gt 0</m> so that
+        <md>
+          0\lt |{\bf r}-{\bf a}|\lt \delta \quad\Rightarrow\quad |f({\bf r})-L|\lt \epsilon
+        </md>
+        This is a stricter condition than in single variable calculus as the limit must have the same value for any path approaching <m>{\bf a}</m>
+      </p>
+      <p>
+        Some limits follow from the definition
+      </p>
+      <example>
+        <p>
+          Find
+        <md>
+          \lim_{(x,y)\to(0,0)}\frac{tan(x^2+y^2)}{x^2+y^2}
+        </md>
+        Let <m>r=\sqrt{x^2+y^2}</m> then the limit becomes
+        <md>
+          \lim_{r\to 0}\frac{\sin(r^2)}{r^2}\,\frac{1}{\cos(r^2)}=1
+        </md>
+        
+        </p>
+      </example>
+      <p>
+        Another technique is to use the squeeze theorem
+      </p>
+      <example>
+        <p>
+          Find
+          <md>
+          \lim_{(x,y)\to(0,0)}\frac{xy^2}{x^2+y^2}
+        </md>
+        Note that 
+        <md>
+          \left|\frac{xy^2}{x^2+y^2}\right|=\left|x\left(\frac{y^2}{x^2+y^2}\right)\right|\leq |x|
+        </md>
+        Then
+        <md>
+          \left|\lim_{(x,y)\to(0,0)}\frac{xy^2}{x^2+y^2}\right|\leq \lim_{(x,y)\to(0,0)}|x|=0
+        </md>
+        
+        </p>
+      </example>
+      <p>
+        Polar coordinates are useful for some limits
+      </p>
+      <example>
+        <p>
+          Find
+          <md>
+          \lim_{(x,y)\to(0,0)}\frac{4x^3+xy^2+y^3}{3x^2+y^2}
+        </md>
+        Letting <m>x=r\cos\theta,y=r\sin\theta</m>, the limit becomes
+        <md>
+          <mrow> \amp \lim_{r\to 0}\frac{4r^3\cos^3\theta+r^3\cos\theta\sin^2\theta+r^3\sin^3\theta}{3r^2\cos^2\theta+r^2\sin^2\theta}</mrow>
+          <mrow> \amp =\lim_{r\to 0}r\left(\frac{4\cos^3\theta+\cos\theta\sin^2\theta+\sin^3\theta}{3\cos^2\theta+\sin^2\theta}\right)=0</mrow>  
+        </md>
+        
+        </p>
+      </example>
+      <p>
+        To demonstrate that a function doesn't have a limit it is enough to exhibit two paths whose limits give different values
+      </p>
+      <example>
+        <p>
+          Find
+          <md>
+            \lim_{(x,y)\to(0,0)}\frac{2x^2+3y^2}{5x^2+7y^2} 
+          </md>
+          Consider the two paths illustrated below
+          <image source="limit1.png" width="50%">
+            <shortdescription>The diagram show two paths from <m>(x,y)</m>to the origin. <m>C_1</m> first sends <m>y</m> to zero then <m>x</m>to zero. <m>C_2</m> sends <m>x \to 0</m> followed by <m>y\to 0</m></shortdescription>
+          </image>
+          For <m>C_1</m>
+          <md>
+            \lim_{x\to 0}\lim_{y\to 0}\frac{2x^2+3y^2}{5x^2+7y^2}=\frac{2}{5}
+          </md>
+          For <m>C_2</m>
+          <md>
+            \lim_{y\to 0}\lim_{x\to 0}\frac{2x^2+3y^2}{5x^2+7y^2}=\frac{3}{7}
+          </md>
+          These values dont agree so the function doesn't have a limit as <m>(x,y)\to(0,0)</m> 
+        </p>
+      </example>
+      <p>
+        Another technique is to consider a family of paths and show that the limits differ
+      </p>
+      <example>
+        <p>
+          Find
+          <md>
+            \lim_{(x,y)\to(0,0)}\frac{(x-3y)^2}{x^2+4y^2} 
+          </md>
+          Consider the path approaching <m>(0,0)</m> along the line <m>y=mx</m>
+          <image source="limit2.png" width="50%">
+            <shortdescription>A diagram showing the path <m>y\to mx</m>followed by <m>x\to 0</m></shortdescription>
+          </image>
+          The limit becomes
+          <md>
+            \lim_{x\to 0}\lim_{y\to mx}\frac{(x-3y)^2}{x^2+4y^2}=\frac{(1-3m)^2}{1+4m^2}
+          </md>
+          which depends on the slope so the function doesn't have a limit
+        </p>
+         
+      </example>
+      <p>
+        Sometimes other paths will show that the limit doesn't exist        
+      </p>
+      <example>
+        <p>
+          Find
+          <md>
+            \lim_{(x,y)\to(0,0)}\frac{3x^2y}{2x^4+y^2} 
+          </md>
+          Consider the limit approaching <m>(0,0)</m> along the family of parabolas <m>y=kx^2</m>
+          <image source="limit3.png" width="50%">
+            <shortdescription>A diagram showing the path <m>y\to kx^2</m> followed by <m>x\to 0</m></shortdescription>
+          </image>
+          <md>
+            \lim_{x\to 0}\lim_{y\to kx^2}\frac{3x^2y}{2x^4+y^2}=\lim_{x\to 0}\frac{3kx^4}{2x^4+k^2x^4}=\frac{3k}{2+k^2}
+          </md>
+          It depends on <m>k</m> so the function doesn't have a limit
+        </p>
+      </example>
+
+        
+      </section>
+      <section>
+        <title>Properties of Limits</title>
+        <p>
+          Limits combine the same way that one dimensional limits do. I
+          <md>
+            \lim_{{\bf r}\to{\bf a}}f({\bf r})= K \qquad \lim_{{\bf r}\to{\bf a}}g({\bf r})= L\qquad \lambda \in \mathbb{R}
+          </md>
+          then
+          <md>
+            <mrow>\lim_{{\bf r}\to{\bf a}}\lambda f({\bf r})=\lambda K \amp\qquad\qquad \lim_{{\bf r}\to{\bf a}}(f({\bf r})+g({\bf r}))=K+L</mrow>
+            <mrow>\lim_{{\bf r}\to{\bf a}}(f({\bf r})g({\bf r}))=KL \amp \qquad\qquad \lim_{{\bf r}\to{\bf a}}\left(\frac{f({\bf r})}{g({\bf r})}\right)=K/L \quad L\neq 0</mrow>
+          </md>
+        </p>
+        <subsection xml:id="subsec-Continuity">
+          <title>Continuity</title>
+          <p>
+            The definition of continuity is similar to the single variable case. A function <m>f({\bf r})</m> is continuous at <m>{\bf a}</m> if
+            <md>
+              \lim_{{\bf r}\to{\bf a}}f({\bf r})=f({\bf a})
+            </md>
+            If <m>f</m> and <m>g</m> are continuous at <m>{\bf r}={\bf a}</m> and <m>\lambda\in\mathbb{R}</m> then so are <m>f+g,\lambda f,fg</m>. Also <m>f/g</m> is continuous if <m>g({\bf a})\neq 0</m>
+          </p>
+          <p>
+            If <m>F</m> is a continuous function of one variable and <m>\lim_{{\bf r}\to{\bf a}}g({\bf r})= L</m> then
+            <md>
+              \lim_{{\bf r}\to{\bf a}}F(g({\bf r}))= F(\lim_{{\bf r}\to{\bf a}}g({\bf r}))= F(L)
+            </md>
+            
+          </p>
+          <example>
+            <p>
+              Find
+              <md>
+                \lim_{(x,y)\to(0,0)}\ln\left(\frac{1+\cos(x^2+y^2)}{\sqrt{x^2+4y^2}+1}\right)   
+              </md>
+              The limit is
+              <md>
+                \ln\left( \lim_{(x,y)\to(0,0)}\frac{1+\cos(x^2+y^2)}{\sqrt{x^2+4y^2}+1}\right)=\ln 2
+              </md>
+              
+            </p>
+            
+          </example>
+        </subsection>
+      </section>
+      <section xml:id="sec-Problems">
+        <title>Problems</title>
+        <exercise>
+          <p>
+            Find
+            <md>
+              \lim_{(x,y)\to(0,0)}\frac{\sin 2x(e^y-1)}{3xy}
+            </md>       
+          </p>
+          
+        </exercise> 
+        <answer>
+          <p>
+            The limit is
+            <md>
+              \lim_{x\to 0}\frac{\sin 2x}{3x}\,\,\lim_{y\to 0}\frac{e^y-1}{y}=\frac{2}{3}
+            </md>
+            
+          </p>
+        </answer>
+        <exercise>
+          <p>
+            Find
+            <md>
+              \lim_{(x,y)\to(0,0)}\frac{x^2+2y^3}{\sin (y-2x)}
+            </md>
+          </p>
+        </exercise>
+        <answer>
+          <p>
+            Along the line <m>y=2x</m> the denominatore is zero and the function is undefined. Since <m>y=2x</m> passes through the origin the limit doesn't exist
+          </p>
+        </answer>
+        <exercise>
+          <p>
+            Find
+            <md>
+              \lim_{(x,y)\to(0,0)}\frac{\sqrt{x^5+2y^5}}{x^2+y^2}
+            </md>
+          </p>
+          
+        </exercise>
+        <answer>
+          <p>
+            Switching to polars the limit becomes
+            <md>
+              \lim_{r\to 0}\frac{\sqrt{r^5\cos^5\theta+r^5\sin^5\theta}}{r^2}=\lim_{r\to 0}\sqrt{r}\sqrt{\cos^5\theta+\sin^5\theta}=0
+            </md>
+            
+          </p>
+        </answer>
+        <exercise>
+          <p>
+            Find
+            <md>
+              \lim_{(x,y)\to(0,0)}\cos\left(\frac{\sqrt{x^2+2y^2}}{x^2+y^2+2}\right)
+            </md>
+          </p>
+        </exercise>
+        <answer>
+          <p>
+            The limit becomes
+            <md>
+              \cos\left(\lim_{(x,y)\to(0,0)}\frac{\sqrt{x^2+2y^2}}{x^2+y^2+2}\right)=\cos(0)=1
+            </md>
+            
+          </p>
+        </answer>
+        <exercise>
+          <p>
+            Find
+            <md>
+              \lim_{(x,y)\to(0,0)}\frac{\cos 2x -1+y^2}{x^2+y^2}
+            </md>
+          </p>
+        </exercise>
+        <answer>
+          <p>
+            Taking the limit <m>x\to 0</m> followed by <m>y\to 0</m>
+            <md>
+              \lim_{y\to 0}\lim_{x\to 0}\frac{\cos 2x -1+y^2}{x^2+y^2}=\lim_{y\to 0}\frac{y^2}{y^2}=1
+            </md>
+            Taking the limit <m>y\to 0</m> followed by <m>x\to 0</m>
+            <md>
+              \lim_{x\to 0}\lim_{y\to 0}\frac{\cos 2x -1}{x^2}=\lim_{x\to 0}\frac{-2\sin 2x}{2x}=-2
+            </md>
+            So the limit doesn't exist.
+          </p>
+        </answer>
+        <exercise>
+          <p>
+            Find
+            <md>
+              \lim_{(x,y)\to(0,0)}\frac{\sqrt{5x^2y^2}}{x^2+y^4}
+            </md>
+          </p>
+        </exercise>
+        <answer>
+          <p>
+            Using the squeeze theorem
+            <md>
+             \lim_{(x,y)\to(0,0)}\frac{5x^2y^2}{x^2+y^4} = \lim_{(x,y)\to(0,0)}5y^2\left(\frac{\sqrt{x^2}}{x^2+y^4}\right)\leq \lim_{(x,y)\to(0,0)}5y^2=0 
+            </md>
+            
+          </p>
+        </answer>
+      </section>
+    </chapter>
+    <chapter>
+      <title>Partial Derivatives</title>
+      <section>
+        <title>Definition of Partial Derivatives</title>
+        <p>
+          The partial derivative of <m>f(x,y)</m> with respect to <m>x</m> is
+          <md>
+            \frac{\partial f}{\partial x}=f_xf(x,y)=\partial_xf(x,y)=\lim_{h\to 0}\frac{f(x+h,y)-f(x,y)}{h}
+          </md>
+          Similarly the partial erive with respect to <m>y</m> is
+          <md>
+            \frac{\partial f}{\partial y}=f_x(x,y)=\partial_y(x,y)=\lim_{k\to 0}\frac{f(x,y+k)-f(x,y)}{k}
+          </md>
+          Calculating partial derivatives is an exercise in single variable calculus. The partial derivative with respect to a variable is the usual derivative while treating all the other variables as constant.
+
+        </p>
+        <example>
+          <p>
+            Find the partial derivatives of
+            <md>
+              f(x,y)=e^{x+3y}+\ln(x^2+y^2)
+            </md>
+            <md>
+              f_x=e^{x+3y}+\frac{2x}{x^2+y^2}\qquad f_y=3e^{x+3y}+\frac{2y}{x^2+y^2}
+            </md>
+            
+          </p>
+        </example>
+      </section>
+      <section>
+        <title>Implicit Differentiation</title>
+        <p>
+          One type of problem in single variable calculus is to find the derivative of <m>y</m> with respect to <m>x</m> when the relation is given in implicit form
+          <md>
+            F(x,y)=\mbox{constant}
+          </md>
+          Doing the calculation every time you took the the derivative of a function of <m>y</m> you multiplied it by <m>y'</m> because of the chain rule. In terms of partial derivatives
+          <md>
+            \frac{d}{dx}(F(x,y))=F_x+F_yy'=0 \quad\Rightarrow\quad y'=-\frac{F_x}{F_y}
+          </md>
+          
+        </p>
+        <example>
+          <p>
+            Find the equation of the tangent line to the curve
+            <md>
+              F(x,y)=x\cos y+x^2y+y^3
+            </md>
+            at the point <m>(2,0)</m>
+            <md>
+              F_x=\cos y+2xy \quad\Rightarrow\quad F_x(2,0)=1
+            </md>
+            <md>
+              F_y=-x\sin y+x^3+3y^2 \quad\Rightarrow\quad F_y(2,0)=4
+            </md>
+            So <m>y'=-1/4</m> and the equation of the tangent line is
+            <md>
+              y=-\frac{1}{4}(x-2)
+            </md>
+            
+          </p>
+        </example>
+      </section>
+      <section>
+        <title>Higher order Derivatives</title>
+        <p>
+          Just as in single variable calculus we can continue to differentiate functions. A given function <m>f(x,y)</m> has four second derivatives
+          <md>
+            f_{xx}=\frac{\partial}{\partial x}\left(\frac{\partial f}{\partial x}\right)\quad f_{xy}=\frac{\partial f}{\partial y}\left(\frac{\partial}{\partial x}\right)\quad f_{yx}=\frac{\partial}{\partial x}\left(\frac{\partial f}{\partial y}\right)\quad f_{yy}=\frac{\partial}{\partial y}\left(\frac{\partial f}{\partial y}\right)\quad 
+          </md>
+          <theorem xml:id="thm-Clairault">
+            <statement>
+              <p>
+                (Clairault) If <m>f_{xy}</m> and <m>f_{yx}</m> are continuous in a neighborhood of a point <m>(x_0,y_0)</m> then
+                <md>
+                  f_{xy}(x_0,y_0)=f_{yx}(x_0,y_0)
+                </md>
+                
+              </p>
+            </statement>
+            <example>
+              <p>
+                Consider
+                <md>
+                  f(x,y)=x^2\cos(x+2y)+12\sqrt{x+y}
+                </md>
+                <md>
+                  <mrow>f_x =\amp 2x\cos(x+2y)-x^2\sin(x+2y)+6(x+y)^{-1/2}</mrow>
+                  <mrow>f_y =\amp -2x^2\sin(x+2y)+6(x+y)^{-1/2}</mrow>
+                  <mrow>f_{xx}= \amp 2\cos(x+2y)-4x\sin(x+2y)-x^2\cos(x+2y)-3(x+y)^{-3/2}</mrow>
+                  <mrow>f_{xy}= \amp -4x\sin(x+2y)-2x^2\cos(x+2y)-3(x+y)^{-3/2}</mrow>
+                  <mrow>f_{yx}= \amp -4x\sin(x+2y)-2x^2\cos(x+2y)-3(x+y)^{-3/2}</mrow>
+                  <mrow>f_{yy} = \amp-4x^2\cos(x+2y)-3(x+y)^{-3/2}</mrow>
+                </md>
+                
+              </p>
+            </example>
+          </theorem>
+          
+        </p>
+         
+      </section>
+      <section>
+        <title>Rate of change of a function in a general direction</title>
+        <p>
+          The partial derivatives give the rate of change along the coordinate axes. What about in a general direction? If the direction makes an angle with the positive <m>x</m> axis then the vector in that direction will be of the form
+          <md>
+            {\bf h}=h\langle \cos\theta,\sin\theta\rangle
+          </md>
+          The change in the function will be
+          <md>
+            f(x+h\cos\theta,y+h\sin\theta)-f(x,y)
+          </md>
+          So the rate of change will be
+          <md>
+            \lim_{h\to 0}\frac{f(x+h\cos\theta,y+h\sin\theta)-f(x,y)}{h}=f_x\cos\theta + f_y\sin\theta
+          </md>
+          
+        </p>
+        <example>
+          <p>
+            Find the rate of change of the function
+            <md>
+              f(x,y)=\ln(3x+2y)+xy+y^4
+            </md>
+            at the point <m>(1,-1)</m> in the direction making an angle of <m>\pi/3</m> with the positive <m>x</m> axis.
+            <md>
+              f_x=\frac{3}{3x+2y}+y\quad f_y=\frac{2}{3x+2y}+x+4y^3 \quad\Rightarrow\quad F_x(1,-1)=2\quad f_y(1,-1)=-1
+            </md>
+            <md>
+              \mbox{Rate of change}=2\left(\frac{1}{2}\right)-1\left(\frac{\sqrt{3}}{2}\right)=1-\frac{\sqrt{3}}{2}
+            </md>
+            
+          </p>
+        </example>
+      </section>
+      <section>
+        <title>Problems</title>
+        <exercise>
+          <p>
+            Find the first order partial derivatives of the following functions
+            <md>
+              <mrow>(a) \amp\quad f(x,y)=\frac{x+2y}{x^2+y^3}</mrow>
+              <mrow>(b) \amp \quad g(x,y)=\sqrt{e^{xy}+xy^3}</mrow>
+              <mrow>(c) \amp \quad h(x,y)=y\cos(x^3+y^2)</mrow>
+              <mrow>(d) \amp \quad p(x,y)=\tan^{-1}\left(\frac{y^2}{x^3}\right)</mrow>
+            </md>
+          </p>
+        </exercise>
+        <answer>
+          <p>
+            <md>
+              <mrow>(a) \amp f_x=\frac{y^3-4xy-x^2}{(x^2+y^3)^2}\quad f_y=\frac{2x^2-3xy^2-4y^3}{(x^2+y^3)^2}</mrow>
+              <mrow>(b) \amp g_x=\frac{ye^{xy}+y^3}{2\sqrt{e^{xy}+xy^3}}\quad g_y=\frac{xe^{xy}+3xy^2}{2\sqrt{e^{xy}+xy^3}}</mrow>
+              <mrow>(c) \amp h_x=-3x^2\sin(x^3+y^2) \quad h_y=\cos(x^3+y^2)-2y^2\sin(x^3+y^2)</mrow>
+              <mrow>(d) \amp p_x = -\frac{3x^2y^2}{x^6+y^4} \quad p_y=\frac{3yx^3}{x^6+y^4}</mrow>
+            </md>
+          </p>
+        </answer>
+        <exercise>
+          <p>
+            Find the equation of the tangent line to the curve
+            <md>
+              e^{4x-y^2}+6\sqrt{x+4y}+x^2y=12
+            </md>
+            at the point <m>(1,2)</m>
+          </p>
+        </exercise>
+        <answer>
+          <p>
+            <md>
+              F_x=4e^{4x-y^2}+3(x+4y)^{-1/2}+2xy\quad\Rightarrow\quad F_x(1,2)=9
+            </md>
+            <md>
+              F_y=-2ye^{4x-y^2}+12(x+4y)^{-1/2}+x^2\quad\Rightarrow\quad F_y(1,2)=1
+            </md>
+            So <m>y'=-9</m> and the equation of the tangent line is
+            <md>
+              y-2=-9(x-1)
+            </md>
+            
+          </p>
+        </answer>
+        <exercise>
+          <p>
+            Find the rate of change of the function at the point <m>(1,1)</m>
+            <md>
+              f(x,y)=y\cos(\pi x)+x^2+4\sqrt{3x+y}
+            </md>
+            in the direction making an angle of <m>3\pi/4</m> with the positive <m>x</m> axis
+          </p>
+        </exercise>
+        <answer>
+          <p>
+            <md>
+              f_x=-\pi y\sin(\pi x)+2x+6(3x+y)^{-1/2})\quad\Rightarrow\quad f_x(1,1)=5
+            </md>
+            <md>
+              f_y=\cos(\pi x)+2(3x+y)^{-1/2})\quad\Rightarrow\quad f_y(1,1)=0
+            </md>
+            So
+            <md>
+              \mbox{Rate of change}=5\left(-\frac{1}{\sqrt{2}}\right)+0\left(-\frac{1}{\sqrt{2}}\right)=-\frac{5}{\sqrt{2}}
+            </md>
+            
+          </p>
+        </answer>
+        <exercise>
+          <p>
+            Find the curvature of a curve given implicitly as
+            <md>
+              f(x,y)=\mbox{constant}
+            </md>
+            
+          </p>
+        </exercise>
+        <answer>
+          <p>
+            Recalling the curvature formula from the previous chapter
+            <md>
+              \kappa = \frac{y''}{(1+y'^2)^{3/2}}
+            </md>
+            Now differentiating the equation of the curve implicitly
+            <md>
+              f_x+f_y y'=0 \quad\Rightarrow\quad y'=-\frac{f_x}{f_y}
+            </md>
+            Differentiating again
+            <md>
+              <mrow> \amp f_{xx}+f_{xy}y'+f_{xy}y'+f_{yy}y'^2+f_yy''=0</mrow>
+              <mrow> \amp f_{xx}+2f_{xy}\left(-\frac{f_x}{f_y}\right)+F_{yy}\left(\frac{f_x}{f_y}\right)^2+f_yy''=0</mrow>
+              <mrow>\amp f_y^2f_{xx}-2f_xf_yf_{xy}+f_x^2f_{yy}+f_y^3y''=0' \amp </mrow>
+              <mrow> \amp y''=-\frac{f_y^2f_{xx}-2f_xf_yf_{xy}+f_x^2f_{yy}}{f_y^3} </mrow>
+            </md>
+            <md>
+              \kappa =-\frac{f_y^2f_{xx}-2f_xf_yf_{xy}+f_x^2f_{yy}}{f_y^3(1+(f_x/f_y)^2)^{3/2}}=-\frac{f_y^2f_{xx}-2f_xf_yf_{xy}+f_x^2f_{yy}}{(f_x^2+f_y^2)^{3/2}}
+            </md>
+            
+          </p>
+        </answer>
+
+      </section>
+    </chapter>
+    <chapter>
+      <title>Tangent Planes and Linearization</title>
+      <section>
+        <title>Tangent Planes</title>
+        <p>
+          <image source="partialderivative.png" width="80%">
+            <shortdescription>The diagram shows the intersection of the graph <m>z=f(x,y)</m> with the plane <m>y=y_0</m> together with the tangent line to the intersection curve at the point <m>(x_0,y_0</m></shortdescription>
+          </image>
+          The line tangent to the curve of intersection of the graph <m>z=f(x,y)</m> and the plane <m>y=y_0</m> at the point <m>(x_0,y_0)</m> has the equation
+          <md>
+            z=z_0+f_x(x_0,y_0)(x-x_0)\quad y=y_0 \quad\Rightarrow\quad {\bf r}_1=\langle x_0,y_0,z_0\rangle +t\langle 1,0,f_x(x_0,y_0)\rangle
+          </md>
+          Similarly the tangent to the curve of intersection of thee graph and the plane <m>x=x_0</m> will have the form
+          <md>
+           {\bf r}_2=\langle x_0,y_0,z_0\rangle +t\langle 0,1,f_y(x_0,y_0)\rangle 
+          </md>
+          So the normal to the tangent plane at <m>(x_0,y_0)</m> will be
+          <md>
+            {\bf n}=\langle 1,0,f_x(x_0,y_0)\rangle\times\langle 0,1,f_y(x_0,y_0)\rangle=\langle -f_x(x_0,y_0),-f_y(x_0,y_0),1\rangle
+          </md>
+          The equation of the tangent plane will be
+          <md>
+            {\bf n}\cdot\langle x-x_0,y-y_0,z-z_0\rangle =0
+          </md>
+          which becomes
+          <md>
+            z=z_0+f_x(x_0,y_0)(x-x_0)+f_y(x_0,y_0)(y-y_0)
+          </md>
+        </p>
+        <example>
+          <p>
+            Find the equation of the tangent plane to <m>z=x^2y+e^{xy-2}</m> at the point <m>(1,2,3)</m>
+            <md>
+              f_x=2xy+ye^{xy-2}\quad f_y=x^2+xe^{xy-2}\quad\Rightarrow\quad f_x(1,2)=6 \quad f_y(1,2)=2
+            </md>
+            The equation of the tangent plane is
+            <md>
+              z=3+6(x-1)+2(y-2)
+            </md>
+            
+          </p>
+
+        </example>
+        <subsection>
+          <title>Tangent plane to an implicit surface</title>
+          <p>
+            If the surface is specified in implicit form
+            <md>
+              f(x,y,z)=\mbox{constant}
+            </md>
+            then the tangent plane at the point <m>(x_0,y_0,z_0)</m> is
+            <md>
+              f_x(x_0,y_0,z_0)(x-x_0)+f_y(x_0,y_0,z_0)(y-y_0)+f_z(x_0,y_0,z_0)(z-z_0)=0
+            </md>
+          </p>
+          <example>
+            <p>
+              Find the tangent plane to the surface <m>3xz+5yz^2-x^2y=6</m> at the point <m>(1,0,2)</m>.
+              <md>
+                f_x=3z-2xy \quad f_y=5z^2-x^2\quad f_z=6x+10yz 
+              </md>
+              <md>
+                f_x(1,0,2)=6 \quad f_y(1,0,2)=9 \quad f_z(1,0,2)=6
+              </md>
+              
+              So the equation of the tangent plane is
+              <md>
+                6(x-1)+9(y-0)+6(z-2)=0
+              </md>
+              
+            </p>
+          </example>
+        </subsection>
+        
+      </section>
+      <section>
+        <title>Linear Approximation</title>
+        <p>
+          Just as the the tangent to the curve <m>y=f(x)</m> can be used to approximate the function near <m>x=a</m> as
+          <md>
+            f(x)\approx f(a)=f'(a)(x-a)
+          </md>
+          the tangent plane to the surface <m>z=g(x,y)</m> at a point<m>(x_0,y_0)</m> can be used to approximate the function near <m>(x_0,y_0)</m>.
+          <md>
+            g(x,y)\approx g(x_0,y_0)+g_x(x_0,y_0)(x-x_0)+g_y(x_0,y_0)(y-y_0)
+          </md>
+          
+        </p>
+        <example>
+          <p>
+            Find the linearization of the function <m>g(x,y)=\sqrt{20-x^2-7y^2}</m> about the point <m>(2,1)</m> and use the linearization to approximate <m>g(1.94,1.09)</m>.
+            <md>
+              g_x=\frac{-x}{\sqrt{20-x^2-7y^2}}\quad g_y=\frac{-7y}{\sqrt{20-x^2-7y^2}}
+            </md>
+            <md>
+              g_x(2,1)=-\frac{2}{3}\quad g_y=-\frac{7}{3}
+            </md>
+            
+            The linearization is
+            <md>
+              g(x,y)\approx 3-\frac{2}{3}(x-2)-\frac{7}{3}(y-1)
+            </md>
+            and
+            <md>
+              g(1.94,1.09)\approx 3-\frac{2}{3}(-0.06)-\frac{7}{3}(0.09)=2.83
+            </md>
+            
+          </p>
+        </example>
+        <subsection xml:id="subsec-Differentials">
+          <title>Differentials</title>
+          <p>
+            In single variable calculus the change in the value of the function<m>y=f(x)</m> due to a small change in <m>x</m>, <m>dx</m>, is approximated be the differential
+            <md>
+              dy=f'(x)\,dx
+            </md>
+            With more than one independent variable the change in the function depends on changes of each independent variable. For example if <m>w=g(x,y,z)</m> the differential will be
+            <md>
+              dw=g_x\,dx+g_y\,dy+g_z\,dz
+            </md>
+            
+
+          </p>
+          <example>
+            <p>
+              The dimensions of a rectangular box are measured to be 25 cm, 20 cm, and 10 cm. Each measurement is correct to within 0.5 cm. Estime the largest possible error in calculating the volume of the box.
+              <md>
+                V=xyz = 25\times 20\times 10 =5000 \,\mbox{cm}^3
+              </md>
+              <md>
+                V_x=yz\quad V_y=xz\quad V_z=xy\qquad dx=dy=dz=0.25
+              </md>
+              <md>
+                <mrow>dV \amp = (20)(10)(0.5)+(25)(10)(0.5)+(25)(20)(0.5)=475</mrow>
+              </md>
+              So the volume is
+              <md>
+                V=5000\pm 475 \,\mbox{cm}^3
+              </md>
+              
+            </p>
+          </example>
+        </subsection>
+         
+      </section>
+      <section>
+        <title>Problems</title>
+        <exercise>
+          <p>
+            Find the equation of the tangent line to the surface <m>z=x^3+\ln(2x+y)</m> at the point <m>(-1,3,-1)</m>.
+                        
+          </p>
+        </exercise>
+        <answer>
+          <p>
+            <md>
+              f_x=3x^2+\frac{2}{2x+y}\quad f_y=\frac{1}{2x+y}\quad\Rightarrow\quad f_x(-1,3)=5 \quad f_y(-1,3)=1
+            </md>
+            So the equation of the tangent plane is
+            <md>
+              z=-1+5(x+1)+1(y-3)
+            </md>
+            
+
+          </p>
+        </answer>
+        <exercise>
+          <p>
+            For the following functions, find the equation of the tangent plane at the indicated point
+            <md>
+              <mrow>(a)\quad \amp f(x,y)=x^2y+y+e^{x-2y}\qquad (x_0,y_0)=(2,1)</mrow>
+              <mrow>(b)\quad \amp g(x,y)=\sin(x+y)+x^2+3y\qquad (x_0,y_0)=(2,-2)</mrow>
+              <mrow>(c) \quad \amp h(x,y) = \tan^{-1}\left(\frac{\sqrt{y}}{x}\right)\qquad (x_0,y_0)=(1,3)</mrow>
+            </md>
+          </p>
+        </exercise>
+        <answer>
+          <p>
+            (a)
+            <md>
+              <mrow> \amp f_x=2xy +e^{x-2y} \qquad f_y=x^2+1-2e^{x-2y}</mrow>
+              <mrow> \amp f(2,1)=6\qquad f_x(2,1)=5 \qquad f_y(2,1)=3 </mrow>
+            </md>
+            The equation of the tangent plane is
+            <md>
+              z=6+5(x-2)+3(y-1)
+            </md>
+            (b)
+            <md>
+              <mrow> \amp g_x=\cos(x+y)+2x \qquad g_y=\cos(x+e)+3</mrow>
+              <mrow> \amp g(2,-2)=-2 \qquad g_x(2,-2)=5\qquad g_y(2,-2)=4</mrow>
+            </md>
+            The equation of the tangent plane is
+            <md>
+              z=-2+5(x-2)+4(y+2)
+            </md>
+            (c)
+            <md>
+              <mrow> \amp h_x=\frac{1}{1+(\sqrt{y}/x)^2}\left(-\frac{\sqrt{y}}{x^2}\right)\qquad h_y=\frac{1}{1+(\sqrt{y}/x)^2}\left(\frac{1}{2x^2\sqrt{y}}\right)</mrow>
+              <mrow> \amp h(1,3)=\tan^{-1}\sqrt{3}=\frac{\pi}{3}\qquad h_x(1,3)=-\frac{\sqrt{3}}{4}\qquad h_y(1,3)=\frac{1}{8\sqrt{3}}</mrow>
+            </md>
+            The equation of the tangent plane is
+            <md>
+              z=\frac{pi}{3}-\frac{\sqrt{3}}{4}(x-1)+\frac{1}{8\sqrt{3}}(y-3)
+            </md>
+          </p>
+        </answer>
+        <exercise>
+          <p>
+            Find the equation of the tangent plane to the surface <m>ze^x+y^2z^2+x^2y=5</m> at <m>(0,2,1)</m>.
+            
+          </p>
+          
+        </exercise>
+        <answer>
+          <p>
+            <md>
+              <mrow> \amp f_x=ze^x+2xy \qquad f_y=2yz^2+x^2\qquad f_z=e^x+2zy^2</mrow>
+              <mrow> \amp f_x(0,2,1)=1 \qquad f_y(0,2,1)=4\qquad f_z(0,2,1)=9</mrow>
+            </md>
+            The equation of the tangent plane is
+            <md>
+              1(x-0)+4(y-2)+9(z-1)=0
+            </md>
+            
+          </p>
+        </answer>
+        <exercise>
+          <p>
+            Find the linearization about <m>(2,-1)</m> of the function
+            <md>
+              h(x,y)=x^2+y^4+\ln(x-y^2)
+            </md>
+            and use it to approximate <m>h(2.1,-0.9)</m>
+          </p>
+        </exercise>
+        <answer>
+          <p>
+            <md>
+              <mrow> \amp h_x=2x+\frac{1}{x-y^2}\qquad h_y=4y^3+\frac{-2y}{x-y^2}</mrow>
+              <mrow> \amp h(2,-1)=5\qquad h_x(2,-1)=5 \qquad h_y(2,-1)=-2</mrow>
+            </md>
+            The linearization is
+            <md>
+              h(x,y)\approx 5+5(x-2)-2(y+1)
+            </md>
+            <md>
+              h(2.1)\approx 5+5(0.1)-2(-0.1)=5.3
+            </md>
+            
+          </p>
+        </answer>
+        <exercise>
+          <p>
+            The total resistance of three resistors <m>R_1,R_2,R_3</m> connected in parallel is
+            <md>
+              \frac{1}{R}=\frac{1}{R_1}+\frac{1}{R_2}+\frac{1}{R_3}
+            </md>
+            If the three resistors have resistances <m>R_1=40\Omega,R_2=60\Omega,R_3=120\Omega</m> with possible errors of <m>2\%</m> in their values. What is the range of possible values of the circuit?
+
+          </p>
+        </exercise>
+        <answer>
+          <p>
+            Differentiating
+            <md>
+              -\frac{1}{R^2}\frac{\partial R}{\partial R_1}=-\frac{1}{R_1^2}\quad\Rightarrow\quad \frac{\partial R}{\partial R_1}=\frac{R^2}{R_1^2}
+            </md>
+            <md>
+              \frac{1}{R}=\frac{1}{40}+\frac{1}{60}+\frac{1}{120}\quad\Rightarrow R=20
+            </md>
+            <md>
+              dR_1=0.02(40)=0.8\quad dR_2=0.02(60)=1.2\quad dR_3=0.02(120)=2.4
+            </md>
+            <md>
+              <mrow>dR \amp = \frac{20^2}{40^2}(0.8)+\frac{20^2}{60^2}(1.2)+\frac{20^2}{120^2}(2.4)=0.6</mrow>
+            </md>
+            So
+            <md>
+              R=20\pm 0.6\,\Omega
+            </md>
+            
+          </p>
+        </answer>    
+      </section>
+    </chapter>
+    <chapter>
+      <title>The Chain Rule</title>
+      <section>
+        <title>One independent variable</title>
+        <p>
+          The chain rule in single variable calculus can be expressed in the form
+        <md>
+          y=f(g(x)) \quad\Rightarrow\quad \frac{dy}{dx}=\frac{df}{du}\,\frac{du}{dx}\quad \mbox{where} \quad u=g(x)
+        </md>
+        For derivatives of multivariable functions, the chain rule has a similar form. The difference is that their is a chain rule like term for each variable. For example
+        <md>
+          u(t)=f(x(t),y(t),z(t))\quad\Rightarrow\quad \frac{du}{dt}=\frac{\partial f}{\partial x}\,\frac{dx}{dt}+\frac{\partial f}{\partial y}\,\frac{dy}{dt}+\frac{\partial f}{\partial z}\,\frac{dz}{dt}
+        </md>
+        
+      </p>
+      <example>
+        <p>
+          Find <m>\frac{du}{dt}</m> given
+          <md>
+            u=xy^2+e^{y+z}+\ln(z+2)+3x\qquad x=e^t\quad y=t-1 \quad z=\cos t
+          </md>
+          <md>
+            f_x=y^2+3 \qquad f_y=2xy+e^{y+z}\qquad f_z=e^{y+z}+\frac{1}{z+2}
+          </md>
+          <md>
+            <mrow>\frac{du}{dt} \amp = f_x x'+f_y y'+f_z z'</mrow>
+            <mrow> \amp = (y^2+3)(e^t)+(2xy+e^{y+z})(1)+\left(e^{y+z}+\frac{1}{z+2}\right)(-\sin t)</mrow>
+            <mrow> \amp =((t-1)^2+3)e^t+(2(t-1)e^t+e^{t-1+\cos t})+\left(e^{t-1+\cos t}</mrow>
+            <mrow> \amp +\frac{1}{2+\cos t}\right)(-\sin t)</mrow>
+          </md>
+          
+        </p>
+      </example>
+      <example>
+        <p>
+          Suppose <m>G(x,y)</m> is a function that satifies
+          <md>
+            G(3,-1)=2 \qquad G_x(3,-1)=-2\qquad G_y(3,-1)=3
+          </md>
+          and define
+          <md>
+            g(t)=G(t+3\cos 2t,-e^t)
+          </md>
+          Find the equation of the tangent to the curve <m>{\bf r}=\langle t,g(t)</m> at <m>t=0</m>.
+          <md>
+            g(0)=G(3,-1)=2
+          </md>
+          
+          <md>
+            <mrow>g'(t) \amp = G_x(t+3\cos 2t,-e^t)(1-6\sin 2t)+G_y(t+3\cos 2t,-e^t)(-e^t)</mrow>
+            <mrow>g'(0) \amp = G_x(3,-1)(1)+G_y(3,-1)(-1)=(-2)(1)+3(-1)=-5</mrow>
+          </md>
+          So the equation of the tangent line is
+          <md>
+            y-g(0)=g'(0)(x-0)\quad\Rightarrow\quad y=-5x+2
+          </md>
+          
+        </p>
+
+      </example>
+      <p>
+        A homogeneous function of order <m>n</m> satisfies the identity
+        <md>
+          f(\lambda x,\lambda y,\lambda z)=\lambda^nf(x,y,z)
+        </md>
+        
+      </p>
+      <example>
+        <p>
+          The function
+          <md>
+            f(x,y,z)=\frac{y^4z+x^3y^2}{\sqrt{x^2+y^2+z^2}}
+          </md>
+          is a homogeous function of order 4 since
+          <md>
+           f(\lambda x,\lambda y,\lambda z)=\frac{\lambda^5zy^4+\lambda^5x^3y^2}{\sqrt{\lambda^2x^2+\lambda^2y^2+\lambda^2z^2}}=\lambda^4\,\frac{y^4z+x^3y^2}{\sqrt{x^2+y^2+z^2}}
+          </md>
+          
+        </p>
+      </example>
+      <theorem xml:id="thm-Euler">
+        <statement>
+          <p>
+            (Euler) If <m>f(x,y,z)</m> is a homogeneous function of order <m>n</m> then it satisfies the equation
+            <md>
+              x\frac{\partial f}{\partial x}+y\frac{\partial f}{\partial y}+z\frac{\partial f}{\partial z}=nf
+            </md>
+            
+          </p>
+        </statement>
+      </theorem>
+      <p>
+        Taking the derivative of the definition of a homogeneous function with respect to <m>\lambda</m>
+        <md>
+        <mrow>n\lambda^{n-1}f \amp =\frac{d}{d\lambda}(f(\lambda x,\lambda y,\lambda z))</mrow>
+        <mrow> \amp = xf_x(\lambda x,\lambda y,\lambda z)+yf_y(\lambda x,\lambda y,\lambda z)+zf_z(\lambda x,\lambda y,\lambda z)</mrow>
+        </md>
+        Setting <m>\lambda=1</m> proves the theorem
+
+
         </p>
         
       </section>
+      <section>
+        <title>More than one independent variable</title>
+        <p>
+          Suppose the variables <m>x,y,z</m> depend on two variables <m>u,v</m>.
+          <md>
+            w(u,v)=f(x(u,v),y(u,v)),z(u,v))
+          </md>
+          The its partial derivatives with respect to <m>u,v</m> are
+          <md>
+            <mrow>\frac{\partial w}{\partial u} \amp =\frac{\partial f}{\partial x}\frac{\partial x}{\partial u}+\frac{\partial f}{\partial x}\frac{\partial y}{\partial u}+\frac{\partial f}{\partial z}\frac{\partial z}{\partial u}</mrow>
+            <mrow> \frac{\partial w}{\partial v}\amp = \frac{\partial f}{\partial x}\frac{\partial x}{\partial u}+\frac{\partial f}{\partial x}\frac{\partial y}{\partial u}+\frac{\partial f}{\partial z}\frac{\partial z}{\partial u}</mrow>
+          </md>
+          
+        </p>
+        <example>
+          <p>
+            Find <m>\partial_uw,\partial_vw</m> where
+            <md>
+              w=e{x+y}+x^2-y^2\qquad x=u^2+v^2\quad y=2uv
+            </md>
+            <md>
+              <mrow>\partial_uw \amp =(e^{x+y}+2x)(2u)+(e^{x+y}-2y)(2v)</mrow>
+              <mrow> \amp =(e^{(u+v)^2}+2(u^2+v^2)(2u)+(e^{(u+v)^2}-4uv)(2v)</mrow>
+            </md>
+            <md>
+              <mrow>\partial_vw \amp =(e^{x+y}+2x)(2v)+(e^{x+y}-2y)(2u)</mrow>
+              <mrow> \amp =(e^{(u+v)^2}+2(u^2+v^2)(2v)+(e^{(u+v)^2}-4uv)(2u)</mrow>
+            </md>
+          </p>
+        </example>
+        <example>
+          <p>
+            Find <m>\partial_yw</m>at the point <m>(3,\sqrt{3})</m> where
+            <md>
+              w=r^3\cos(4\theta)
+            </md>
+            and <m>r,\theta</m> are the usual polar coordinates
+            <md>
+              r=\sqrt{x^2+y^2}\qquad \theta=\tan^{-1}\left(\frac{y}{x}\right)
+            </md>
+            <md>
+              \frac{\partial r}{\partial y}=\frac{y}{\sqrt{x^2+y^2}}\qquad \frac{\partial \theta}{\partial y}=\frac{1}{1+(y/x)^2}\frac{1}{x}=\frac{x}{x^2+y^2}
+            </md>
+            <md>
+              <mrow>\frac{\partial w}{\partial y} \amp =\frac{\partial w}{\partial r}\frac{\partial r}{\partial y}+\frac{\partial w}{\partial \theta}\frac{\partial \theta}{\partial y}</mrow>
+              <mrow> \amp =(3r^2\cos(4\theta)\frac{\partial r}{\partial y}+(-4r^3\sin (4\theta))\frac{\partial \theta}{\partial y}</mrow>
+            </md>
+            
+            At the point <m>(3,\sqrt{3})</m>
+            <md>
+              r=2\sqrt{3}\quad \theta=\frac{\pi}{6}\quad \frac{\partial r}{\partial y}=\frac{1}{2}\quad \frac{\partial \theta}{\partial y}=\frac{1}{4}
+            </md>
+            <md>
+              <mrow> \frac{\partial w}{\partial y}\amp =(3(2\sqrt{3})^2)\cos\left(\frac{2\pi}{3}\right)\left(\frac{1}{2}\right)+(-4(2\sqrt{3})^2)\sin\left(\frac{2\pi}{3}\right)\left(\frac{1}{4}\right)</mrow>
+              <mrow> \amp =-45</mrow>
+            </md>
+            
+          </p>
+        </example>
+      </section>
+            
       
-
     </chapter>
     <!-- Include backmatter -->
     <xi:include href="./backmatter.ptx" />

@@ -1,0 +1,38 @@
+WARNING : Could not find a target 'html', but found a target 'web' with format='html'; using this target.
+INFO    : Building target web
+INFO    : XSL conversion of /workspaces/pretext/Math-234-topics/source/main.ptx by /root/.ptx/2.37.1/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : successful application of /root/.ptx/2.37.1/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : Generating any needed assets.
+INFO    : Finished generating assets.
+
+INFO    : Preparing to build into /workspaces/pretext/Math-234-topics/output/web.
+INFO    : discovering source file's directory name: /workspaces/pretext/Math-234-topics/source
+INFO    : verifying and expanding input directory: /workspaces/pretext/Math-234-topics/source/../generated-assets
+INFO    : input directory expanded to absolute path: /workspaces/pretext/Math-234-topics/generated-assets
+INFO    : verifying and expanding input directory: /workspaces/pretext/Math-234-topics/source/../assets
+INFO    : input directory expanded to absolute path: /workspaces/pretext/Math-234-topics/assets
+INFO    : XSL conversion of /workspaces/pretext/Math-234-topics/source/main.ptx by /root/.ptx/2.37.1/core/xsl/utilities/report-publisher-variables.xsl
+INFO    : successful application of /root/.ptx/2.37.1/core/xsl/utilities/report-publisher-variables.xsl
+INFO    : Downloading rs services file from https://runestone.academy/cdn/runestone/latest/webpack_static_imports.xml.
+INFO    : Runestone Services via online CDN query: version 8.0.0
+INFO    : Downloading Runestone Services, version 8.0.0
+INFO    : Extracting Runestone Services from archive file
+INFO    : Building custom css theme: theme-default-modern
+INFO    : converting /workspaces/pretext/Math-234-topics/source/main.ptx to HTML in /ptx-usywlduo
+INFO    : XSL conversion of /workspaces/pretext/Math-234-topics/source/main.ptx by /root/.ptx/2.37.1/core/xsl/pretext-html.xsl
+INFO    : messages from the log for XSL processing:
+WARNING : * PTX:WARNING: In a section containing subsections, any content that is not inside a subsection needs to be inside an <introduction> and/or  <conclusion>.
+INFO    : *              located within: "Properties of Limits" (title)
+INFO    : *              located within: "Tangent Planes" (title)
+INFO    : *              located within: "Linear Approximation" (title)
+INFO    : * PTX:INFO:   checking all deprecated elements.
+INFO    : successful application of /root/.ptx/2.37.1/core/xsl/pretext-html.xsl
+INFO    : Removing temporary directory /ptx-usywlduo
+INFO    : Removing temporary directory /ptx-pauxitpb
+INFO    : 
+Finished build for target web. Run `pretext view web` to see the results.
+
+INFO    : 
+Success!  Built requested target(s) without errors.
+
+INFO    : 
