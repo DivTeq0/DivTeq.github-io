@@ -20,7 +20,7 @@ INFO    : You can also try to run `pretext deploy --no-push` to skip this step, 
 INFO    : (If `https://DivTeq0:@github.com/DivTeq0/Math234.git` doesn't match your GitHub repository,
 INFO    : use `git remote remove origin` on the command line then try to deploy again.)
 ERROR   : Deploy was unsuccessful.
-INFO    : 
+INFO    :git remote 
 ----------------------------------------------------
 INFO    : While running pretext, the following errors occurred:
 
