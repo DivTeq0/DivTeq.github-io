@@ -1126,6 +1126,78 @@ var ptx_lunr_docs = [
   "body": " Find at the point where and are the usual polar coordinates   At the point     "
 },
 {
+  "id": "my-great-book-11-4",
+  "level": "1",
+  "url": "my-great-book-11-4.html",
+  "type": "Section",
+  "number": "9.3",
+  "title": "Implicit differentiation",
+  "body": " Implicit differentiation  Given a surface defined implictly, can it be expressed locally as a graph? Consider the surface Can be locally represented as a function Differentiating the equation for the surface with respect to  Similarly So can be represented as a graph as long as .   Find at the point on the surface    So can be expressed as a graph but can't, since    "
+},
+{
+  "id": "my-great-book-11-4-3",
+  "level": "2",
+  "url": "my-great-book-11-4.html#my-great-book-11-4-3",
+  "type": "Example",
+  "number": "9.3.1",
+  "title": "",
+  "body": " Find at the point on the surface    So can be expressed as a graph but can't, since   "
+},
+{
+  "id": "my-great-book-11-5",
+  "level": "1",
+  "url": "my-great-book-11-5.html",
+  "type": "Section",
+  "number": "9.4",
+  "title": "Problems",
+  "body": " Problems   Find at if     At         Find if             If Calculate        which could have been deduced using Euler's theorem since is homogeneous of order 8.     Given find at the point          At the point         Find at the point on the surfacw       So don't exist.   "
+},
+{
+  "id": "my-great-book-11-5-2",
+  "level": "2",
+  "url": "my-great-book-11-5.html#my-great-book-11-5-2",
+  "type": "Checkpoint",
+  "number": "9.4.1",
+  "title": "",
+  "body": " Find at if   "
+},
+{
+  "id": "my-great-book-11-5-4",
+  "level": "2",
+  "url": "my-great-book-11-5.html#my-great-book-11-5-4",
+  "type": "Checkpoint",
+  "number": "9.4.2",
+  "title": "",
+  "body": " Find if   "
+},
+{
+  "id": "my-great-book-11-5-6",
+  "level": "2",
+  "url": "my-great-book-11-5.html#my-great-book-11-5-6",
+  "type": "Checkpoint",
+  "number": "9.4.3",
+  "title": "",
+  "body": " If Calculate   "
+},
+{
+  "id": "my-great-book-11-5-8",
+  "level": "2",
+  "url": "my-great-book-11-5.html#my-great-book-11-5-8",
+  "type": "Checkpoint",
+  "number": "9.4.4",
+  "title": "",
+  "body": "  Given find at the point    "
+},
+{
+  "id": "my-great-book-11-5-10",
+  "level": "2",
+  "url": "my-great-book-11-5.html#my-great-book-11-5-10",
+  "type": "Checkpoint",
+  "number": "9.4.5",
+  "title": "",
+  "body": " Find at the point on the surfacw   "
+},
+{
   "id": "backmatter-2",
   "level": "1",
   "url": "backmatter-2.html",

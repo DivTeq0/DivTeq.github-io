@@ -2745,9 +2745,208 @@
           </p>
         </example>
       </section>
+      <section>
+        <title>Implicit differentiation</title>
+        <p>
+          Given a surface defined implictly, can it be expressed locally as a graph? Consider the surface
+          <md>
+            f(x,y,z)=\mbox{constant}
+          </md>
+          Can <m>z</m> be locally represented as a function
+          <md>
+            z=g(x,y)
+          </md>
+          Differentiating the equation for the surface with respect to <m>x</m>
+          <md>
+            f_x(x,y,g(x,y))+f_z(x,y,g(x,y))\frac{\partial g}{\partial x}=0 \quad\Rightarrow\quad \frac{\partial g}{\partial x}=-\frac{f_x}{f_z}\quad (f_z\neq 0)
+          </md>
+          Similarly 
+          <md>
+            \frac{\partial g}{\partial y}=-\frac{f_y}{f_z}\quad (f_z\neq 0)
+          </md>
+          So <m>z</m> can be represented as a graph as long as <m>z_x,z_y\neq 0</m>.
+
+        </p>
+        <example>
+          <p>
+            Find <m>\partial_xz,\partial_yz</m> at the point <m>(1,-2,4)</m> on the surface
+            <md>
+              f(x,y,z)=2x^2y-e^{z+2y}+2zx^2
+            </md>
+            <md>
+              f_x=4xy+4xz \qquad f_y=2x^2-2e^{z+2y}\qquad f_z=-e^{z+2y}+2x^2
+            </md>
+            <md>
+              f_x(1,-2,4)=8 \qquad f_y(1,-2,4)-0 \qquad f_z(1,-2,4)=1
+            </md>
+            <md>
+              \frac{\partial z}{\partial x}=-\frac{8}{1}=-8 \qquad \frac{\partial z}{\partial y}=-\frac{0}{1}=0 
+            </md>
+            So <m>z </m> can be expressed as a graph but <m>y</m> can't, since <m>f_y=0</m>
+          </p>
+        </example>
+      </section>
+      <section>
+        <title>Problems</title>
+        <exercise>
+          <p>
+            Find <m>w'(t)</m> at <m>t=1</m> if
+            <md>
+              w=xe^y+y\sin z-\cos z\qquad x=e^t\quad y=t-1+\ln t\quad z=\pi t^2
+            </md>
+            
+          </p>
+        </exercise>
+        <answer>
+          <p>
+            At <m>t=1</m>
+            <md>
+              x=e \quad y=0 \quad z=\pi \quad\Rightarrow\quad w=e+1
+            </md>
+            <md>
+              x'=e^t\quad y.=1+1/t\quad z'=2\pi t \quad\Rightarrow\quad x'(1)=e\quad y'(1)=2 \quad z'(1)=2\pi
+            </md>
+            <md>
+              w_x=e^y \qquad w_y=xe^y+\sin z \qquad w_z=y\cos z+\sin z
+            </md>
+            
+            <md>
+              <mrow>w'(1) \amp = w_xx'(1)+w_yy'(1)+w_zz'(1)</mrow>
+              <mrow> \amp =(1)e+(e)2+(0)(2\pi)=3e</mrow>
+            </md>
+            
+          </p>
+        </answer>
+        <exercise>
+          <p>
+            Find <m>\partial_uw\partial_vw</m> if
+            <md>
+              w=ze^{x+2y}-2xz+zy^2 \qquad x=2u-v^2\quad y=u+1 \quad z=uv
+            </md>
+            
+          </p>
+        </exercise>
+        <answer>
+          <p>
+            <md>
+              w_x=ze^{x+2y}-2z\qquad w_y=2ze^{x+2y}+2zy\qquad w_z=e^{x+2y}+y^2
+            </md>
+            <md>
+              x_u=2 \quad x_v=-2v \qquad y_u=1 \quad y_v=0 \quad z_u=v\quad z_v=u
+            </md>
+            <md>
+              <mrow>\partial_uw \amp =(ze^{x+2y}-2z)2+(2ze^{x+2y}+2zy)(1)+(e^{x+2y}+y^2)(v)</mrow>
+              <mrow> \amp =(uve^{2-v^2}-2uv)(2)+(uve^{2-v^2}+2uv(u+1))(1)</mrow>
+              <mrow> \amp +(e^{2-v^2}+(u+1)^2)(v)</mrow>
+            </md>
+            <md>
+              <mrow>\partial_vw \amp =(ze^{x+2y}-2z)(-2v)+(2ze^{x+2y}+2zy)(0)+(e^{x+2y}+y^2)(u)</mrow>
+              <mrow> \amp =(uve^{2-v^2}-2uv)(-2v)+(e^{2-v^2}+(u+1)^2)(u)</mrow>
+            </md>
+          </p>
+        </answer>
+        <exercise>
+          <p>
+            If
+            <md>
+              w=x^2y^6\sin^{-1}\left(\frac{y}{x}\right)
+            </md>
+            Calculate
+            <md>
+              x\frac{\partial w}{\partial x}+y\frac{\partial w}{\partial y}
+            </md>
+            
+          </p>
+        </exercise>
+        <answer>
+          <p>
+            <md>
+              \frac{\partial w}{\partial x}=2xy^6\sin^{-1}\left(\frac{y}{x}\right)+x^2y^6\left(\frac{1}{\sqrt{1-(y/x)^2}}\left(-\frac{y}{x^2}\right)\right)
+            </md>
+            <md>
+              \frac{\partial w}{\partial x}=6x^2y^5\sin^{-1}\left(\frac{y}{x}\right)+x^2y^6\left(\frac{1}{\sqrt{1-(y/x)^2}}\left(\frac{1}{x}\right)\right)
+            </md>
+            <md>
+              <mrow>x\frac{\partial w}{\partial x}+y\frac{\partial w}{\partial y} \amp =2x^2y^6\sin^{-1}\left(\frac{y}{x}\right)+6x^2y^6\sin^{-1}\left(\frac{y}{x}\right)</mrow>
+              <mrow> \amp +\frac{1}{\sqrt{1-(y/x)^2}}\left(x^3y^6\left(-\frac{y}{x^2}\right)\right)+\left(x^2y^7\left(\frac{1}{x}\right)\right)</mrow>
+              <mrow> \amp = 8x^2y^6\sin^{-1}\left(\frac{y}{x}\right)=8w</mrow>
+            </md>
+            which could have been deduced using Euler's theorem since <m>w</m> is homogeneous of order 8.
+          </p>
+        </answer>
+        <exercise>
+          
+          <p>
+            Given
+            <md>
+              w=\frac{\ln(xy^3)}{x^2+y^2}
+            </md>
+            find <m>\partial_r w,\partial_\theta w</m> at the point <m>r=2,\theta=\pi/4</m>
+          </p>
+        
+        </exercise>
+        <answer>
+          <p>
+            <md>
+              w_x=\frac{1}{x(x^2+y^2)}+\ln(xy^3)\left(\frac{-2x}{(x^2+y^2)^2}\right)
+            </md>
+            <md>
+              w_y=\frac{3}{y(x^2+y^2)}+\ln(xy^3)\left(\frac{-2y}{(x^2+y^2)^2}\right)
+            </md>
+            <md>
+              \partial_rx=\cos\theta \quad \partial_ry=\sin\theta \quad \partial_\theta x=-r\sin\theta \quad \partial_\theta y=r\cos\theta
+            </md>
+            <md>
+              w_r=w_x\,x_r+w_y\,y_r \qquad w_\theta=w_x\,x_\theta+w_y\,y_\theta
+            </md>
+            
+            At the point <m>x=y=\sqrt{2}</m>
+            <md>
+              \partial_rx=\frac{1}{\sqrt{2}} \quad \partial_ry=\frac{1}{\sqrt{2}} \quad \partial_\theta x=-\sqrt{2} \quad \partial_\theta y=\sqrt{2}
+            </md>
+            <md>
+              w_x=\frac{1}{4\sqrt{2}}+\ln(4)\left(-\frac{\sqrt{2}}{16}\right) \quad w_y=\frac{3}{4\sqrt{2}}+\ln(4)\left(-\frac{\sqrt{2}}{16}\right) 
+            </md>
+            <md>
+              <mrow>\partial_rw \amp =\left(\frac{1}{4\sqrt{2}}+\ln(4)\left(-\frac{\sqrt{2}}{16}\right)\right)\frac{1}{\sqrt{2}}</mrow>
+              <mrow> \amp +\left(\frac{3}{4\sqrt{2}}+\ln(4)\left(-\frac{\sqrt{2}}{16}\right) \right)\frac{1}{\sqrt{2}}</mrow>
+              <mrow> \amp =\frac{1}{2}-\frac{\ln 4}{8}</mrow>
+            </md>
+            <md>
+              <mrow>\partial_\theta w \amp =\left(\frac{1}{4\sqrt{2}}+\ln(4)\left(-\frac{\sqrt{2}}{16}\right)\right)(-\sqrt{2})</mrow>
+              <mrow> \amp +\left(\frac{3}{4\sqrt{2}}+\ln(4)\left(-\frac{\sqrt{2}}{16}\right) \right)\sqrt{2}</mrow>
+              <mrow> \amp =\frac{1}{2}</mrow>
+            </md>
+          </p>
+        </answer>
+        <exercise>
+          <p>
+            Find <m>z_x,z_y</m> at the point <m>(-3,2,1)</m> on the surfacw
+            <md>
+              f(x,y,z)=xy^2+yz^3+xyz=-16
+            </md>
+            
+          </p>
+        </exercise>
+        <answer>
+          <p>
+            <md>
+              f_x=y^2+yz\qquad f_y=2xy+z^3+xz\qquad f_z=3yz^2+xy
+              
+            </md>
+            <md>
+              f_x(-3,2,1)=6 \qquad f_y(-3,2,1)=-14 \qquad f_z(-3,2,1)=0
+            </md>
+            So <m>z_x.z_y</m> don't exist.
+          </p>
+        </answer>
+      </section>
             
       
     </chapter>
+    
+
+    
     <!-- Include backmatter -->
     <xi:include href="./backmatter.ptx" />
 
