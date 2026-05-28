@@ -1150,7 +1150,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "9.4",
   "title": "Problems",
-  "body": " Problems   Find at if     At         Find if             If Calculate        which could have been deduced using Euler's theorem since is homogeneous of order 8.     Given find at the point          At the point         Find at the point on the surfacw       So don't exist.   "
+  "body": " Problems   Find at if     At         Find if             If Calculate        which could have been deduced using Euler's theorem since is homogeneous of order 8.    Given find at the point         At the point         Find at the point on the surfacw       So don't exist.   "
 },
 {
   "id": "my-great-book-11-5-2",
@@ -1186,7 +1186,7 @@ var ptx_lunr_docs = [
   "type": "Checkpoint",
   "number": "9.4.4",
   "title": "",
-  "body": "  Given find at the point    "
+  "body": " Given find at the point   "
 },
 {
   "id": "my-great-book-11-5-10",
