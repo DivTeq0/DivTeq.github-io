@@ -2609,8 +2609,8 @@
           <md>
             <mrow>\frac{du}{dt} \amp = f_x x'+f_y y'+f_z z'</mrow>
             <mrow> \amp = (y^2+3)(e^t)+(2xy+e^{y+z})(1)+\left(e^{y+z}+\frac{1}{z+2}\right)(-\sin t)</mrow>
-            <mrow> \amp =((t-1)^2+3)e^t+(2(t-1)e^t+e^{t-1+\cos t})+\left(e^{t-1+\cos t}</mrow>
-            <mrow> \amp +\frac{1}{2+\cos t}\right)(-\sin t)</mrow>
+            <mrow> \amp =((t-1)^2+3)e^t+(2(t-1)e^t+e^{t-1+\cos t})+\left(e^{t-1+\cos t}\right)(-\sin t(</mrow>
+            <mrow> \amp +\left(\frac{1}{2+\cos t}\right)(-\sin t)</mrow>
           </md>
           
         </p>
@@ -2944,8 +2944,32 @@
             
       
     </chapter>
+    <chapter>
+      <title>The Gradient and Directional Derivatives</title>
+      <section>
+        <title>The Gradient</title>
+        <p>
+          The definition of differentiability in single variable calculus is the there is a function <m>f'(x)</m> given by
+          <md>
+            f'(x)=\lim_{h\to 0}\frac{f(x+h)-f(x)}{h}
+          </md>
+          To generalize this to functions of more than one variable, this can be rewritten in the form
+          <md>
+             \lim_{h\to 0}\frac{f(x+h)-f(x)-hf'(x)}{h}=0
+          </md>
+          A function of more than one variable is differentiable if there exists a vector, <m>\nabla f</m>, called the gradient of<m>f</m>, so that
+          <md>
+           \lim_{h\to 0}\frac{|f({\bf r}+h\hat{\bf u})-f({\bf r})-h\hat{\bf u}\cdot\nabla f|}{h}=0
+          </md>
+          where <m>\hat{\bf u}</m> is a unit vector.
+          
+        </p>
     
-
+        
+      </section>
+      
+    </chapter>
+    
     
     <!-- Include backmatter -->
     <xi:include href="./backmatter.ptx" />
