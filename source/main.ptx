@@ -2961,8 +2961,19 @@
           <md>
            \lim_{h\to 0}\frac{|f({\bf r}+h\hat{\bf u})-f({\bf r})-h\hat{\bf u}\cdot\nabla f|}{h}=0
           </md>
-          where <m>\hat{\bf u}</m> is a unit vector.
+          where <m>\hat{\bf u}</m> is a unit vector. If it is differentiable the previous equation can be rewritten as
+          <md>
+            \lim_{h\to 0}\frac{|f({\bf r}+h\hat{\bf u})-f({\bf r})|}{h}=\hat{\bf u}\cdot\nabla f
+          </md>
+          The expression <m>\hat{\bf u}\cdot\nabla f</m> is called the directional derivative of <m>f</m> in the direction <m>\hat{\bf u}</m>
           
+        </p>
+        <p>
+          To find the components of <m>\nabla f</m>. First take <m>\hat{\bf u}={\bf e}_1=\langle 1,0,0\rangle</m>. Then the <m>x</m> component of <m>\nabla f</m> is
+          <md>
+            {\be e}_1\cdot\nabla f=\lim_{h\to 0}\frac{|f(x+h,y,z)-f(x,y,z)|}{h}=\frac{\partial f}{\partial x}
+          </md>
+          Similarly the <m>y</m> and <m>z</m> components are <m>f_y</m> and <m>f_z</m>
         </p>
     
         

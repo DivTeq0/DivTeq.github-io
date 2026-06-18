@@ -259,20 +259,36 @@ eBookConfig.enable_chatcodes =  false;
 f'(x)=\lim_{h\to 0}\frac{f(x+h)-f(x)}{h}
 \end{equation*}
 </div>
-<div class="para">This can be rewritten in the form</div>
+<div class="para">To generalize this to functions of more than one variable, this can be rewritten in the form</div>
 <div class="displaymath process-math" id="my-great-book-12-2-2-3">
 \begin{equation*}
 \lim_{h\to 0}\frac{f(x+h)-f(x)-hf'(x)}{h}=0
 \end{equation*}
 </div>
-<div class="para">A function of more than one variable is differentiable if there exists a vector, <span class="process-math">\(\nabla f\)</span> , called the gradient of <span class="process-math">\(f\)</span> , so that</div>
+<div class="para">A function of more than one variable is differentiable if there exists a vector, <span class="process-math">\(\nabla f\text{,}\)</span> called the gradient of<span class="process-math">\(f\text{,}\)</span> so that</div>
 <div class="displaymath process-math" id="my-great-book-12-2-2-6">
 \begin{equation*}
 \lim_{h\to 0}\frac{|f({\bf r}+h\hat{\bf u})-f({\bf r})-h\hat{\bf u}\cdot\nabla f|}{h}=0
 \end{equation*}
 </div>
-<div class="para">where <span class="process-math">\(\hat{\bf u}\)</span> is a unit vector.</div>
+<div class="para">where <span class="process-math">\(\hat{\bf u}\)</span> is a unit vector. If it is differentiable the previous equation can be rewritten as</div>
+<div class="displaymath process-math" id="my-great-book-12-2-2-8">
+\begin{equation*}
+\lim_{h\to 0}\frac{|f({\bf r}+h\hat{\bf u})-f({\bf r})|}{h}=\hat{\bf u}\cdot\nabla f
+\end{equation*}
+</div>
+<div class="para">The expression <span class="process-math">\(\hat{\bf u}\cdot\nabla f\)</span> is called the directional derivative of <span class="process-math">\(f\)</span> in the direction <span class="process-math">\(\hat{\bf u}\)</span>
+</div>
 <div class="autopermalink" data-description="Paragraph"><a href="#my-great-book-12-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="my-great-book-12-2-3">
+<div class="para">To find the components of <span class="process-math">\(\nabla f\text{.}\)</span> First take <span class="process-math">\(\hat{\bf u}={\bf e}_1=\langle 1,0,0\rangle\text{.}\)</span> Then the <span class="process-math">\(x\)</span> component of <span class="process-math">\(\nabla f\)</span> is</div>
+<div class="displaymath process-math" id="my-great-book-12-2-3-5">
+\begin{equation*}
+{\be e}_1\cdot\nabla f=\lim_{h\to 0}\frac{|f(\langle x,y,z\rangle+h\langle 1,0,0\rangle)-f(x,y,z)|}{h}
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#my-great-book-12-2-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="autopermalink" data-description="Section 10.1: The Gradient"><a href="#my-great-book-12-2" title="Copy heading and permalink for Section 10.1: The Gradient" aria-label="Copy heading and permalink for Section 10.1: The Gradient">🔗</a></div></section></div>
 <div id="ptx-content-footer" class="ptx-content-footer">
