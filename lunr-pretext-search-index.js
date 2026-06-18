@@ -1198,6 +1198,15 @@ var ptx_lunr_docs = [
   "body": " Find at the point on the surfacw   "
 },
 {
+  "id": "my-great-book-12-2",
+  "level": "1",
+  "url": "my-great-book-12-2.html",
+  "type": "Section",
+  "number": "10.1",
+  "title": "The Gradient",
+  "body": " The Gradient  The definition of differentiability in single variable calculus is the there is a function given by To generalize this to functions of more than one variable, this can be rewritten in the form A function of more than one variable is differentiable if there exists a vector, , called the gradient of , so that where is a unit vector. If it is differentiable the previous equation can be rewritten as The expression is called the directional derivative of in the direction   To find the components of . First take . Then the component of is   "
+},
+{
   "id": "backmatter-2",
   "level": "1",
   "url": "backmatter-2.html",
