@@ -1204,7 +1204,169 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "10.1",
   "title": "The Gradient",
-  "body": " The Gradient  The definition of differentiability in single variable calculus is the there is a function given by To generalize this to functions of more than one variable, this can be rewritten in the form A function of more than one variable is differentiable if there exists a vector, , called the gradient of , so that where is a unit vector. If it is differentiable the previous equation can be rewritten as The expression is called the directional derivative of in the direction   To find the components of . First take . Then the component of is Similarly the and components are and   "
+  "body": " The Gradient  The definition of differentiability in single variable calculus is that there is a function given by To generalize this to functions of more than one variable, this can be rewritten in the form A function of more than one variable is differentiable if there exists a vector, , called the gradient of , so that where is a unit vector. If it is differentiable the previous equation can be rewritten as The expression is called the directional derivative of in the direction   To find the components of . First take . Then the component of is Similarly the and components are and   "
+},
+{
+  "id": "sec-DirectionalDerivatives",
+  "level": "1",
+  "url": "sec-DirectionalDerivatives.html",
+  "type": "Section",
+  "number": "10.2",
+  "title": "Directional Derivatives",
+  "body": " Directional Derivatives  Given a curve and the graph of a function . The curve induces a curve in the graph The rate of change of along the curve at a point is The directional derivative is defined to be the arc length derivative along the curve where is the unit tangent to the curve   (for accessibility)  If the angle between and is then So the maximum rate of change of is when  and value of the maximum rate is    Find the rate of change of at the point towards the point         Let (a) Find the directional derivative of at the point in the direction given by the vector   (b) In what direction does have the greatest rate of change at ? What is the maximum rate  (a)    (b)    "
+},
+{
+  "id": "sec-DirectionalDerivatives-3",
+  "level": "2",
+  "url": "sec-DirectionalDerivatives.html#sec-DirectionalDerivatives-3",
+  "type": "Example",
+  "number": "10.2.1",
+  "title": "",
+  "body": " Find the rate of change of at the point towards the point       "
+},
+{
+  "id": "sec-DirectionalDerivatives-4",
+  "level": "2",
+  "url": "sec-DirectionalDerivatives.html#sec-DirectionalDerivatives-4",
+  "type": "Example",
+  "number": "10.2.2",
+  "title": "",
+  "body": " Let (a) Find the directional derivative of at the point in the direction given by the vector   (b) In what direction does have the greatest rate of change at ? What is the maximum rate  (a)    (b)   "
+},
+{
+  "id": "sec-Tangentplane",
+  "level": "1",
+  "url": "sec-Tangentplane.html",
+  "type": "Section",
+  "number": "10.3",
+  "title": "The gradient and the tangent plane",
+  "body": " The gradient and the tangent plane  Consider a curve that lies entirely with a level surface then Differentiating this with respect to  so is orthogonal to   (for accessibility)    Since is tangent to the curve, it is also tangent to the level surface. is orthogonal to the tangent to any curve lying in the surface, thus it is orthogonal to the tangent plane.   Find the equation of the tangent plane to the level surface at the point     The equation of the tangent plane is    "
+},
+{
+  "id": "sec-Tangentplane-4",
+  "level": "2",
+  "url": "sec-Tangentplane.html#sec-Tangentplane-4",
+  "type": "Example",
+  "number": "10.3.1",
+  "title": "",
+  "body": " Find the equation of the tangent plane to the level surface at the point     The equation of the tangent plane is   "
+},
+{
+  "id": "sec-Problems-10",
+  "level": "1",
+  "url": "sec-Problems-10.html",
+  "type": "Section",
+  "number": "10.4",
+  "title": "Problems",
+  "body": " Problems   Find the equation of the tangent plane at to the surface      The equation of the tangent plane is     A climber is on a point on the side of a mountain. He notes that the slope of the mountain to the east is and the slope to the north is . What direction should he pick to descend most rapidly? What will the slope of his descent be?           Show that the spheres intersect orthogonally     At the intersection points At the intersection points the tangent planes should be orthogonal, so should their gradients.  But at the intersection poits so     Let be a curve in with and .  Let be a function with and let   (a) What is the angle between and ?  (b) What are the two possible values for ?    (a) So   (b) Rotating counterclockwise gives a vector pointing along the axis in the positive direction. Rotating clockwise gives a vector pointing along the axis in the negative direction. So the two possibilities are    "
+},
+{
+  "id": "sec-Problems-10-2",
+  "level": "2",
+  "url": "sec-Problems-10.html#sec-Problems-10-2",
+  "type": "Checkpoint",
+  "number": "10.4.1",
+  "title": "",
+  "body": " Find the equation of the tangent plane at to the surface   "
+},
+{
+  "id": "sec-Problems-10-4",
+  "level": "2",
+  "url": "sec-Problems-10.html#sec-Problems-10-4",
+  "type": "Checkpoint",
+  "number": "10.4.2",
+  "title": "",
+  "body": " A climber is on a point on the side of a mountain. He notes that the slope of the mountain to the east is and the slope to the north is . What direction should he pick to descend most rapidly? What will the slope of his descent be?  "
+},
+{
+  "id": "sec-Problems-10-6",
+  "level": "2",
+  "url": "sec-Problems-10.html#sec-Problems-10-6",
+  "type": "Checkpoint",
+  "number": "10.4.3",
+  "title": "",
+  "body": " Show that the spheres intersect orthogonally  "
+},
+{
+  "id": "sec-Problems-10-8",
+  "level": "2",
+  "url": "sec-Problems-10.html#sec-Problems-10-8",
+  "type": "Example",
+  "number": "10.4.4",
+  "title": "",
+  "body": " Let be a curve in with and .  Let be a function with and let   (a) What is the angle between and ?  (b) What are the two possible values for ?  "
+},
+{
+  "id": "sec-Critical-points",
+  "level": "1",
+  "url": "sec-Critical-points.html",
+  "type": "Section",
+  "number": "11.1",
+  "title": "Critical points",
+  "body": " Critical points  A quick review of some facts about local extrema (minima and maxima) in single variable calculus   A function, , has a local minimum at if there is an open interval, , containing with for all . It has a local maximum if for all     A point is a critical point of if either or doesn't exist \\item If exists then if has a local minimum or maximum then . The converse isn't true, for example if , but has neither a maximum or minimum at .    If exists then the Taylor series for near the critical point has the form Then for points close to the critical point if and the point is a local minimum or if and the point is local maximum.    If the higher order terms have to be examined to classify the point.      Critical points for functions of two variables   A point is a critical point for a function if doesn't exist or if satisfies Geometrically this means that the tangent plane to the graph of is horizontal (or vertical) at .  A function of two variables has a local maximum at if for all points in a disk with center . It has a local minimum at if for all points in a disk with center .\\ As in single variable calculus, the local extrema (maxima and minima) are critical points but not all critical points are extrema.    Find the critical points of the function    The function has only one critical point and it is a minimum since can be written in the form      Taylor series near a critical point  Suppose that has a critical point at . Then . The Taylor series near the critical point will have the form where and the second derivatives are evaluated at . If we are close enough to i.e. are small enough so the higher order terms can be neglected, then the nature of the critical point is governed by the behavior of the quadratic terms. If the quadratic term, is positive, the critical point is a minimum.  (for accessibility)  If it is negative it is a maximum.  (for accessibility)  If it has no definite sign it is a saddle.  (for accessibility)  The saddle is a new type of critical point. Geometrically in one direction it has a minimimum and in another a maximum.    Second derivative test  By completing the square the quadratic term can be written in the form Let , then the second derivative test is   If and then and is a local maximum    If and then and is a local minimum    If then has an indefinite sign and is a saddle    If the test is inconclusive       Find and classify the critical points of the function    so is a saddle. so is a minimum    Extrema on Bounded Domains  As in single variable calculus, continuous functions on closed domains achieve both their maximum and minimum values. In the two variable case if the maximum (or minimum) don't occur in the interior of the region they must occur on the boundary   Find the maximum and minimum values of the function on the rectangle   The critical points are given by  so is a saddle and the maximum and minimum must lie on the boundary.    (for accessibility)   So the absolute maximum is and the absolute minimum is .    "
+},
+{
+  "id": "subsec-Critical-points-two-variables-3",
+  "level": "2",
+  "url": "sec-Critical-points.html#subsec-Critical-points-two-variables-3",
+  "type": "Example",
+  "number": "11.1.1",
+  "title": "",
+  "body": " Find the critical points of the function    The function has only one critical point and it is a minimum since can be written in the form   "
+},
+{
+  "id": "sec-Critical-points-6",
+  "level": "2",
+  "url": "sec-Critical-points.html#sec-Critical-points-6",
+  "type": "Example",
+  "number": "11.1.2",
+  "title": "",
+  "body": " Find and classify the critical points of the function    so is a saddle. so is a minimum  "
+},
+{
+  "id": "subsec-Extrema-on-Bounded-Domains-3",
+  "level": "2",
+  "url": "sec-Critical-points.html#subsec-Extrema-on-Bounded-Domains-3",
+  "type": "Example",
+  "number": "11.1.3",
+  "title": "",
+  "body": " Find the maximum and minimum values of the function on the rectangle   The critical points are given by  so is a saddle and the maximum and minimum must lie on the boundary.    (for accessibility)   So the absolute maximum is and the absolute minimum is .  "
+},
+{
+  "id": "sec-Problems-11",
+  "level": "1",
+  "url": "sec-Problems-11.html",
+  "type": "Section",
+  "number": "11.2",
+  "title": "Problems",
+  "body": " Problems   Find and classify the critical points of the function      The critical points are   so is a saddle. so the points are minima    Find and classify the critical points of the function      From the second equation either or . Substititing thse values into the first equations gives the critical points   so is a minimum, so are saddles.    Find and classify the critical points of the function      Substituting gives Factoring   so is a saddle. and so the points are maxima   "
+},
+{
+  "id": "sec-Problems-11-2",
+  "level": "2",
+  "url": "sec-Problems-11.html#sec-Problems-11-2",
+  "type": "Checkpoint",
+  "number": "11.2.1",
+  "title": "",
+  "body": " Find and classify the critical points of the function   "
+},
+{
+  "id": "sec-Problems-11-4",
+  "level": "2",
+  "url": "sec-Problems-11.html#sec-Problems-11-4",
+  "type": "Checkpoint",
+  "number": "11.2.2",
+  "title": "",
+  "body": " Find and classify the critical points of the function   "
+},
+{
+  "id": "sec-Problems-11-6",
+  "level": "2",
+  "url": "sec-Problems-11.html#sec-Problems-11-6",
+  "type": "Checkpoint",
+  "number": "11.2.3",
+  "title": "",
+  "body": " Find and classify the critical points of the function   "
 },
 {
   "id": "backmatter-2",
