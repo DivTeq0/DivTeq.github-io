@@ -267,6 +267,24 @@ eBookConfig.enable_chatcodes =  false;
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-Problems-11.html" class="internal"><span class="codenumber">11.2</span> <span class="title">Problems</span></a></div></li>
 </ul>
 </li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="ch-Constrained-Optimization.html" class="internal"><span class="codenumber">12</span> <span class="title">Constrained Optimization</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-The-Method-of-Lagrange.html" class="internal"><span class="codenumber">12.1</span> <span class="title">The Method of Lagrange</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-Two-Constraints.html" class="internal"><span class="codenumber">12.2</span> <span class="title">Two Constraints</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-Problems-12.html" class="internal"><span class="codenumber">12.3</span> <span class="title">Problems</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="ch-Area-Integrals.html" class="internal"><span class="codenumber">13</span> <span class="title">Area Integrals</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-Integrals-over-Rectangles.html" class="internal"><span class="codenumber">13.1</span> <span class="title">Integrals over Rectangles</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-Non-Rectangular-Regions.html" class="internal"><span class="codenumber">13.2</span> <span class="title">Integrals over Non Rectangular Regions</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-Volumes-Area-Integrals.html" class="internal"><span class="codenumber">13.3</span> <span class="title">Calculating Volumes using Area Integrals</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-Integrals-Polar-Coordinates.html" class="internal"><span class="codenumber">13.4</span> <span class="title">Area Integrals in Polar Coordinates</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-Problems-13.html" class="internal"><span class="codenumber">13.5</span> <span class="title">Problems</span></a></div></li>
+</ul>
+</li>
 <li class="toc-item toc-backmatter"><div class="toc-title-box"><a href="backmatter.html" class="internal"><span class="title">Backmatter</span></a></div></li>
 </ul></nav></div>
 <main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="sec-Critical-points"><h2 class="heading hide-type">
@@ -452,13 +470,34 @@ f_{xx}=2 \quad f_{yy}=0 \quad f_{xy}=-2 \quad \Rightarrow\quad D=-4
 <div class="autopermalink" data-description="Paragraph"><a href="#subsec-Extrema-on-Bounded-Domains-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="para logical" id="subsec-Extrema-on-Bounded-Domains-3-3">
-<div class="displaymath process-math" id="subsec-Extrema-on-Bounded-Domains-3-3-2">
-\begin{align*}
-\mbox{On}\,\, C_1 \amp \quad f(x,0)=x^2 \quad 0\leq x\leq 3 \qquad \mbox{Max:}\,f(3,0)=9\quad \mbox{Min:}\,f(0,0)=0 \\
-\mbox{On}\,\, C_2 \amp \quad f(3,y)=9-4y \quad 0\leq y\leq 2 \qquad \mbox{Max:}\,f(3,0)=9\quad \mbox{Min:}\,f(3,2)=1 \\
-\mbox{On}\,\, C_3 \amp  \quad f(x,2)=x^2-4x+4 \quad 0\leq x\leq 3 \qquad \mbox{Max:}\,f(0,2)=4\quad \mbox{Min:}\,f(2,2)=0 \\
-\mbox{On}\,\, C_4 \amp \quad f(0,y)=2y \quad 0\leq y\leq 2 \qquad \mbox{Max:}\,f(0,2)=4\quad \mbox{Min:}\,f(0,0)=0 
-\end{align*}
+<div class="para">
+<div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="external/Boundeddomain.png" class="contained" alt="(for accessibility)"></div> On <span class="process-math">\(C_1\)</span>
+</div>
+<div class="displaymath process-math" id="subsec-Extrema-on-Bounded-Domains-3-3-3">
+\begin{equation*}
+f(x,0)=x^2 \quad 0\leq x\leq 3 \qquad \mbox{Max:}\,f(3,0)=9\quad \mbox{Min:}\,f(0,0)=0 
+\end{equation*}
+</div>
+<div class="para">On <span class="process-math">\(C_2\)</span>
+</div>
+<div class="displaymath process-math" id="subsec-Extrema-on-Bounded-Domains-3-3-5">
+\begin{equation*}
+f(3,y)=9-4y \quad 0\leq y\leq 2 \qquad \mbox{Max:}\,f(3,0)=9\quad \mbox{Min:}\,f(3,2)=1 
+\end{equation*}
+</div>
+<div class="para">On <span class="process-math">\(C_3\)</span>
+</div>
+<div class="displaymath process-math" id="subsec-Extrema-on-Bounded-Domains-3-3-7">
+\begin{equation*}
+f(x,2)=x^2-4x+4 \quad 0\leq x\leq 3 \quad \mbox{Max:}\,f(0,2)=4\quad \mbox{Min:}\,f(2,2)=0 
+\end{equation*}
+</div>
+<div class="para">On <span class="process-math">\(C_4\)</span>
+</div>
+<div class="displaymath process-math" id="subsec-Extrema-on-Bounded-Domains-3-3-9">
+\begin{equation*}
+f(0,y)=2y \quad 0\leq y\leq 2 \qquad \mbox{Max:}\,f(0,2)=4\quad \mbox{Min:}\,f(0,0)=0  
+\end{equation*}
 </div>
 <div class="para">So the absolute maximum is <span class="process-math">\(9=f(3,0)\)</span> and the absolute minimum is <span class="process-math">\(0=f(0,0)=f(2,2)\text{.}\)</span>
 </div>

@@ -1303,7 +1303,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "11.1",
   "title": "Critical points",
-  "body": " Critical points  A quick review of some facts about local extrema (minima and maxima) in single variable calculus   A function, , has a local minimum at if there is an open interval, , containing with for all . It has a local maximum if for all     A point is a critical point of if either or doesn't exist \\item If exists then if has a local minimum or maximum then . The converse isn't true, for example if , but has neither a maximum or minimum at .    If exists then the Taylor series for near the critical point has the form Then for points close to the critical point if and the point is a local minimum or if and the point is local maximum.    If the higher order terms have to be examined to classify the point.      Critical points for functions of two variables   A point is a critical point for a function if doesn't exist or if satisfies Geometrically this means that the tangent plane to the graph of is horizontal (or vertical) at .  A function of two variables has a local maximum at if for all points in a disk with center . It has a local minimum at if for all points in a disk with center .\\ As in single variable calculus, the local extrema (maxima and minima) are critical points but not all critical points are extrema.    Find the critical points of the function    The function has only one critical point and it is a minimum since can be written in the form      Taylor series near a critical point  Suppose that has a critical point at . Then . The Taylor series near the critical point will have the form where and the second derivatives are evaluated at . If we are close enough to i.e. are small enough so the higher order terms can be neglected, then the nature of the critical point is governed by the behavior of the quadratic terms. If the quadratic term, is positive, the critical point is a minimum.  (for accessibility)  If it is negative it is a maximum.  (for accessibility)  If it has no definite sign it is a saddle.  (for accessibility)  The saddle is a new type of critical point. Geometrically in one direction it has a minimimum and in another a maximum.    Second derivative test  By completing the square the quadratic term can be written in the form Let , then the second derivative test is   If and then and is a local maximum    If and then and is a local minimum    If then has an indefinite sign and is a saddle    If the test is inconclusive       Find and classify the critical points of the function    so is a saddle. so is a minimum    Extrema on Bounded Domains  As in single variable calculus, continuous functions on closed domains achieve both their maximum and minimum values. In the two variable case if the maximum (or minimum) don't occur in the interior of the region they must occur on the boundary   Find the maximum and minimum values of the function on the rectangle   The critical points are given by  so is a saddle and the maximum and minimum must lie on the boundary.    (for accessibility)   So the absolute maximum is and the absolute minimum is .    "
+  "body": " Critical points  A quick review of some facts about local extrema (minima and maxima) in single variable calculus   A function, , has a local minimum at if there is an open interval, , containing with for all . It has a local maximum if for all     A point is a critical point of if either or doesn't exist \\item If exists then if has a local minimum or maximum then . The converse isn't true, for example if , but has neither a maximum or minimum at .    If exists then the Taylor series for near the critical point has the form Then for points close to the critical point if and the point is a local minimum or if and the point is local maximum.    If the higher order terms have to be examined to classify the point.      Critical points for functions of two variables   A point is a critical point for a function if doesn't exist or if satisfies Geometrically this means that the tangent plane to the graph of is horizontal (or vertical) at .  A function of two variables has a local maximum at if for all points in a disk with center . It has a local minimum at if for all points in a disk with center .\\ As in single variable calculus, the local extrema (maxima and minima) are critical points but not all critical points are extrema.    Find the critical points of the function    The function has only one critical point and it is a minimum since can be written in the form      Taylor series near a critical point  Suppose that has a critical point at . Then . The Taylor series near the critical point will have the form where and the second derivatives are evaluated at . If we are close enough to i.e. are small enough so the higher order terms can be neglected, then the nature of the critical point is governed by the behavior of the quadratic terms. If the quadratic term, is positive, the critical point is a minimum.  (for accessibility)  If it is negative it is a maximum.  (for accessibility)  If it has no definite sign it is a saddle.  (for accessibility)  The saddle is a new type of critical point. Geometrically in one direction it has a minimimum and in another a maximum.    Second derivative test  By completing the square the quadratic term can be written in the form Let , then the second derivative test is   If and then and is a local maximum    If and then and is a local minimum    If then has an indefinite sign and is a saddle    If the test is inconclusive       Find and classify the critical points of the function    so is a saddle. so is a minimum    Extrema on Bounded Domains  As in single variable calculus, continuous functions on closed domains achieve both their maximum and minimum values. In the two variable case if the maximum (or minimum) don't occur in the interior of the region they must occur on the boundary   Find the maximum and minimum values of the function on the rectangle   The critical points are given by  so is a saddle and the maximum and minimum must lie on the boundary.    (for accessibility)  On  On  On  On  So the absolute maximum is and the absolute minimum is .    "
 },
 {
   "id": "subsec-Critical-points-two-variables-3",
@@ -1330,7 +1330,7 @@ var ptx_lunr_docs = [
   "type": "Example",
   "number": "11.1.3",
   "title": "",
-  "body": " Find the maximum and minimum values of the function on the rectangle   The critical points are given by  so is a saddle and the maximum and minimum must lie on the boundary.    (for accessibility)   So the absolute maximum is and the absolute minimum is .  "
+  "body": " Find the maximum and minimum values of the function on the rectangle   The critical points are given by  so is a saddle and the maximum and minimum must lie on the boundary.    (for accessibility)  On  On  On  On  So the absolute maximum is and the absolute minimum is .  "
 },
 {
   "id": "sec-Problems-11",
@@ -1339,7 +1339,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "11.2",
   "title": "Problems",
-  "body": " Problems   Find and classify the critical points of the function      The critical points are   so is a saddle. so the points are minima    Find and classify the critical points of the function      From the second equation either or . Substititing thse values into the first equations gives the critical points   so is a minimum, so are saddles.    Find and classify the critical points of the function      Substituting gives Factoring   so is a saddle. and so the points are maxima   "
+  "body": " Problems   Find and classify the critical points of the function      The critical points are   so is a saddle. so the points are minima    Find and classify the critical points of the function      From the second equation either or . Substititing thse values into the first equations gives the critical points   so is a minimum, so are saddles.    Find and classify the critical points of the function      Substituting gives Factoring   so is a saddle. and so the points are maxima    Find the minimum and maximum values of on the region bounded by the triangle with vertices       (for accessibility)   But isn't in the region, so the maximum and minimum must occur on the boundary.  On  On  On  So the maximum value is and the minimum value is    "
 },
 {
   "id": "sec-Problems-11-2",
@@ -1367,6 +1367,339 @@ var ptx_lunr_docs = [
   "number": "11.2.3",
   "title": "",
   "body": " Find and classify the critical points of the function   "
+},
+{
+  "id": "sec-Problems-11-8",
+  "level": "2",
+  "url": "sec-Problems-11.html#sec-Problems-11-8",
+  "type": "Checkpoint",
+  "number": "11.2.4",
+  "title": "",
+  "body": " Find the minimum and maximum values of on the region bounded by the triangle with vertices   "
+},
+{
+  "id": "sec-The-Method-of-Lagrange",
+  "level": "1",
+  "url": "sec-The-Method-of-Lagrange.html",
+  "type": "Section",
+  "number": "12.1",
+  "title": "The Method of Lagrange",
+  "body": " The Method of Lagrange  In the simplest form, the problem is to maximize (or minimize) a function subject to a constraint Lagrange introduced a new variable , called a Lagrange multiplier. The solution to the constrained problem can be found by solving the equations To illustrate why this is the solution consider the diagram  (for accessibility)  At the point the gradients are not parallel. can be increased by moving in the direction of the component of perpendicular to . At the point , where the gradients are parallel any motion along the constraint will decrease the value of .    Find the maximum value of the product of three positive numbers subject to the constraint . So and using gives The first two equations imply . Substituting the second equation into the third gives Substituting into the constraint gives so the maximum value is .     A company finds its production can be expressed in the form where in the number of units of labor and is the units of capital. Units of labor cost $125 and units of capital cost $32. Given a production level of , find the and values that minimize the total cost.  The total cost is and the constraint is Using gives solving for  eliminating  substituting into the constraint gives     Find the absolute maximum and minimum of on the region . First search for local extrema which gives this has three real solutions . So there are three critical points The second derivatives are The second derivative test gives so is a saddle and are minima and . To check for extrema on the boundary look for extrema subject to the constraint using Lagrange's method. Multiplying the first equation by and the second one by and subtracting gives so or . If the substituting into the constraint gives  If , substituting into the constraint gives For these values So the absolute minimum is and the absolute maximum is .   "
+},
+{
+  "id": "sec-The-Method-of-Lagrange-3",
+  "level": "2",
+  "url": "sec-The-Method-of-Lagrange.html#sec-The-Method-of-Lagrange-3",
+  "type": "Example",
+  "number": "12.1.1",
+  "title": "",
+  "body": "  Find the maximum value of the product of three positive numbers subject to the constraint . So and using gives The first two equations imply . Substituting the second equation into the third gives Substituting into the constraint gives so the maximum value is .   "
+},
+{
+  "id": "sec-The-Method-of-Lagrange-4",
+  "level": "2",
+  "url": "sec-The-Method-of-Lagrange.html#sec-The-Method-of-Lagrange-4",
+  "type": "Example",
+  "number": "12.1.2",
+  "title": "",
+  "body": " A company finds its production can be expressed in the form where in the number of units of labor and is the units of capital. Units of labor cost $125 and units of capital cost $32. Given a production level of , find the and values that minimize the total cost.  The total cost is and the constraint is Using gives solving for  eliminating  substituting into the constraint gives   "
+},
+{
+  "id": "sec-The-Method-of-Lagrange-5",
+  "level": "2",
+  "url": "sec-The-Method-of-Lagrange.html#sec-The-Method-of-Lagrange-5",
+  "type": "Example",
+  "number": "12.1.3",
+  "title": "",
+  "body": " Find the absolute maximum and minimum of on the region . First search for local extrema which gives this has three real solutions . So there are three critical points The second derivatives are The second derivative test gives so is a saddle and are minima and . To check for extrema on the boundary look for extrema subject to the constraint using Lagrange's method. Multiplying the first equation by and the second one by and subtracting gives so or . If the substituting into the constraint gives  If , substituting into the constraint gives For these values So the absolute minimum is and the absolute maximum is .  "
+},
+{
+  "id": "sec-Two-Constraints",
+  "level": "1",
+  "url": "sec-Two-Constraints.html",
+  "type": "Section",
+  "number": "12.2",
+  "title": "Two Constraints",
+  "body": " Two Constraints   To find extrema of subject to and . In this case our equations are    Find the maximum of subject to and   Reducing these leads to Substituting into the constraint gives The corresponding values of are . So the maximum is .     "
+},
+{
+  "id": "sec-Two-Constraints-2-2",
+  "level": "2",
+  "url": "sec-Two-Constraints.html#sec-Two-Constraints-2-2",
+  "type": "Example",
+  "number": "12.2.1",
+  "title": "",
+  "body": " Find the maximum of subject to and   Reducing these leads to Substituting into the constraint gives The corresponding values of are . So the maximum is .   "
+},
+{
+  "id": "sec-Problems-12",
+  "level": "1",
+  "url": "sec-Problems-12.html",
+  "type": "Section",
+  "number": "12.3",
+  "title": "Problems",
+  "body": " Problems   Find the point(s) on the surface closest to the origin      The Lagrange equations are The third equation gives    Substituting into the constraint gives Dividing the first two Lagrange equations Since  so  Two critical points are   Substituting into the first two Lagrange equations The constraint gives Two more critial points are  so the closest points are      The material for the bottom of an aquarium costs half as much as the high strength glass for the four sides. Find the shape of the cheapest aquarium with volume 2000 cm      Let and be the length and width of the base and be the height. The cost will be proportional to The constraint is . The Lagrange equations are Multiplying the first equation by the second by and substracting Substituting this into the third Lagrange equation Now substituting this into the second Lagrange equation Using the constraint      Find the maximum and minimum values of in the region     First look for local extrema  So is a local minimum and . The maximum must be on the boundary.  Langrange's equations are Multiplying the first equation by and the second one by and subtracting gives Substituting into the constraint  So the minimum value is and the maximum is     Find the point closest to the origin on the curve of intersection of the surfaces     The Lagrange equations are Setting leads to Dividing the first equation by and adding to the second equation. Dividing the third equation by and solving for  The first constraint becomes Then and the two points closest to the origin are     Prove the Arithmetic-Geometric inequality     Let and consider the region of the plane in the first octant. Since the region is closed and bounded, the function achieves its maximum and minimum in the region. The minimum is clearly . To find the maximum, use Lagrange's method. The equations are     "
+},
+{
+  "id": "sec-Problems-12-2",
+  "level": "2",
+  "url": "sec-Problems-12.html#sec-Problems-12-2",
+  "type": "Checkpoint",
+  "number": "12.3.1",
+  "title": "",
+  "body": " Find the point(s) on the surface closest to the origin  "
+},
+{
+  "id": "sec-Problems-12-4",
+  "level": "2",
+  "url": "sec-Problems-12.html#sec-Problems-12-4",
+  "type": "Checkpoint",
+  "number": "12.3.2",
+  "title": "",
+  "body": " The material for the bottom of an aquarium costs half as much as the high strength glass for the four sides. Find the shape of the cheapest aquarium with volume 2000 cm   "
+},
+{
+  "id": "sec-Problems-12-6",
+  "level": "2",
+  "url": "sec-Problems-12.html#sec-Problems-12-6",
+  "type": "Checkpoint",
+  "number": "12.3.3",
+  "title": "",
+  "body": " Find the maximum and minimum values of in the region   "
+},
+{
+  "id": "sec-Problems-12-8",
+  "level": "2",
+  "url": "sec-Problems-12.html#sec-Problems-12-8",
+  "type": "Checkpoint",
+  "number": "12.3.4",
+  "title": "",
+  "body": " Find the point closest to the origin on the curve of intersection of the surfaces   "
+},
+{
+  "id": "sec-Problems-12-10",
+  "level": "2",
+  "url": "sec-Problems-12.html#sec-Problems-12-10",
+  "type": "Checkpoint",
+  "number": "12.3.5",
+  "title": "",
+  "body": " Prove the Arithmetic-Geometric inequality   "
+},
+{
+  "id": "sec-Integrals-over-Rectangles",
+  "level": "1",
+  "url": "sec-Integrals-over-Rectangles.html",
+  "type": "Section",
+  "number": "13.1",
+  "title": "Integrals over Rectangles",
+  "body": " Integrals over Rectangles  Let be the rectangle given by . If is a function on then the integral of over can be defined using Riemann sums. Partition the rectangle into subrectangles with areas . Choose an arbitrary point, then the integral is given by as long as the limit exists.  (for accessibility)  If is continuous then there is a theorem (Fubini's theorem) that the integral can be calculated by doing the integrations one variable at a time. Either fix and integrate over followed by integrating the result over .  (for accessibility)     or fix the value of and integrate over followed by integrating the result over .  (for accessibility)   The integration order doesn't matter. That is     Calculate for and . If we reversed the order of integration    "
+},
+{
+  "id": "sec-Integrals-over-Rectangles-3",
+  "level": "2",
+  "url": "sec-Integrals-over-Rectangles.html#sec-Integrals-over-Rectangles-3",
+  "type": "Example",
+  "number": "13.1.1",
+  "title": "",
+  "body": " Calculate for and . If we reversed the order of integration   "
+},
+{
+  "id": "sec-Non-Rectangular-Regions",
+  "level": "1",
+  "url": "sec-Non-Rectangular-Regions.html",
+  "type": "Section",
+  "number": "13.2",
+  "title": "Integrals over Non Rectangular Regions",
+  "body": " Integrals over Non Rectangular Regions  Integrals over non rectangular regions can also be calculated by iterating the integrals. In this case the first integration will be between variable bounds. Suppose a region can be specified as or as Then the integral of the region can be calculated as   (for accessibility)  or as   (for accessibility)  and Fubini's theorem states that the two iterated integrals are the same.  Calculate where is the triangle bounded by the axis, the line and the line .  (for accessibility)       Sketch the region of integration and evaluate the integral   (for accessibility)    (for accessibility)       Sketch the region of integration and evaluate the integral   (for accessibility)  In this case the integrand doesn't have a nice antiderivative, so we need to reverse the order of integration. The region can be described as     "
+},
+{
+  "id": "sec-Non-Rectangular-Regions-9",
+  "level": "2",
+  "url": "sec-Non-Rectangular-Regions.html#sec-Non-Rectangular-Regions-9",
+  "type": "Example",
+  "number": "13.2.1",
+  "title": "",
+  "body": " Calculate where is the triangle bounded by the axis, the line and the line .  (for accessibility)     "
+},
+{
+  "id": "sec-Non-Rectangular-Regions-10",
+  "level": "2",
+  "url": "sec-Non-Rectangular-Regions.html#sec-Non-Rectangular-Regions-10",
+  "type": "Example",
+  "number": "13.2.2",
+  "title": "",
+  "body": " Sketch the region of integration and evaluate the integral   (for accessibility)    (for accessibility)     "
+},
+{
+  "id": "sec-Non-Rectangular-Regions-11",
+  "level": "2",
+  "url": "sec-Non-Rectangular-Regions.html#sec-Non-Rectangular-Regions-11",
+  "type": "Example",
+  "number": "13.2.3",
+  "title": "",
+  "body": " Sketch the region of integration and evaluate the integral   (for accessibility)  In this case the integrand doesn't have a nice antiderivative, so we need to reverse the order of integration. The region can be described as    "
+},
+{
+  "id": "sec-Volumes-Area-Integrals",
+  "level": "1",
+  "url": "sec-Volumes-Area-Integrals.html",
+  "type": "Section",
+  "number": "13.3",
+  "title": "Calculating Volumes using Area Integrals",
+  "body": " Calculating Volumes using Area Integrals  The integral represents the volume of the region bounded above by the graph of and below by the region in the plane. The expression represents the volume of a thin column and adding these up gives the volume between the graph and .  (for accessibility)     Find the volume of the solid whose base is the region bounded by and and whose top is bounded by . The intersection points are (-4,-12) and (1,3). The volume is then given by    "
+},
+{
+  "id": "sec-Volumes-Area-Integrals-3",
+  "level": "2",
+  "url": "sec-Volumes-Area-Integrals.html#sec-Volumes-Area-Integrals-3",
+  "type": "Example",
+  "number": "13.3.1",
+  "title": "",
+  "body": " Find the volume of the solid whose base is the region bounded by and and whose top is bounded by . The intersection points are (-4,-12) and (1,3). The volume is then given by   "
+},
+{
+  "id": "sec-Integrals-Polar-Coordinates",
+  "level": "1",
+  "url": "sec-Integrals-Polar-Coordinates.html",
+  "type": "Section",
+  "number": "13.4",
+  "title": "Area Integrals in Polar Coordinates",
+  "body": " Area Integrals in Polar Coordinates    (for accessibility)  To calculate an area integral in polar coordinates, partition the area by polar rectangles with areas To integrate a function over the area, pick a point, in each area, and form a Riemann sum If is given in cartesian form    Calculate where is the region in the first quadrant outside the circle and inside the cardioid   (for accessibility)       Find the volume of the region bounded above by and below by the paraboloid .  (for accessibility)  The integration area is so use polar coordinates. The values vary between and 4. So     Find the area of the region of the disk illustrated.  (for accessibility)  The region can be described in polar coordinates as      Find the volume of the region bounded above by , below by the plane and inside the cylinder   (for accessibility)       "
+},
+{
+  "id": "sec-Integrals-Polar-Coordinates-3",
+  "level": "2",
+  "url": "sec-Integrals-Polar-Coordinates.html#sec-Integrals-Polar-Coordinates-3",
+  "type": "Example",
+  "number": "13.4.1",
+  "title": "",
+  "body": " Calculate where is the region in the first quadrant outside the circle and inside the cardioid   (for accessibility)     "
+},
+{
+  "id": "sec-Integrals-Polar-Coordinates-4",
+  "level": "2",
+  "url": "sec-Integrals-Polar-Coordinates.html#sec-Integrals-Polar-Coordinates-4",
+  "type": "Example",
+  "number": "13.4.2",
+  "title": "",
+  "body": " Find the volume of the region bounded above by and below by the paraboloid .  (for accessibility)  The integration area is so use polar coordinates. The values vary between and 4. So   "
+},
+{
+  "id": "sec-Integrals-Polar-Coordinates-5",
+  "level": "2",
+  "url": "sec-Integrals-Polar-Coordinates.html#sec-Integrals-Polar-Coordinates-5",
+  "type": "Example",
+  "number": "13.4.3",
+  "title": "",
+  "body": " Find the area of the region of the disk illustrated.  (for accessibility)  The region can be described in polar coordinates as    "
+},
+{
+  "id": "sec-Integrals-Polar-Coordinates-6",
+  "level": "2",
+  "url": "sec-Integrals-Polar-Coordinates.html#sec-Integrals-Polar-Coordinates-6",
+  "type": "Example",
+  "number": "13.4.4",
+  "title": "",
+  "body": " Find the volume of the region bounded above by , below by the plane and inside the cylinder   (for accessibility)      "
+},
+{
+  "id": "sec-Problems-13",
+  "level": "1",
+  "url": "sec-Problems-13.html",
+  "type": "Section",
+  "number": "13.5",
+  "title": "Problems",
+  "body": " Problems   Find the area of the region in the plane bounded by and       (for accessibility)    (for accessibility)       Find the volume below the paraboloid and above the triangle in the plane bounded by       (for accessibility)    (for accessibility)       Consider the integral  (a) Sketch the region of integration  (b) Change the order of integration  (c) Compute the integral     (a)  (for accessibility)  (b) The new limits are (c) Let       Let be the triangle bounded by . (a) If is continuous express the integral as an iterated integral in both orders of integration. (b) Find the area of       (for accessibility)  Doing the integration first followed by the integration Doing the integration first (b) Using the second version      Evaluate      The region in polars is   (for accessibility)       Find the volume of the region bounded above by and below by   (for accessibility)      The curve of intersection is      Evaluate     Switching to polars     Find the volume of the region bounded above by and below by   (for accessibility)      The curve of intersection is      Find the area enclosed by the lemniscate   (for accessibility)      By symmetry we can calculate the area in the first quadrant and multiply by 4 So the total area is 16    A cylindrical hole of radius is bored through the center of a sphere of radius as illustrated. Find the volume of the remaining solid.  (for accessibility)      A vertical slice through the object is  (for accessibility)      "
+},
+{
+  "id": "sec-Problems-13-2",
+  "level": "2",
+  "url": "sec-Problems-13.html#sec-Problems-13-2",
+  "type": "Checkpoint",
+  "number": "13.5.1",
+  "title": "",
+  "body": " Find the area of the region in the plane bounded by and   "
+},
+{
+  "id": "sec-Problems-13-4",
+  "level": "2",
+  "url": "sec-Problems-13.html#sec-Problems-13-4",
+  "type": "Checkpoint",
+  "number": "13.5.2",
+  "title": "",
+  "body": " Find the volume below the paraboloid and above the triangle in the plane bounded by   "
+},
+{
+  "id": "sec-Problems-13-6",
+  "level": "2",
+  "url": "sec-Problems-13.html#sec-Problems-13-6",
+  "type": "Checkpoint",
+  "number": "13.5.3",
+  "title": "",
+  "body": " Consider the integral  (a) Sketch the region of integration  (b) Change the order of integration  (c) Compute the integral   "
+},
+{
+  "id": "sec-Problems-13-8",
+  "level": "2",
+  "url": "sec-Problems-13.html#sec-Problems-13-8",
+  "type": "Checkpoint",
+  "number": "13.5.4",
+  "title": "",
+  "body": " Let be the triangle bounded by . (a) If is continuous express the integral as an iterated integral in both orders of integration. (b) Find the area of   "
+},
+{
+  "id": "sec-Problems-13-10",
+  "level": "2",
+  "url": "sec-Problems-13.html#sec-Problems-13-10",
+  "type": "Checkpoint",
+  "number": "13.5.5",
+  "title": "",
+  "body": "  Evaluate    "
+},
+{
+  "id": "sec-Problems-13-12",
+  "level": "2",
+  "url": "sec-Problems-13.html#sec-Problems-13-12",
+  "type": "Checkpoint",
+  "number": "13.5.6",
+  "title": "",
+  "body": " Find the volume of the region bounded above by and below by   (for accessibility)    "
+},
+{
+  "id": "sec-Problems-13-14",
+  "level": "2",
+  "url": "sec-Problems-13.html#sec-Problems-13-14",
+  "type": "Checkpoint",
+  "number": "13.5.7",
+  "title": "",
+  "body": " Evaluate   "
+},
+{
+  "id": "sec-Problems-13-16",
+  "level": "2",
+  "url": "sec-Problems-13.html#sec-Problems-13-16",
+  "type": "Checkpoint",
+  "number": "13.5.8",
+  "title": "",
+  "body": " Find the volume of the region bounded above by and below by   (for accessibility)    "
+},
+{
+  "id": "sec-Problems-13-18",
+  "level": "2",
+  "url": "sec-Problems-13.html#sec-Problems-13-18",
+  "type": "Checkpoint",
+  "number": "13.5.9",
+  "title": "",
+  "body": " Find the area enclosed by the lemniscate   (for accessibility)    "
+},
+{
+  "id": "sec-Problems-13-20",
+  "level": "2",
+  "url": "sec-Problems-13.html#sec-Problems-13-20",
+  "type": "Checkpoint",
+  "number": "13.5.10",
+  "title": "",
+  "body": " A cylindrical hole of radius is bored through the center of a sphere of radius as illustrated. Find the volume of the remaining solid.  (for accessibility)    "
 },
 {
   "id": "backmatter-2",
