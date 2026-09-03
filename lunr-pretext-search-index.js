@@ -10,1696 +10,274 @@ var ptx_lunr_docs = [
   "body": "  "
 },
 {
-  "id": "my-great-book-3-2",
+  "id": "sec-Math-Modeling",
   "level": "1",
-  "url": "my-great-book-3-2.html",
+  "url": "sec-Math-Modeling.html",
   "type": "Section",
   "number": "1.1",
-  "title": "The definition of the dot product",
-  "body": " The definition of the dot product  The dot product of a vector with itself is defined as  If   Thus    Consider the triangle illustrated   A triangle composed of three vectors {\\bf a},{\\bf b}, and {\\bf c}={\\bf a}-{\\bf b} together with the angle theta between {\\bf a} and {\\bf b}    Recalling the law of cosines for the triangle   Comparing the two leads to    Find the angle between the vectors      Show that the following vectors are orthogonal     "
+  "title": "Mathematical Modeling",
+  "body": " Mathematical Modeling  Differential equations (DEs) are used to mathematically model physical situations. The first example of using a differential equation to model real world situations is Newton's 2nd Law. Some other examples of differential equation models that you are probably familiar with.  Radioactive decay : The rate of decay of a radioactive substance is proportional to the amount of the substance. with solution    Projectiles : Motion of a particle under constant gravitational acceleration downwards with solution    Newton's Law of Cooling : The rate of change of the temperature of an object is proportional to the difference between its temperature and the temperature of its surroundings. with solution    Population : The rate of change of a population is proportional to the population. with solution    Logistic Population Model :  with solution    "
 },
 {
-  "id": "my-great-book-3-2-9",
-  "level": "2",
-  "url": "my-great-book-3-2.html#my-great-book-3-2-9",
-  "type": "Example",
-  "number": "1.1.1",
-  "title": "",
-  "body": " Find the angle between the vectors    "
-},
-{
-  "id": "my-great-book-3-2-10",
-  "level": "2",
-  "url": "my-great-book-3-2.html#my-great-book-3-2-10",
-  "type": "Example",
-  "number": "1.1.2",
-  "title": "",
-  "body": " Show that the following vectors are orthogonal    "
-},
-{
-  "id": "sec-",
+  "id": "sec-ODEs",
   "level": "1",
-  "url": "sec-.html",
+  "url": "sec-ODEs.html",
   "type": "Section",
   "number": "1.2",
-  "title": "Vector Projection",
-  "body": " Vector Projection  In many applications of vectors it is useful to be able to express a vector as the sum of vectors parallel and perpendicular to a given vector   A diagram showing the components of a vector {\\bf b} parallel and perpendicular to a vector {\\bf a}   Note that since is parallel to     Then   then   The scalar projection is the magnitude of this vector    Given the vectors   find the components of parallel and perpendicular to      "
+  "title": "Ordinary Differential equations",
+  "body": " Ordinary Differential equations  An ordinary differential equation consists of a real dependent variable, a real independent variable, and derivatives of the dependent variable with respect to the independent variable. It can be expressed in the implicit form. where is the dependent variable and is the independent variable. The normal form is obtained by solving for the highest derivative (if possible).  The order of a differential equation is the order of the highest derivative. The examples in the previous section were all first order except the projectile example.  A differential equation is linear if it is a linear function of the dependent variable and its derivatives. Otherwise it is nonlinear. All of the examples in the previous section are linear except for the Logistic model.  A differential equation is autonomous if the independent variable doesn't appear explicitly in the equation. All of the examples in the previous section are autonomous.   Here are some more complicated differential equation models  The Van der Pol equation : It describes the current in a certain type of electrical circuit. The dependent variable is and the independent variable is . It is second order, nonlinear, and autonomous   The Euler-Bernoulli equation : It describes the the deflection of a beam The dependent variable is the independent variable is . It is fourth order, linear and it isn't autonomous   The Schrodinger equation for the hydrogen atom  The dependent variable is and the independent variable is . It is second order, linear and not autonomous,   The Blasius equation It describes boundary layer flow of a fluid over a flat plate. The dependent variable is , the independent variable isn't given explicitly. The equation is third order, nonlinear, and autonomous   "
 },
 {
-  "id": "sec--13",
-  "level": "2",
-  "url": "sec-.html#sec--13",
-  "type": "Example",
-  "number": "1.2.1",
-  "title": "",
-  "body": " Given the vectors   find the components of parallel and perpendicular to     "
-},
-{
-  "id": "my-great-book-3-4",
+  "id": "sec-Explicit-Solutions",
   "level": "1",
-  "url": "my-great-book-3-4.html",
+  "url": "sec-Explicit-Solutions.html",
   "type": "Section",
   "number": "1.3",
-  "title": "Problems",
-  "body": " Problems   Given the vectors     Find the angle between the vectors    Express in terms of vectors parallel and perpendicular to                       Show that the points are the vertices of a right triangle         What is the angle between the vector from the origin to the point and the vector from to the point ?          Find the distance from the point to the line through the points and         So the distance is      Find a vector that is perpendicular to both of the vectors    Let then    Let then   So the answer is any vector of the form      For a parallelogram show the sum of the squares of the lengths of the diagonals is equal to the sum of the squares of the lengths of the sides.         Show that the diagonals of a rhombus (a parallelogram with equal length sides) are orthogonal.    Since     "
+  "title": "Analytic solutions in explicit form",
+  "body": " Analytic solutions in explicit form  An analytic or closed form solution to a differential equation is an expression relating the dependent and independent variables without derivatives, which when differentiated makes the differential equation an identity. Solutions can given in explicit form or in implicit form   If the differential equation is then an explicit solution of the equation makes an identity    The differential equation has a solution since So it satisfies the equation. is called a particular solution. The general solution to the equation is where is an arbitrary constant analogous to the when finding antiderivatives    "
 },
 {
-  "id": "my-great-book-3-4-2",
+  "id": "sec-Explicit-Solutions-4",
   "level": "2",
-  "url": "my-great-book-3-4.html#my-great-book-3-4-2",
-  "type": "Checkpoint",
+  "url": "sec-Explicit-Solutions.html#sec-Explicit-Solutions-4",
+  "type": "Example",
   "number": "1.3.1",
   "title": "",
-  "body": " Given the vectors     Find the angle between the vectors    Express in terms of vectors parallel and perpendicular to                     "
+  "body": "  The differential equation has a solution since So it satisfies the equation. is called a particular solution. The general solution to the equation is where is an arbitrary constant analogous to the when finding antiderivatives   "
 },
 {
-  "id": "my-great-book-3-4-3",
-  "level": "2",
-  "url": "my-great-book-3-4.html#my-great-book-3-4-3",
-  "type": "Checkpoint",
-  "number": "1.3.2",
-  "title": "",
-  "body": " Show that the points are the vertices of a right triangle       "
-},
-{
-  "id": "my-great-book-3-4-4",
-  "level": "2",
-  "url": "my-great-book-3-4.html#my-great-book-3-4-4",
-  "type": "Checkpoint",
-  "number": "1.3.3",
-  "title": "",
-  "body": " What is the angle between the vector from the origin to the point and the vector from to the point ?        "
-},
-{
-  "id": "my-great-book-3-4-5",
-  "level": "2",
-  "url": "my-great-book-3-4.html#my-great-book-3-4-5",
-  "type": "Checkpoint",
-  "number": "1.3.4",
-  "title": "",
-  "body": " Find the distance from the point to the line through the points and         So the distance is    "
-},
-{
-  "id": "my-great-book-3-4-6",
-  "level": "2",
-  "url": "my-great-book-3-4.html#my-great-book-3-4-6",
-  "type": "Checkpoint",
-  "number": "1.3.5",
-  "title": "",
-  "body": " Find a vector that is perpendicular to both of the vectors    Let then    Let then   So the answer is any vector of the form    "
-},
-{
-  "id": "my-great-book-3-4-7",
-  "level": "2",
-  "url": "my-great-book-3-4.html#my-great-book-3-4-7",
-  "type": "Checkpoint",
-  "number": "1.3.6",
-  "title": "",
-  "body": " For a parallelogram show the sum of the squares of the lengths of the diagonals is equal to the sum of the squares of the lengths of the sides.       "
-},
-{
-  "id": "my-great-book-3-4-8",
-  "level": "2",
-  "url": "my-great-book-3-4.html#my-great-book-3-4-8",
-  "type": "Checkpoint",
-  "number": "1.3.7",
-  "title": "",
-  "body": " Show that the diagonals of a rhombus (a parallelogram with equal length sides) are orthogonal.    Since    "
-},
-{
-  "id": "my-great-book-4-2",
+  "id": "sec-Implicit-Solutions",
   "level": "1",
-  "url": "my-great-book-4-2.html",
+  "url": "sec-Implicit-Solutions.html",
+  "type": "Section",
+  "number": "1.4",
+  "title": "Analytic solutions in implicit form",
+  "body": " Analytic solutions in implicit form  To check whether an implicit function satisfies a differential equation we have to implicitly differentiate the function and solve for   are the partial derivatives of g, that is they are the usual derivatives with respect to the variable while considering all the other variables to be constant. The function will be a solution to the equation if    A closed form solution to the differential equation is given by since and    "
+},
+{
+  "id": "sec-Implicit-Solutions-3",
+  "level": "2",
+  "url": "sec-Implicit-Solutions.html#sec-Implicit-Solutions-3",
+  "type": "Example",
+  "number": "1.4.1",
+  "title": "",
+  "body": " A closed form solution to the differential equation is given by since and   "
+},
+{
+  "id": "sec-IVPs",
+  "level": "1",
+  "url": "sec-IVPs.html",
+  "type": "Section",
+  "number": "1.5",
+  "title": "Initial Value Problems",
+  "body": " Initial Value Problems  In applications of differential equations we are usually interested in finding solutions that satisfy another requirement called an initial condition. This has the effect of fixing the arbitrary constant in the general solution.  An initial value problem (IVP) consists of a differential equations together with a given initial value of the dependent variable. If we are using the IVP to model a physical situation, we want the solution to make sense. The mathematical issues that need to be addressed are    Existence : Does the solution exist?     Uniqueness : If a solution exists, is it unique?     Interval of existence : If a unique solution is found. For what values of the independent variable is the solution valid?      What can go wrong?    Existence Just as in the theory of algebraic equations, we are not guaranteed a solution to a given IVP. Sometimes it is clear the a solution cannot exist. For example. consider the IVP since substituting the initial condition into the right hand side of the equation implies is undefined   Uniqueness Sometimes there is more than one solution to a given IVP. Consider This has solutions of the form with arbitrary.   Interval of existence For some differential equations the interval of existence will depend on the initial conditions. The IVP The differential equation is undefined for , so depending on the position of the initial condition the possible intervals of existence are . A subtler problem occurs when the solution of the differential equation has a singularity. As an example the IVP has the solution since has vertical asymptotes at odd multiple of   "
+},
+{
+  "id": "sec-Existence-Uniqueness",
+  "level": "1",
+  "url": "sec-Existence-Uniqueness.html",
+  "type": "Section",
+  "number": "1.6",
+  "title": "An Existence and Uniqueness Theorem",
+  "body": " An Existence and Uniqueness Theorem    Given the initial value problem    If is continuous in the open rectangle then the IVP has a solution in an open interval about the initial point .    If in addition the partial derivative is also continuous the solution is unique.   Notes   The theorem is a local existence theorem. It only guarantees a solution in a neighborhood of the initial point. It doesn't give any information about the interval of existence.    The theorem gives sufficient conditions for an solution to exist. There can be solutions to an IVP even if the function isn't continuous. has a solution even though is not continuous at     The theorem is also true if there are more than one dependent variable and all the partial derivatives with respect to the dependent variables are continuous. For example, given the IVP then if and are continuous at then a solution exists. If the partial derivatives are also continuous then the solution is unique.        Solve the differential equation For the initial conditions   Firstly and are continuous everywhere so a unique solution exists for any initial condition.  Separating the variables and integrating  (a) (b) (c) The problem goes back to separating the variables. If , dividing by is not allowed. We know there is a unique solution from the theorem. Substituting into the differential equation shows that that is a solution. is an example of a singular or equilibrium solution    Consider IVPs associated with the differential equation Clearly if the solutions will not exist. For , is continuous and are singular solutions, so a solution will exist for . For the partial derivative is continuous, but is undefined at . So there is a possibility of non uniqueness at those values.  Separating the variables and integrating Incorporating the initial condition gives For this becomes But is also a solution so there are at least two solutions hence non uniqueness.  The situation is actually worse. There are an infinite number of solutions. If , is negative so there is a choice between the singular solution and the sinusoidal solution. If the only possibility is the singular solution. For the situation is reversed, for there is only the singular solution and for there is a choice. Some of the possible solutions for the initial condition are graphed below.  (for accessibility)     "
+},
+{
+  "id": "thm-",
+  "level": "2",
+  "url": "sec-Existence-Uniqueness.html#thm-",
+  "type": "Theorem",
+  "number": "1.6.1",
+  "title": "",
+  "body": "  Given the initial value problem    If is continuous in the open rectangle then the IVP has a solution in an open interval about the initial point .    If in addition the partial derivative is also continuous the solution is unique.   Notes   The theorem is a local existence theorem. It only guarantees a solution in a neighborhood of the initial point. It doesn't give any information about the interval of existence.    The theorem gives sufficient conditions for an solution to exist. There can be solutions to an IVP even if the function isn't continuous. has a solution even though is not continuous at     The theorem is also true if there are more than one dependent variable and all the partial derivatives with respect to the dependent variables are continuous. For example, given the IVP then if and are continuous at then a solution exists. If the partial derivatives are also continuous then the solution is unique.      "
+},
+{
+  "id": "sec-Existence-Uniqueness-3",
+  "level": "2",
+  "url": "sec-Existence-Uniqueness.html#sec-Existence-Uniqueness-3",
+  "type": "Example",
+  "number": "1.6.2",
+  "title": "",
+  "body": " Solve the differential equation For the initial conditions   Firstly and are continuous everywhere so a unique solution exists for any initial condition.  Separating the variables and integrating  (a) (b) (c) The problem goes back to separating the variables. If , dividing by is not allowed. We know there is a unique solution from the theorem. Substituting into the differential equation shows that that is a solution. is an example of a singular or equilibrium solution  "
+},
+{
+  "id": "sec-Existence-Uniqueness-4",
+  "level": "2",
+  "url": "sec-Existence-Uniqueness.html#sec-Existence-Uniqueness-4",
+  "type": "Example",
+  "number": "1.6.3",
+  "title": "",
+  "body": " Consider IVPs associated with the differential equation Clearly if the solutions will not exist. For , is continuous and are singular solutions, so a solution will exist for . For the partial derivative is continuous, but is undefined at . So there is a possibility of non uniqueness at those values.  Separating the variables and integrating Incorporating the initial condition gives For this becomes But is also a solution so there are at least two solutions hence non uniqueness.  The situation is actually worse. There are an infinite number of solutions. If , is negative so there is a choice between the singular solution and the sinusoidal solution. If the only possibility is the singular solution. For the situation is reversed, for there is only the singular solution and for there is a choice. Some of the possible solutions for the initial condition are graphed below.  (for accessibility)    "
+},
+{
+  "id": "sec-Simple-Harmonic-Motion",
+  "level": "1",
+  "url": "sec-Simple-Harmonic-Motion.html",
+  "type": "Section",
+  "number": "1.7",
+  "title": "Simple Harmonic Motion",
+  "body": " Simple Harmonic Motion  We consider a particle of mass m attached to a spring.   (for accessibility)   Initially displace it an amount and let go. The independent variable will be time and the dependent variable will be the displacement .The initial conditions are . The particle will oscillate about the equilibrium ( ) position. To get a differential equation for we will use Newton's 2nd law For a spring the force is given by Hooke's law The differential equation is Considering the behavior of the particle leads to guessing a solution of the form   (for accessibility)   Substituting into the equation gives To find we use the initial condition Since the equation is second order, to get a unique solution, two initial conditions are required. By guessing to use the cosine we have automatically satisfied . Notice if you choose this also satisfies the DE. So the general solution has the form with arbitrary constants to be determined by the initial conditions  Is this solution unique? Yes, because we can replace the second order equation by the two first order equations The functions are continuous and the partial derivatives are continuous also, so by the theorem the solution exists and is unique.  "
+},
+{
+  "id": "sec-Time-Only",
+  "level": "1",
+  "url": "sec-Time-Only.html",
   "type": "Section",
   "number": "2.1",
-  "title": "Properties of the Cross Product",
-  "body": "> Properties of the Cross Product  The cross product of two vectors in , is a vector with the properties     is orthogonal to both      is the area of the parallelogram with sides      form a right handed triad.       If is the angle between and then the second property implies    A diagram of a parallelogram with sides vectors {\\bf a} and {\\bf b}. also the included angle and the height   To find the direction of , use the right hand rule. Using your right hand in the position illustrated, your thumb gives the direction of the cross product.   A diagram of a right hand demonstrating the Right Hand Rule to get the direction of   One consequence of this is that the cross product is anti commutative.   Another consequence is that if and are parallel (or antiparallel) then   "
+  "title": "Time Only Differential Equations",
+  "body": " Time Only Differential Equations  The simplest type of differential equation is one where the derivative of the dependent variable depends only on the independent variable You have been solving these since your first calculus class. Using the fundamental theorem, the solution is These types of equations occur in physics, when the force is a function of time only. Newton's second law takes the form The velocity can be calculated by integration and the displacement can be obtained by another integration   A ball is thrown upwards at a speed . Neglecting air resistance, what is the maximum height the ball will reach? The displacement is (assuming that ) When the ball is at its maximum height the velocity is 0. The maximum height will be     "
 },
 {
-  "id": "my-great-book-4-3",
+  "id": "sec-Time-Only-2-6",
+  "level": "2",
+  "url": "sec-Time-Only.html#sec-Time-Only-2-6",
+  "type": "Example",
+  "number": "2.1.1",
+  "title": "",
+  "body": " A ball is thrown upwards at a speed . Neglecting air resistance, what is the maximum height the ball will reach? The displacement is (assuming that ) When the ball is at its maximum height the velocity is 0. The maximum height will be   "
+},
+{
+  "id": "sec-Separable",
   "level": "1",
-  "url": "my-great-book-4-3.html",
+  "url": "sec-Separable.html",
   "type": "Section",
   "number": "2.2",
-  "title": "Calculating the Cross Product",
-  "body": " Calculating the Cross Product  One way to calculate the components of is to use the cross products of the basis vectors    The usual method is to express it as a determinant   The coefficient of each vector is obtained by eliminating the column of the vector in the array, noting that the component is negative. The determinants are calculated by    Find given      Find the area of the triangle with vertices      "
+  "title": "Separable Equations",
+  "body": " Separable Equations  The next class of differential equations that can be readily solved are the separable ones. They have the form The dependent and independent variables can be separated and each side of the equation can be integrated which is an implicit solution of the differential equation.  There is also the possibility of equilibrium solutions. If is a constant solution of then a solution to the differential equation is    Find the general solution to the differential equation There are no problems with existence or uniqueness and there is an equilibrium solution . Separating the variables and integrating So the solution is     Solve the initial value problem There is an equilibrium solution, . This equation is separable  This gives Integrating Using the initial condition Since the initial condition is then . Combing the logs    "
 },
 {
-  "id": "my-great-book-4-3-9",
+  "id": "sec-Separable-4",
   "level": "2",
-  "url": "my-great-book-4-3.html#my-great-book-4-3-9",
+  "url": "sec-Separable.html#sec-Separable-4",
   "type": "Example",
   "number": "2.2.1",
   "title": "",
-  "body": " Find given    "
+  "body": " Find the general solution to the differential equation There are no problems with existence or uniqueness and there is an equilibrium solution . Separating the variables and integrating So the solution is   "
 },
 {
-  "id": "my-great-book-4-3-10",
+  "id": "sec-Separable-5",
   "level": "2",
-  "url": "my-great-book-4-3.html#my-great-book-4-3-10",
+  "url": "sec-Separable.html#sec-Separable-5",
   "type": "Example",
   "number": "2.2.2",
   "title": "",
-  "body": " Find the area of the triangle with vertices     "
+  "body": " Solve the initial value problem There is an equilibrium solution, . This equation is separable  This gives Integrating Using the initial condition Since the initial condition is then . Combing the logs   "
 },
 {
-  "id": "my-great-book-4-4",
+  "id": "sec-Population-Models",
   "level": "1",
-  "url": "my-great-book-4-4.html",
+  "url": "sec-Population-Models.html",
   "type": "Section",
   "number": "2.3",
-  "title": "The Scalar Triple Product",
-  "body": " The Scalar Triple Product   A diagram of a parallelepiped with edges vectors {\\bf a},{\\bf b},{\\bf c}. The triple product gives its volume   The signed volume of the parallelepiped with sides with three vectors is   The volume will be positive if it is a right handed triad, negative it it's left handed. The scalar triple product has the properties   If the three vectors lie in the same plane then   Another use of the triple product is to express a vector as a combination of three given vectors   Crossing the equation with followed by dotting it with gives   Similarly   In linear algebra this method is known as Cramers's rule  "
+  "title": "Population Models",
+  "body": " Population Models   Exponential Growth  The simplest population model states that the rate of growth of a population is proportional to the population. The associated differential equation is It is separable Using the initial condition gives . An the solution is It isn't a good for long term behavior as the population will become unbounded eventually   A bacterial colony is found to have 2000 individuals after 2 hours. After 5 hours the colony has grown to 54000 individuals  (a) What was the initial population?  (b) At what time will the colony contain a million individuals?   Dividing        The Logistic equation  A Belgian biologist called Verhulst proposed a modification of exponential growth where are given constants. The idea is that for small values of the population grows exponentially. As increases there is a resistance to growth modeled by the term. This is an attempt to take into account the struggle for resources as the population increases.  The equation is separable Using partial fractions gives Integrating gives The initial condition implies that Integrating leads to Solving for gives The constant is called the growth rate by analogy with the simple exponential growth. is called the carrying capacity since   Here are some solutions to    (for accessibility)     The Extinction-Explosion (Doomsday) Model  A slightly different model is given by the DE A similar analysis leads to the expression for as If then If then and the denominator becomes zero at a finite value of    Here are some solutions to    (for accessibility)    "
 },
 {
-  "id": "my-great-book-4-5",
+  "id": "subsec-Exponential-3",
+  "level": "2",
+  "url": "sec-Population-Models.html#subsec-Exponential-3",
+  "type": "Example",
+  "number": "2.3.1",
+  "title": "",
+  "body": " A bacterial colony is found to have 2000 individuals after 2 hours. After 5 hours the colony has grown to 54000 individuals  (a) What was the initial population?  (b) At what time will the colony contain a million individuals?   Dividing     "
+},
+{
+  "id": "sec-gravity-air-resistance",
   "level": "1",
-  "url": "my-great-book-4-5.html",
+  "url": "sec-gravity-air-resistance.html",
   "type": "Section",
   "number": "2.4",
-  "title": "Problems",
-  "body": " Problems   Given   (a) Show and are orthogonal.    (b) Find a unit vector orthogonal to both and .    (c) Given find if               Find the area of the parallelogram with sides           Find the volume of the parallelepiped with sides          Find the area of the triangle with vertices           Solve the equation   where           Find two unit vectors orthogonal to each other and also orthogonal to   Choose        Given (a) Show that the vectors lie in the same plane. (b) Find so that   (a) (b) Using the cross product    So      "
+  "title": "Motion under gravity with air resistance",
+  "body": " Motion under gravity with air resistance  If a particle of mass m is falling through a fluid, it experiences an upward resistive force exerted by the fluid in addition to the force of gravity. Let us assume that the force depends on the particle's velocity. Physical considerations would lead to the assumption the resistive force will increase as the speed increases. That implies Taking the velocity to be positive downward, Newton's second law gives This is a separable DE with solution Unless the form of the resistance is given this isn't very useful, but some qualitative conclusions can be drawn from the differential equation itself.  Suppose the initial velocity satisfies , then the DE implies and must increase but so will . This means the rate of change of , , decreases until . The velocity that satisfies is called the terminal velocity.  If on the other hand the initial velocity satisfies then the DE implies that and decreases to the terminal velocity   (for accessibility)     Maximum height with linear air resistance   The differential equation for a particle moving upward with linear air resistance is To simplify the algebra let kg, m\/s, m\/s , and , The DE becomes Separating the variables and integrating   The particle reaches maximum height when  The maximum height is given by integrating the velocity compared to the value for no air resistance    "
 },
 {
-  "id": "my-great-book-4-5-2",
+  "id": "sec-gravity-air-resistance-6",
   "level": "2",
-  "url": "my-great-book-4-5.html#my-great-book-4-5-2",
-  "type": "Checkpoint",
+  "url": "sec-gravity-air-resistance.html#sec-gravity-air-resistance-6",
+  "type": "Example",
   "number": "2.4.1",
   "title": "",
-  "body": " Given   (a) Show and are orthogonal.    (b) Find a unit vector orthogonal to both and .    (c) Given find if             "
+  "body": "  Maximum height with linear air resistance   The differential equation for a particle moving upward with linear air resistance is To simplify the algebra let kg, m\/s, m\/s , and , The DE becomes Separating the variables and integrating   The particle reaches maximum height when  The maximum height is given by integrating the velocity compared to the value for no air resistance   "
 },
 {
-  "id": "my-great-book-4-5-3",
-  "level": "2",
-  "url": "my-great-book-4-5.html#my-great-book-4-5-3",
-  "type": "Checkpoint",
-  "number": "2.4.2",
-  "title": "",
-  "body": " Find the area of the parallelogram with sides         "
-},
-{
-  "id": "my-great-book-4-5-4",
-  "level": "2",
-  "url": "my-great-book-4-5.html#my-great-book-4-5-4",
-  "type": "Checkpoint",
-  "number": "2.4.3",
-  "title": "",
-  "body": " Find the volume of the parallelepiped with sides        "
-},
-{
-  "id": "my-great-book-4-5-5",
-  "level": "2",
-  "url": "my-great-book-4-5.html#my-great-book-4-5-5",
-  "type": "Checkpoint",
-  "number": "2.4.4",
-  "title": "",
-  "body": " Find the area of the triangle with vertices         "
-},
-{
-  "id": "my-great-book-4-5-6",
-  "level": "2",
-  "url": "my-great-book-4-5.html#my-great-book-4-5-6",
-  "type": "Checkpoint",
-  "number": "2.4.5",
-  "title": "",
-  "body": " Solve the equation   where         "
-},
-{
-  "id": "my-great-book-4-5-7",
-  "level": "2",
-  "url": "my-great-book-4-5.html#my-great-book-4-5-7",
-  "type": "Checkpoint",
-  "number": "2.4.6",
-  "title": "",
-  "body": " Find two unit vectors orthogonal to each other and also orthogonal to   Choose      "
-},
-{
-  "id": "my-great-book-4-5-8",
-  "level": "2",
-  "url": "my-great-book-4-5.html#my-great-book-4-5-8",
-  "type": "Checkpoint",
-  "number": "2.4.7",
-  "title": "",
-  "body": " Given (a) Show that the vectors lie in the same plane. (b) Find so that   (a) (b) Using the cross product    So     "
-},
-{
-  "id": "my-great-book-5-2",
+  "id": "sec-Leaky-Vessels",
   "level": "1",
-  "url": "my-great-book-5-2.html",
+  "url": "sec-Leaky-Vessels.html",
+  "type": "Section",
+  "number": "2.5",
+  "title": "Leaky Vessels",
+  "body": " Leaky Vessels  Consider a cylindrical vessel with constant cross sectional area , partially filled with water, with a hole of area in its base. What we would like to do is calculate the height of water in the vessel as a function of time.   (for accessibility)   The velocity of the water leaving the vessel is given by Torricelli's Law The volume and the rate of change of volume will be given by On the other hand the amount of water leaving the vessel will be the area of the hole times the speed of the water. thus The equation is separable let then If then and the vessel is empty when .     The Clepsydra   In the ancient world they used water flowing from a vessel as a clock. In particular they wanted the height of the water to drop at a constant rate so the current height would give a measure of the time.  Suppose the vessel has a cross sectional area at a height then the volume of fluid with height will be given by Then using the chain rule Assuming the vessel is a solid of revolution, the cross sections will be circles.   (for accessibility)   If the equation of the curve is then What shape should the vessel be so that Using Torricelli's law again we have then or    "
+},
+{
+  "id": "sec-Leaky-Vessels-5",
+  "level": "2",
+  "url": "sec-Leaky-Vessels.html#sec-Leaky-Vessels-5",
+  "type": "Example",
+  "number": "2.5.1",
+  "title": "",
+  "body": "  The Clepsydra   In the ancient world they used water flowing from a vessel as a clock. In particular they wanted the height of the water to drop at a constant rate so the current height would give a measure of the time.  Suppose the vessel has a cross sectional area at a height then the volume of fluid with height will be given by Then using the chain rule Assuming the vessel is a solid of revolution, the cross sections will be circles.   (for accessibility)   If the equation of the curve is then What shape should the vessel be so that Using Torricelli's law again we have then or   "
+},
+{
+  "id": "sec-Integrating-Factor",
+  "level": "1",
+  "url": "sec-Integrating-Factor.html",
   "type": "Section",
   "number": "3.1",
-  "title": "Lines",
-  "body": " Lines  Let the two points be and with corresponding vectors and , then if is on the line through and then the vectors and are parallel.   Demonstrating a line through two points {\\bf a} and {\\bf b}  If Then the line can be also expressed in the symmetric form    Find the equation of the line through the points and The corresponding vectors are  Then the parametric equation for the line is and the symmetric form is    "
+  "title": "The Integrating Factor Method",
+  "body": " The Integrating Factor Method  The general form of a first order linear differential equation is If and are continuous functions, our theorem guarantees that a solution to the equation exits and it is unique since is continuous and is also continuous.  To solve Multiply the differential equation with a function , the integrating factor, with the property that Since all the terms are multiplied by , without loss of generality we can choose . Multiplying the equation by  Integrating and dividing by gives the solution    The differential equation has integrating factor and the solution is     Solve the differential equation The integrating factor is and the solution is Calculating the integral involves integration by parts, which is very common in the solution of first order linear differential equations.     Now do another integration by parts  Solving for gives   So the solution to the differential equation is    "
 },
 {
-  "id": "my-great-book-5-2-3",
+  "id": "sec-Integrating-Factor-4",
   "level": "2",
-  "url": "my-great-book-5-2.html#my-great-book-5-2-3",
+  "url": "sec-Integrating-Factor.html#sec-Integrating-Factor-4",
   "type": "Example",
   "number": "3.1.1",
   "title": "",
-  "body": " Find the equation of the line through the points and The corresponding vectors are  Then the parametric equation for the line is and the symmetric form is   "
+  "body": " The differential equation has integrating factor and the solution is   "
 },
 {
-  "id": "my-great-book-5-3",
+  "id": "sec-Integrating-Factor-5",
+  "level": "2",
+  "url": "sec-Integrating-Factor.html#sec-Integrating-Factor-5",
+  "type": "Example",
+  "number": "3.1.2",
+  "title": "",
+  "body": " Solve the differential equation The integrating factor is and the solution is Calculating the integral involves integration by parts, which is very common in the solution of first order linear differential equations.     Now do another integration by parts  Solving for gives   So the solution to the differential equation is   "
+},
+{
+  "id": "sec-Superposition",
   "level": "1",
-  "url": "my-great-book-5-3.html",
+  "url": "sec-Superposition.html",
   "type": "Section",
   "number": "3.2",
-  "title": "Intersection of two lines",
-  "body": " Intersection of two lines  In two lines will not intersect in general. If the lines are given as The two lines will intersect id there are values of so the     Find the intersection point of the two lines     So and the intersection point is    "
+  "title": "Superposition",
+  "body": " Superposition  The reason that the linear differential equations are expressed in the form above rather than as is that if we define the function by then this the defining property of a linear transformation.  Given a linear DE The associated homogeneous equation is If is any solution of the DE and is a solution to the associated homogeneous equation then so the solution to the original non homogeneous differential equation consists of two parts: a particular solution plus an arbitrary solution of the associated homogeneous equation. If an arbitrary solution to the homogeneous equation is added to any solution to the DE you get another solution to the DE. This property is called superposition. Superposition is a property of all linear equations.  The solution to a linear differential equation is where the arbitrary constant from the antiderivative is included. A solution to the homogeneous equation is . The function is the arbitrary solution to the homogeneous equation.  In the first example in the previous section. The solution to was found to be   "
 },
 {
-  "id": "my-great-book-5-3-3",
-  "level": "2",
-  "url": "my-great-book-5-3.html#my-great-book-5-3-3",
-  "type": "Example",
-  "number": "3.2.1",
-  "title": "",
-  "body": " Find the intersection point of the two lines     So and the intersection point is   "
-},
-{
-  "id": "my-great-book-5-4",
+  "id": "sec-Electrical-Circuits",
   "level": "1",
-  "url": "my-great-book-5-4.html",
+  "url": "sec-Electrical-Circuits.html",
   "type": "Section",
   "number": "3.3",
-  "title": "Distance between two lines",
-  "body": " Distance between two lines    A diagram showing the distance between two lines as the projection of a vector between the the lines orthogonal to the plane formed by the two directions  If the lines are given as The distance will be the scalar projection of the vector between a point on each of the lines, perpendicular to both lines   Let the lines be     "
+  "title": "Electrical Circuits",
+  "body": " Electrical Circuits  Electrical circuits are a fertile area for linear differential equations. For example consider the circuit   (for accessibility)   \\begin{center} The voltages across the resistor and inductor are given in terms of the current  Kirchhoff’s law is that the voltages around the circuit add to zero which leads to the first order DE This is a linear equation with integrating factor So the current is    If a constant and then using the initial condition gives and the solution is The current starts from 0 and asymptotes to the steady state value    (for accessibility)     If and . The solution is Using the integral from the second example in the first section gives the general solution Using the initial condition gives the solution   An example plot of the solution is   (for accessibility)   Electrical engineers call the homogeneous solution the transient response since it tends to zero as . The remainder of the solution (the particular integral) is called the steady state response.   "
 },
 {
-  "id": "my-great-book-5-4-3",
+  "id": "sec-Electrical-Circuits-5",
   "level": "2",
-  "url": "my-great-book-5-4.html#my-great-book-5-4-3",
+  "url": "sec-Electrical-Circuits.html#sec-Electrical-Circuits-5",
   "type": "Example",
   "number": "3.3.1",
   "title": "",
-  "body": "Let the lines be    "
+  "body": " If a constant and then using the initial condition gives and the solution is The current starts from 0 and asymptotes to the steady state value    (for accessibility)   "
 },
 {
-  "id": "my-great-book-5-5",
-  "level": "1",
-  "url": "my-great-book-5-5.html",
-  "type": "Section",
-  "number": "3.4",
-  "title": "Distance from a point to a line",
-  "body": " Distance from a point to a line    Showing how to calculate the distance from a point to a line by find the area of a parallelogram formed by a vector from the point to a point on the line and the line's direction  If the equation of the line is then the area of the parallelogram is    Find the distance from the point to the line through the points and .      "
-},
-{
-  "id": "my-great-book-5-5-3",
+  "id": "sec-Electrical-Circuits-6",
   "level": "2",
-  "url": "my-great-book-5-5.html#my-great-book-5-5-3",
+  "url": "sec-Electrical-Circuits.html#sec-Electrical-Circuits-6",
   "type": "Example",
-  "number": "3.4.1",
+  "number": "3.3.2",
   "title": "",
-  "body": " Find the distance from the point to the line through the points and .     "
-},
-{
-  "id": "sec-Planes",
-  "level": "1",
-  "url": "sec-Planes.html",
-  "type": "Section",
-  "number": "3.5",
-  "title": "Planes",
-  "body": " Planes    A plane with points with three position vectors, {\\bf a},{\\bf b},{\\bf c} showing the vectors {\\bf b}-{\\bf a},{\\bf c}-{\\bf a} in the plane and the normal  If are three points on a plane and is any other point on the plane then the three vectors lie in the plane then where the normal to the plane is If then the equation of the plane is    Find the equation of the plane containing the points .  The equation of the plane is   "
-},
-{
-  "id": "sec-Planes-3",
-  "level": "2",
-  "url": "sec-Planes.html#sec-Planes-3",
-  "type": "Example",
-  "number": "3.5.1",
-  "title": "",
-  "body": " Find the equation of the plane containing the points .  The equation of the plane is  "
-},
-{
-  "id": "my-great-book-5-7",
-  "level": "1",
-  "url": "my-great-book-5-7.html",
-  "type": "Section",
-  "number": "3.6",
-  "title": "Distance from a point to a plane",
-  "body": " Distance from a point to a plane  The distance will the scalar projection of a vector from the plane to the point in the direction of the normal.  Diagram displaying the parallel projection of the vector from a point in the plane to the point onto the normal for the plane      Find the distance from the point to the plane     "
-},
-{
-  "id": "my-great-book-5-7-3",
-  "level": "2",
-  "url": "my-great-book-5-7.html#my-great-book-5-7-3",
-  "type": "Example",
-  "number": "3.6.1",
-  "title": "",
-  "body": " Find the distance from the point to the plane    "
-},
-{
-  "id": "my-great-book-5-8",
-  "level": "1",
-  "url": "my-great-book-5-8.html",
-  "type": "Section",
-  "number": "3.7",
-  "title": "Intersection of two Planes",
-  "body": " Intersection of two Planes  The intersection line lies in both planes so will be orthogonal to both normals. The direction of the line will be . We just need then to find a point that lies on both planes.  Depicting the line of intersection of two plane together with the plane normals and the direction vector for the line     Find the line of intersection of the planes and  Now put in the plane equations So the equation of the line is    "
-},
-{
-  "id": "my-great-book-5-8-3",
-  "level": "2",
-  "url": "my-great-book-5-8.html#my-great-book-5-8-3",
-  "type": "Example",
-  "number": "3.7.1",
-  "title": "",
-  "body": " Find the line of intersection of the planes and  Now put in the plane equations So the equation of the line is   "
-},
-{
-  "id": "my-great-book-5-9",
-  "level": "1",
-  "url": "my-great-book-5-9.html",
-  "type": "Section",
-  "number": "3.8",
-  "title": "Problems",
-  "body": " Problems   Find the point on the line closest to the origin    The point will correspond to the projection of orthogonal to the direction .      (a) Find the equation of the plane containing the point and the line . (b) Find the distance from the point to the plane    (a) Two vectors that lie in the plane are and . A normal to the plane is The equation of the plane is (b) The distance will be     Find the components of the vector parallel and perpendicular to the plane .    A normal vector is then      Show that the points are coplanar    They will be coplanar if      Calculate the distance between the line through the points and and the line through the points and     The equations of the two lines are       (a) Find the equation of the line of intersection of the planes   (b) Find the point of intersection of the line from part (a) and the plane     (a) The direction of the line will be perpendicular to both the plane normals To determine the intersection point of the line with the plane set  So the equation of the line is (b) Substituting the equation of the line into the equation of the plane So the intersection point is    "
-},
-{
-  "id": "my-great-book-5-9-2",
-  "level": "2",
-  "url": "my-great-book-5-9.html#my-great-book-5-9-2",
-  "type": "Checkpoint",
-  "number": "3.8.1",
-  "title": "",
-  "body": " Find the point on the line closest to the origin  "
-},
-{
-  "id": "my-great-book-5-9-4",
-  "level": "2",
-  "url": "my-great-book-5-9.html#my-great-book-5-9-4",
-  "type": "Checkpoint",
-  "number": "3.8.2",
-  "title": "",
-  "body": " (a) Find the equation of the plane containing the point and the line . (b) Find the distance from the point to the plane  "
-},
-{
-  "id": "my-great-book-5-9-6",
-  "level": "2",
-  "url": "my-great-book-5-9.html#my-great-book-5-9-6",
-  "type": "Checkpoint",
-  "number": "3.8.3",
-  "title": "",
-  "body": " Find the components of the vector parallel and perpendicular to the plane .  "
-},
-{
-  "id": "my-great-book-5-9-8",
-  "level": "2",
-  "url": "my-great-book-5-9.html#my-great-book-5-9-8",
-  "type": "Checkpoint",
-  "number": "3.8.4",
-  "title": "",
-  "body": " Show that the points are coplanar  "
-},
-{
-  "id": "my-great-book-5-9-10",
-  "level": "2",
-  "url": "my-great-book-5-9.html#my-great-book-5-9-10",
-  "type": "Checkpoint",
-  "number": "3.8.5",
-  "title": "",
-  "body": " Calculate the distance between the line through the points and and the line through the points and   "
-},
-{
-  "id": "my-great-book-5-9-12",
-  "level": "2",
-  "url": "my-great-book-5-9.html#my-great-book-5-9-12",
-  "type": "Checkpoint",
-  "number": "3.8.6",
-  "title": "",
-  "body": " (a) Find the equation of the line of intersection of the planes   (b) Find the point of intersection of the line from part (a) and the plane   "
-},
-{
-  "id": "sec-Traces",
-  "level": "1",
-  "url": "sec-Traces.html",
-  "type": "Section",
-  "number": "4.1",
-  "title": "Traces",
-  "body": " Traces  One method of visualizing surfaces in three dimensions is to examine the curves of interesection of the surface with planes parallel to the coordinate planes, known as traces   Consider the surface . Some of the traces are    The traces for . They are downward opening parabolas    The traces for . They are upward opening parabolas    The traces for . They are hyperbolas    Here is a graph of the surface with the traces superimposed  The graph of with traces drawn on the graph     "
-},
-{
-  "id": "sec-Traces-3",
-  "level": "2",
-  "url": "sec-Traces.html#sec-Traces-3",
-  "type": "Example",
-  "number": "4.1.1",
-  "title": "",
-  "body": " Consider the surface . Some of the traces are    The traces for . They are downward opening parabolas    The traces for . They are upward opening parabolas    The traces for . They are hyperbolas    Here is a graph of the surface with the traces superimposed  The graph of with traces drawn on the graph    "
-},
-{
-  "id": "my-great-book-6-3",
-  "level": "1",
-  "url": "my-great-book-6-3.html",
-  "type": "Section",
-  "number": "4.2",
-  "title": "Conic Sections",
-  "body": " Conic Sections  Conic sections are plane curves given by equations that are quadratic in and . Translations anr rotations will reduce them to the standard forms.   A circle centered at the origin with radius    An ellipse centered at the origin with semimajor axis and semiminor axis      A parabola with equation    A hrperbola with equation with asymptotes   They are known as conic sections as they occur as the curves of intersection of a plane with a double cone   A circle formed by the intersection of a horizontal plane with a double cone    An ellipse formed by the intersection of a non horizontal plane with one of the cones      A parabola form by intersecting one of the cones with a plane parallel to its side    A hyperbola formed by a plane intersecting both cones     "
-},
-{
-  "id": "my-great-book-6-4",
-  "level": "1",
-  "url": "my-great-book-6-4.html",
-  "type": "Section",
-  "number": "4.3",
-  "title": "Cylinders",
-  "body": " Cylinders  Cylinders are surfaces that have a constant cross section. The most common type has one of the variables missing.   This is a graph of   The graph of illustrating that the crossections at constant values of are similar parabolas  The cross sections at constant values of are similar parabolas   Other expressions give rise to cylinders. Functions of the form constant also give rise to cylinders.   This is a graph of .  The graph of with constant elliptic cross sections  The intersection of the graph with planes perpendicular to the line give rise to constant ellipses   "
-},
-{
-  "id": "my-great-book-6-4-3",
-  "level": "2",
-  "url": "my-great-book-6-4.html#my-great-book-6-4-3",
-  "type": "Example",
-  "number": "4.3.1",
-  "title": "",
-  "body": " This is a graph of   The graph of illustrating that the crossections at constant values of are similar parabolas  The cross sections at constant values of are similar parabolas  "
-},
-{
-  "id": "my-great-book-6-4-5",
-  "level": "2",
-  "url": "my-great-book-6-4.html#my-great-book-6-4-5",
-  "type": "Example",
-  "number": "4.3.2",
-  "title": "",
-  "body": " This is a graph of .  The graph of with constant elliptic cross sections  The intersection of the graph with planes perpendicular to the line give rise to constant ellipses  "
-},
-{
-  "id": "sec-Quadrics",
-  "level": "1",
-  "url": "sec-Quadrics.html",
-  "type": "Section",
-  "number": "4.4",
-  "title": "Quadrics",
-  "body": " Quadrics  Quadric surfaces have equations that are quadratic in . The basic types have the forms The third possibility of having only one of the variables quadratic gives rise to parabolic cylinders. Traces of the surfaces will be conic sections   Ellipsoids  Ellipsoids have equations of the form The traces are ellipses   An ellipsoid centered at the origin    An ellipsoid centered at the origin      Hyperboloids of one sheet  These have equations of the form The horizontal traces are ellipses with radii increasing as you move away from the plane. The vertical traces are hyperbolas.   A hyperboloid of one sheet    A hyperboloid of one sheet      Hyperboloids of two sheets  These have equations of the form The horizontal traces are ellipses with radii increasing as you move away from the plane. There are no taces until . The vertical traces are hyperbolas.  A hyperboloid of two sheets      Paraboloids  Paraboloids have equations of the form The horizontal traces are ellipses with radii increasing as you move away from the plane with  The vertical traces are parabolas   A paraboloid with axis the axis    A paraboloid with axis the axis      Hyperbolic paraboloids  Their equations have the form The vertical traces are parabolas The horizontal traces are hyperbolas   (Graph of a hyberbolic paraboloid, shaped like a saddle or a Pringles chip    (Graph of a hyberbolic paraboloid, shaped like a saddle or a Plingles chip     "
-},
-{
-  "id": "my-great-book-7-2",
-  "level": "1",
-  "url": "my-great-book-7-2.html",
-  "type": "Section",
-  "number": "5.1",
-  "title": "Parametric equations",
-  "body": " Parametric equations  Curves in the plane can be specified in three different ways Parametric equations are the most useful way to describe a curve. The graph can be parametrized trivially as Implicit descriptions of curves don't always represent functions. As an example the circle isn't the graph of a function (it is the graph of two functions ). However the circle can be descibed parametrically by a vector function One feature that parametric curves have that graphs generally don't have is an orientation. As the parameter increases, the point moves along the curve.   Consider the parametric curve The cartesian equation for the curve is Since and is increasing on the interval , the parametric curve is the positive half of the hyperbola with the orientation shown below.  A graph of the parametric curve as half of a hyperbola with an upward orientation     Polar curves can also be expressed in parametric form. The curve can be represented parametrically with as the parameter   The first two representations for curves don't generalize to . Graphs of functions, and equations of the form are surfaces not curves. Parametric equations still represent curves. A paramerized curve in is given by   A parametrization that will be useful later in the course is the line segment from a point with position vector to a point with position vector is paranetrized as    A helix has a parametrization The curve moves along the cylinder counterclockwise while moving in the positive direction   A helix with the curve moving upwards and also moving counterclockwise along the cylinder when viewed from above    "
-},
-{
-  "id": "my-great-book-7-2-3",
-  "level": "2",
-  "url": "my-great-book-7-2.html#my-great-book-7-2-3",
-  "type": "Example",
-  "number": "5.1.1",
-  "title": "",
-  "body": " Consider the parametric curve The cartesian equation for the curve is Since and is increasing on the interval , the parametric curve is the positive half of the hyperbola with the orientation shown below.  A graph of the parametric curve as half of a hyperbola with an upward orientation    "
-},
-{
-  "id": "my-great-book-7-2-7",
-  "level": "2",
-  "url": "my-great-book-7-2.html#my-great-book-7-2-7",
-  "type": "Example",
-  "number": "5.1.2",
-  "title": "",
-  "body": " A helix has a parametrization The curve moves along the cylinder counterclockwise while moving in the positive direction   A helix with the curve moving upwards and also moving counterclockwise along the cylinder when viewed from above   "
-},
-{
-  "id": "sec-Tangents",
-  "level": "1",
-  "url": "sec-Tangents.html",
-  "type": "Section",
-  "number": "5.2",
-  "title": "Tangents",
-  "body": " Tangents  To find a vector tangent to a given curve, we will proceed analogously to single variable calculus. To find the tangent at a point, choose a nearby poit and calculate the vector joining them. As the neaby point moves closer to the given point the vector joining them becomes closer to pointing in the tangent direction.   Two points on a parametrized curve and the vector joinig them       Find the equation of the tangent line to the curve at the point   The point corresponds to . So the equation of the tangent line will be  and the equation of the tangent line is    "
-},
-{
-  "id": "sec-Tangents-5",
-  "level": "2",
-  "url": "sec-Tangents.html#sec-Tangents-5",
-  "type": "Example",
-  "number": "5.2.1",
-  "title": "",
-  "body": " Find the equation of the tangent line to the curve at the point   The point corresponds to . So the equation of the tangent line will be  and the equation of the tangent line is   "
-},
-{
-  "id": "my-great-book-7-4",
-  "level": "1",
-  "url": "my-great-book-7-4.html",
-  "type": "Section",
-  "number": "5.3",
-  "title": "Arc Length",
-  "body": " Arc Length  To calculate the length of a parametrized curve Partition the interval into subintervals . The length of the curve can be approximated by summing the lengths of the vectors  Letting  Taking the limits , the arc length becomes an integral    Find the length of the curve       "
-},
-{
-  "id": "my-great-book-7-4-3",
-  "level": "2",
-  "url": "my-great-book-7-4.html#my-great-book-7-4-3",
-  "type": "Example",
-  "number": "5.3.1",
-  "title": "",
-  "body": " Find the length of the curve      "
-},
-{
-  "id": "sec-Curvature",
-  "level": "1",
-  "url": "sec-Curvature.html",
-  "type": "Section",
-  "number": "5.4",
-  "title": "Curvature",
-  "body": " Curvature  Given a curve in  The angle the curve makes with the positive direction, is given by The curvature is defined to be the rate of change of with respect to the arc length.   A 2d curve with a tangent line and the angle the tangent line makes with the positive axis    A 2d curve with a tangent line and the angle the tangent line makes with the positive axis   If the curve is given as , the curvature has the simpler form    Find the curvature of the cycloid     In , a curve's direction will be given by the unit tangent vector Since is a unit vector the only way it can vary is by changing direction. So the the derivative of is orthogonal to . Define the curvature vector to be the derivative of with respect to arc length.  is called the unit normal vector and is the curvature. Curves are usually not parametrized by arc length. The curvature and and unit normal can be calculated using the chain rule.    Find the unit tangent, unit normal, and curvature of the curve         Find the unit tangent, unit normal and curvature of the curve         "
-},
-{
-  "id": "sec-Curvature-3",
-  "level": "2",
-  "url": "sec-Curvature.html#sec-Curvature-3",
-  "type": "Example",
-  "number": "5.4.1",
-  "title": "",
-  "body": " Find the curvature of the cycloid    "
-},
-{
-  "id": "sec-Curvature-5",
-  "level": "2",
-  "url": "sec-Curvature.html#sec-Curvature-5",
-  "type": "Example",
-  "number": "5.4.2",
-  "title": "",
-  "body": " Find the unit tangent, unit normal, and curvature of the curve       "
-},
-{
-  "id": "sec-Curvature-6",
-  "level": "2",
-  "url": "sec-Curvature.html#sec-Curvature-6",
-  "type": "Example",
-  "number": "5.4.3",
-  "title": "",
-  "body": " Find the unit tangent, unit normal and curvature of the curve        "
-},
-{
-  "id": "my-great-book-7-6",
-  "level": "1",
-  "url": "my-great-book-7-6.html",
-  "type": "Section",
-  "number": "5.5",
-  "title": "More Curvature",
-  "body": " More Curvature  The plane containing and is called the osculating plane. The normal to this plane is called the binormal. The circle tangent at the point is called the osculating circle. It has a radius of .  A curve with the unit tangent and unit normal displayed together with the osculating circle and its radius    As evidenced by the second example in the previous section, the straightforward way to find the curvature and normal can involve some complicated differentiation. There is an indirect way to do the calculations which is often more efficient.  So and can be calculated as    Find the unit tangent, unit normal, binormal and curvature of the curve           Find the unit tangent, unit normal, binormal and curvature of the curve         "
-},
-{
-  "id": "my-great-book-7-6-4",
-  "level": "2",
-  "url": "my-great-book-7-6.html#my-great-book-7-6-4",
-  "type": "Example",
-  "number": "5.5.1",
-  "title": "",
-  "body": " Find the unit tangent, unit normal, binormal and curvature of the curve         "
-},
-{
-  "id": "my-great-book-7-6-5",
-  "level": "2",
-  "url": "my-great-book-7-6.html#my-great-book-7-6-5",
-  "type": "Example",
-  "number": "5.5.2",
-  "title": "",
-  "body": " Find the unit tangent, unit normal, binormal and curvature of the curve        "
-},
-{
-  "id": "my-great-book-7-7",
-  "level": "1",
-  "url": "my-great-book-7-7.html",
-  "type": "Section",
-  "number": "5.6",
-  "title": "Problems",
-  "body": " Problems   (a) Find the length of the curve (b) Find the equation of the tangent line to the curve at the point     (a)  (b) The point corresponds to so the tangent line will be     Find the unit tangent, unit normal, binormal, and curvature for the curve               Find the unit tangent, unit normal, binormal, and curvature of the curve           (a) Show that the curve lies in a plane  (b) Find the equation of the plane    (a)   The binormal is constant so the osculating plane is also  (b) So the equation of the plane is     Parametrize the curve of intersection of the two surfaces     The cylinder equation can be rewritten as which can be parametrized as Substituting into the equation for the paraboloid The curve can be parametrized as     Find the unit tangent, unit norma, binormal, and curvature of the curve          "
-},
-{
-  "id": "my-great-book-7-7-2",
-  "level": "2",
-  "url": "my-great-book-7-7.html#my-great-book-7-7-2",
-  "type": "Checkpoint",
-  "number": "5.6.1",
-  "title": "",
-  "body": " (a) Find the length of the curve (b) Find the equation of the tangent line to the curve at the point   "
-},
-{
-  "id": "my-great-book-7-7-4",
-  "level": "2",
-  "url": "my-great-book-7-7.html#my-great-book-7-7-4",
-  "type": "Checkpoint",
-  "number": "5.6.2",
-  "title": "",
-  "body": " Find the unit tangent, unit normal, binormal, and curvature for the curve   "
-},
-{
-  "id": "my-great-book-7-7-6",
-  "level": "2",
-  "url": "my-great-book-7-7.html#my-great-book-7-7-6",
-  "type": "Checkpoint",
-  "number": "5.6.3",
-  "title": "",
-  "body": " Find the unit tangent, unit normal, binormal, and curvature of the curve   "
-},
-{
-  "id": "my-great-book-7-7-8",
-  "level": "2",
-  "url": "my-great-book-7-7.html#my-great-book-7-7-8",
-  "type": "Checkpoint",
-  "number": "5.6.4",
-  "title": "",
-  "body": " (a) Show that the curve lies in a plane  (b) Find the equation of the plane  "
-},
-{
-  "id": "my-great-book-7-7-10",
-  "level": "2",
-  "url": "my-great-book-7-7.html#my-great-book-7-7-10",
-  "type": "Checkpoint",
-  "number": "5.6.5",
-  "title": "",
-  "body": " Parametrize the curve of intersection of the two surfaces   "
-},
-{
-  "id": "my-great-book-7-7-12",
-  "level": "2",
-  "url": "my-great-book-7-7.html#my-great-book-7-7-12",
-  "type": "Checkpoint",
-  "number": "5.6.6",
-  "title": "",
-  "body": " Find the unit tangent, unit norma, binormal, and curvature of the curve   "
-},
-{
-  "id": "sec-Limits",
-  "level": "1",
-  "url": "sec-Limits.html",
-  "type": "Section",
-  "number": "6.1",
-  "title": "Limits",
-  "body": " Limits  The definition of a limit in is analogous to the definition in single variable calculus. In the definition replace the open interval by the open disk   Formally a function has a limit , if given an there exists a so that This is a stricter condition than in single variable calculus as the limit must have the same value for any path approaching   Some limits follow from the definition   Find Let then the limit becomes    Another technique is to use the squeeze theorem   Find Note that Then    Polar coordinates are useful for some limits   Find Letting , the limit becomes    To demonstrate that a function doesn't have a limit it is enough to exhibit two paths whose limits give different values   Find Consider the two paths illustrated below  The diagram show two paths from to the origin. first sends to zero then to zero. sends followed by  For  For  These values dont agree so the function doesn't have a limit as    Another technique is to consider a family of paths and show that the limits differ   Find Consider the path approaching along the line   A diagram showing the path followed by  The limit becomes which depends on the slope so the function doesn't have a limit   Sometimes other paths will show that the limit doesn't exist   Find Consider the limit approaching along the family of parabolas   A diagram showing the path followed by   It depends on so the function doesn't have a limit   "
-},
-{
-  "id": "sec-Limits-5",
-  "level": "2",
-  "url": "sec-Limits.html#sec-Limits-5",
-  "type": "Example",
-  "number": "6.1.1",
-  "title": "",
-  "body": " Find Let then the limit becomes   "
-},
-{
-  "id": "sec-Limits-7",
-  "level": "2",
-  "url": "sec-Limits.html#sec-Limits-7",
-  "type": "Example",
-  "number": "6.1.2",
-  "title": "",
-  "body": " Find Note that Then   "
-},
-{
-  "id": "sec-Limits-9",
-  "level": "2",
-  "url": "sec-Limits.html#sec-Limits-9",
-  "type": "Example",
-  "number": "6.1.3",
-  "title": "",
-  "body": " Find Letting , the limit becomes   "
-},
-{
-  "id": "sec-Limits-11",
-  "level": "2",
-  "url": "sec-Limits.html#sec-Limits-11",
-  "type": "Example",
-  "number": "6.1.4",
-  "title": "",
-  "body": " Find Consider the two paths illustrated below  The diagram show two paths from to the origin. first sends to zero then to zero. sends followed by  For  For  These values dont agree so the function doesn't have a limit as   "
-},
-{
-  "id": "sec-Limits-13",
-  "level": "2",
-  "url": "sec-Limits.html#sec-Limits-13",
-  "type": "Example",
-  "number": "6.1.5",
-  "title": "",
-  "body": " Find Consider the path approaching along the line   A diagram showing the path followed by  The limit becomes which depends on the slope so the function doesn't have a limit  "
-},
-{
-  "id": "sec-Limits-15",
-  "level": "2",
-  "url": "sec-Limits.html#sec-Limits-15",
-  "type": "Example",
-  "number": "6.1.6",
-  "title": "",
-  "body": " Find Consider the limit approaching along the family of parabolas   A diagram showing the path followed by   It depends on so the function doesn't have a limit  "
-},
-{
-  "id": "my-great-book-8-3",
-  "level": "1",
-  "url": "my-great-book-8-3.html",
-  "type": "Section",
-  "number": "6.2",
-  "title": "Properties of Limits",
-  "body": " Properties of Limits  Limits combine the same way that one dimensional limits do. I then    Continuity  The definition of continuity is similar to the single variable case. A function is continuous at if If and are continuous at and then so are . Also is continuous if   If is a continuous function of one variable and then    Find The limit is     "
-},
-{
-  "id": "subsec-Continuity-4",
-  "level": "2",
-  "url": "my-great-book-8-3.html#subsec-Continuity-4",
-  "type": "Example",
-  "number": "6.2.1",
-  "title": "",
-  "body": " Find The limit is   "
-},
-{
-  "id": "sec-Problems",
-  "level": "1",
-  "url": "sec-Problems.html",
-  "type": "Section",
-  "number": "6.3",
-  "title": "Problems",
-  "body": " Problems   Find     The limit is     Find     Along the line the denominatore is zero and the function is undefined. Since passes through the origin the limit doesn't exist    Find     Switching to polars the limit becomes     Find     The limit becomes     Find     Taking the limit followed by  Taking the limit followed by  So the limit doesn't exist.    Find     Using the squeeze theorem    "
-},
-{
-  "id": "sec-Problems-2",
-  "level": "2",
-  "url": "sec-Problems.html#sec-Problems-2",
-  "type": "Checkpoint",
-  "number": "6.3.1",
-  "title": "",
-  "body": " Find   "
-},
-{
-  "id": "sec-Problems-4",
-  "level": "2",
-  "url": "sec-Problems.html#sec-Problems-4",
-  "type": "Checkpoint",
-  "number": "6.3.2",
-  "title": "",
-  "body": " Find   "
-},
-{
-  "id": "sec-Problems-6",
-  "level": "2",
-  "url": "sec-Problems.html#sec-Problems-6",
-  "type": "Checkpoint",
-  "number": "6.3.3",
-  "title": "",
-  "body": " Find   "
-},
-{
-  "id": "sec-Problems-8",
-  "level": "2",
-  "url": "sec-Problems.html#sec-Problems-8",
-  "type": "Checkpoint",
-  "number": "6.3.4",
-  "title": "",
-  "body": " Find   "
-},
-{
-  "id": "sec-Problems-10",
-  "level": "2",
-  "url": "sec-Problems.html#sec-Problems-10",
-  "type": "Checkpoint",
-  "number": "6.3.5",
-  "title": "",
-  "body": " Find   "
-},
-{
-  "id": "sec-Problems-12",
-  "level": "2",
-  "url": "sec-Problems.html#sec-Problems-12",
-  "type": "Checkpoint",
-  "number": "6.3.6",
-  "title": "",
-  "body": " Find   "
-},
-{
-  "id": "my-great-book-9-2",
-  "level": "1",
-  "url": "my-great-book-9-2.html",
-  "type": "Section",
-  "number": "7.1",
-  "title": "Definition of Partial Derivatives",
-  "body": " Definition of Partial Derivatives  The partial derivative of with respect to is Similarly the partial erive with respect to is Calculating partial derivatives is an exercise in single variable calculus. The partial derivative with respect to a variable is the usual derivative while treating all the other variables as constant.   Find the partial derivatives of     "
-},
-{
-  "id": "my-great-book-9-2-3",
-  "level": "2",
-  "url": "my-great-book-9-2.html#my-great-book-9-2-3",
-  "type": "Example",
-  "number": "7.1.1",
-  "title": "",
-  "body": " Find the partial derivatives of    "
-},
-{
-  "id": "my-great-book-9-3",
-  "level": "1",
-  "url": "my-great-book-9-3.html",
-  "type": "Section",
-  "number": "7.2",
-  "title": "Implicit Differentiation",
-  "body": " Implicit Differentiation  One type of problem in single variable calculus is to find the derivative of with respect to when the relation is given in implicit form Doing the calculation every time you took the the derivative of a function of you multiplied it by because of the chain rule. In terms of partial derivatives    Find the equation of the tangent line to the curve at the point   So and the equation of the tangent line is    "
-},
-{
-  "id": "my-great-book-9-3-3",
-  "level": "2",
-  "url": "my-great-book-9-3.html#my-great-book-9-3-3",
-  "type": "Example",
-  "number": "7.2.1",
-  "title": "",
-  "body": " Find the equation of the tangent line to the curve at the point   So and the equation of the tangent line is   "
-},
-{
-  "id": "my-great-book-9-4",
-  "level": "1",
-  "url": "my-great-book-9-4.html",
-  "type": "Section",
-  "number": "7.3",
-  "title": "Higher order Derivatives",
-  "body": " Higher order Derivatives  Just as in single variable calculus we can continue to differentiate functions. A given function has four second derivatives    (Clairault) If and are continuous in a neighborhood of a point then     Consider       "
-},
-{
-  "id": "thm-Clairault",
-  "level": "2",
-  "url": "my-great-book-9-4.html#thm-Clairault",
-  "type": "Theorem",
-  "number": "7.3.1",
-  "title": "",
-  "body": "  (Clairault) If and are continuous in a neighborhood of a point then     Consider     "
-},
-{
-  "id": "my-great-book-9-5",
-  "level": "1",
-  "url": "my-great-book-9-5.html",
-  "type": "Section",
-  "number": "7.4",
-  "title": "Rate of change of a function in a general direction",
-  "body": " Rate of change of a function in a general direction  The partial derivatives give the rate of change along the coordinate axes. What about in a general direction? If the direction makes an angle with the positive axis then the vector in that direction will be of the form The change in the function will be So the rate of change will be    Find the rate of change of the function at the point in the direction making an angle of with the positive axis.     "
-},
-{
-  "id": "my-great-book-9-5-3",
-  "level": "2",
-  "url": "my-great-book-9-5.html#my-great-book-9-5-3",
-  "type": "Example",
-  "number": "7.4.1",
-  "title": "",
-  "body": " Find the rate of change of the function at the point in the direction making an angle of with the positive axis.    "
-},
-{
-  "id": "my-great-book-9-6",
-  "level": "1",
-  "url": "my-great-book-9-6.html",
-  "type": "Section",
-  "number": "7.5",
-  "title": "Problems",
-  "body": " Problems   Find the first order partial derivatives of the following functions          Find the equation of the tangent line to the curve at the point       So and the equation of the tangent line is     Find the rate of change of the function at the point  in the direction making an angle of with the positive axis      So     Find the curvature of a curve given implicitly as     Recalling the curvature formula from the previous chapter Now differentiating the equation of the curve implicitly Differentiating again     "
-},
-{
-  "id": "my-great-book-9-6-2",
-  "level": "2",
-  "url": "my-great-book-9-6.html#my-great-book-9-6-2",
-  "type": "Checkpoint",
-  "number": "7.5.1",
-  "title": "",
-  "body": " Find the first order partial derivatives of the following functions   "
-},
-{
-  "id": "my-great-book-9-6-4",
-  "level": "2",
-  "url": "my-great-book-9-6.html#my-great-book-9-6-4",
-  "type": "Checkpoint",
-  "number": "7.5.2",
-  "title": "",
-  "body": " Find the equation of the tangent line to the curve at the point   "
-},
-{
-  "id": "my-great-book-9-6-6",
-  "level": "2",
-  "url": "my-great-book-9-6.html#my-great-book-9-6-6",
-  "type": "Checkpoint",
-  "number": "7.5.3",
-  "title": "",
-  "body": " Find the rate of change of the function at the point  in the direction making an angle of with the positive axis  "
-},
-{
-  "id": "my-great-book-9-6-8",
-  "level": "2",
-  "url": "my-great-book-9-6.html#my-great-book-9-6-8",
-  "type": "Checkpoint",
-  "number": "7.5.4",
-  "title": "",
-  "body": " Find the curvature of a curve given implicitly as   "
-},
-{
-  "id": "my-great-book-10-2",
-  "level": "1",
-  "url": "my-great-book-10-2.html",
-  "type": "Section",
-  "number": "8.1",
-  "title": "Tangent Planes",
-  "body": " Tangent Planes    The diagram shows the intersection of the graph with the plane together with the tangent line to the intersection curve at the point  The line tangent to the curve of intersection of the graph and the plane at the point has the equation Similarly the tangent to the curve of intersection of thee graph and the plane will have the form So the normal to the tangent plane at will be The equation of the tangent plane will be which becomes    Find the equation of the tangent plane to at the point  The equation of the tangent plane is     Tangent plane to an implicit surface  If the surface is specified in implicit form then the tangent plane at the point is    Find the tangent plane to the surface at the point .  So the equation of the tangent plane is     "
-},
-{
-  "id": "my-great-book-10-2-3",
-  "level": "2",
-  "url": "my-great-book-10-2.html#my-great-book-10-2-3",
-  "type": "Example",
-  "number": "8.1.1",
-  "title": "",
-  "body": " Find the equation of the tangent plane to at the point  The equation of the tangent plane is   "
-},
-{
-  "id": "my-great-book-10-2-4-3",
-  "level": "2",
-  "url": "my-great-book-10-2.html#my-great-book-10-2-4-3",
-  "type": "Example",
-  "number": "8.1.2",
-  "title": "",
-  "body": " Find the tangent plane to the surface at the point .  So the equation of the tangent plane is   "
-},
-{
-  "id": "my-great-book-10-3",
-  "level": "1",
-  "url": "my-great-book-10-3.html",
-  "type": "Section",
-  "number": "8.2",
-  "title": "Linear Approximation",
-  "body": " Linear Approximation  Just as the the tangent to the curve can be used to approximate the function near as the tangent plane to the surface at a point can be used to approximate the function near .    Find the linearization of the function about the point and use the linearization to approximate .  The linearization is and     Differentials  In single variable calculus the change in the value of the function due to a small change in , , is approximated be the differential With more than one independent variable the change in the function depends on changes of each independent variable. For example if the differential will be    The dimensions of a rectangular box are measured to be 25 cm, 20 cm, and 10 cm. Each measurement is correct to within 0.5 cm. Estime the largest possible error in calculating the volume of the box.   So the volume is     "
-},
-{
-  "id": "my-great-book-10-3-3",
-  "level": "2",
-  "url": "my-great-book-10-3.html#my-great-book-10-3-3",
-  "type": "Example",
-  "number": "8.2.1",
-  "title": "",
-  "body": " Find the linearization of the function about the point and use the linearization to approximate .  The linearization is and   "
-},
-{
-  "id": "subsec-Differentials-3",
-  "level": "2",
-  "url": "my-great-book-10-3.html#subsec-Differentials-3",
-  "type": "Example",
-  "number": "8.2.2",
-  "title": "",
-  "body": " The dimensions of a rectangular box are measured to be 25 cm, 20 cm, and 10 cm. Each measurement is correct to within 0.5 cm. Estime the largest possible error in calculating the volume of the box.   So the volume is   "
-},
-{
-  "id": "my-great-book-10-4",
-  "level": "1",
-  "url": "my-great-book-10-4.html",
-  "type": "Section",
-  "number": "8.3",
-  "title": "Problems",
-  "body": " Problems   Find the equation of the tangent line to the surface at the point .     So the equation of the tangent plane is     For the following functions, find the equation of the tangent plane at the indicated point     (a) The equation of the tangent plane is (b) The equation of the tangent plane is (c) The equation of the tangent plane is     Find the equation of the tangent plane to the surface at .     The equation of the tangent plane is     Find the linearization about of the function and use it to approximate      The linearization is      The total resistance of three resistors connected in parallel is If the three resistors have resistances with possible errors of in their values. What is the range of possible values of the circuit?    Differentiating    So    "
-},
-{
-  "id": "my-great-book-10-4-2",
-  "level": "2",
-  "url": "my-great-book-10-4.html#my-great-book-10-4-2",
-  "type": "Checkpoint",
-  "number": "8.3.1",
-  "title": "",
-  "body": " Find the equation of the tangent line to the surface at the point .  "
-},
-{
-  "id": "my-great-book-10-4-4",
-  "level": "2",
-  "url": "my-great-book-10-4.html#my-great-book-10-4-4",
-  "type": "Checkpoint",
-  "number": "8.3.2",
-  "title": "",
-  "body": " For the following functions, find the equation of the tangent plane at the indicated point   "
-},
-{
-  "id": "my-great-book-10-4-6",
-  "level": "2",
-  "url": "my-great-book-10-4.html#my-great-book-10-4-6",
-  "type": "Checkpoint",
-  "number": "8.3.3",
-  "title": "",
-  "body": " Find the equation of the tangent plane to the surface at .  "
-},
-{
-  "id": "my-great-book-10-4-8",
-  "level": "2",
-  "url": "my-great-book-10-4.html#my-great-book-10-4-8",
-  "type": "Checkpoint",
-  "number": "8.3.4",
-  "title": "",
-  "body": " Find the linearization about of the function and use it to approximate   "
-},
-{
-  "id": "my-great-book-10-4-10",
-  "level": "2",
-  "url": "my-great-book-10-4.html#my-great-book-10-4-10",
-  "type": "Checkpoint",
-  "number": "8.3.5",
-  "title": "",
-  "body": " The total resistance of three resistors connected in parallel is If the three resistors have resistances with possible errors of in their values. What is the range of possible values of the circuit?  "
-},
-{
-  "id": "my-great-book-11-2",
-  "level": "1",
-  "url": "my-great-book-11-2.html",
-  "type": "Section",
-  "number": "9.1",
-  "title": "One independent variable",
-  "body": " One independent variable  The chain rule in single variable calculus can be expressed in the form For derivatives of multivariable functions, the chain rule has a similar form. The difference is that their is a chain rule like term for each variable. For example    Find given       Suppose is a function that satifies and define Find the equation of the tangent to the curve at .  So the equation of the tangent line is    A homogeneous function of order satisfies the identity    The function is a homogeous function of order 4 since      (Euler) If is a homogeneous function of order then it satisfies the equation     Taking the derivative of the definition of a homogeneous function with respect to  Setting proves the theorem  "
-},
-{
-  "id": "my-great-book-11-2-3",
-  "level": "2",
-  "url": "my-great-book-11-2.html#my-great-book-11-2-3",
-  "type": "Example",
-  "number": "9.1.1",
-  "title": "",
-  "body": " Find given     "
-},
-{
-  "id": "my-great-book-11-2-4",
-  "level": "2",
-  "url": "my-great-book-11-2.html#my-great-book-11-2-4",
-  "type": "Example",
-  "number": "9.1.2",
-  "title": "",
-  "body": " Suppose is a function that satifies and define Find the equation of the tangent to the curve at .  So the equation of the tangent line is   "
-},
-{
-  "id": "my-great-book-11-2-6",
-  "level": "2",
-  "url": "my-great-book-11-2.html#my-great-book-11-2-6",
-  "type": "Example",
-  "number": "9.1.3",
-  "title": "",
-  "body": " The function is a homogeous function of order 4 since   "
-},
-{
-  "id": "thm-Euler",
-  "level": "2",
-  "url": "my-great-book-11-2.html#thm-Euler",
-  "type": "Theorem",
-  "number": "9.1.4",
-  "title": "",
-  "body": "  (Euler) If is a homogeneous function of order then it satisfies the equation    "
-},
-{
-  "id": "my-great-book-11-3",
-  "level": "1",
-  "url": "my-great-book-11-3.html",
-  "type": "Section",
-  "number": "9.2",
-  "title": "More than one independent variable",
-  "body": " More than one independent variable  Suppose the variables depend on two variables . The its partial derivatives with respect to are    Find where       Find at the point where and are the usual polar coordinates   At the point      "
-},
-{
-  "id": "my-great-book-11-3-3",
-  "level": "2",
-  "url": "my-great-book-11-3.html#my-great-book-11-3-3",
-  "type": "Example",
-  "number": "9.2.1",
-  "title": "",
-  "body": " Find where     "
-},
-{
-  "id": "my-great-book-11-3-4",
-  "level": "2",
-  "url": "my-great-book-11-3.html#my-great-book-11-3-4",
-  "type": "Example",
-  "number": "9.2.2",
-  "title": "",
-  "body": " Find at the point where and are the usual polar coordinates   At the point     "
-},
-{
-  "id": "my-great-book-11-4",
-  "level": "1",
-  "url": "my-great-book-11-4.html",
-  "type": "Section",
-  "number": "9.3",
-  "title": "Implicit differentiation",
-  "body": " Implicit differentiation  Given a surface defined implictly, can it be expressed locally as a graph? Consider the surface Can be locally represented as a function Differentiating the equation for the surface with respect to  Similarly So can be represented as a graph as long as .   Find at the point on the surface    So can be expressed as a graph but can't, since    "
-},
-{
-  "id": "my-great-book-11-4-3",
-  "level": "2",
-  "url": "my-great-book-11-4.html#my-great-book-11-4-3",
-  "type": "Example",
-  "number": "9.3.1",
-  "title": "",
-  "body": " Find at the point on the surface    So can be expressed as a graph but can't, since   "
-},
-{
-  "id": "my-great-book-11-5",
-  "level": "1",
-  "url": "my-great-book-11-5.html",
-  "type": "Section",
-  "number": "9.4",
-  "title": "Problems",
-  "body": " Problems   Find at if     At         Find if             If Calculate        which could have been deduced using Euler's theorem since is homogeneous of order 8.    Given find at the point         At the point         Find at the point on the surfacw       So don't exist.   "
-},
-{
-  "id": "my-great-book-11-5-2",
-  "level": "2",
-  "url": "my-great-book-11-5.html#my-great-book-11-5-2",
-  "type": "Checkpoint",
-  "number": "9.4.1",
-  "title": "",
-  "body": " Find at if   "
-},
-{
-  "id": "my-great-book-11-5-4",
-  "level": "2",
-  "url": "my-great-book-11-5.html#my-great-book-11-5-4",
-  "type": "Checkpoint",
-  "number": "9.4.2",
-  "title": "",
-  "body": " Find if   "
-},
-{
-  "id": "my-great-book-11-5-6",
-  "level": "2",
-  "url": "my-great-book-11-5.html#my-great-book-11-5-6",
-  "type": "Checkpoint",
-  "number": "9.4.3",
-  "title": "",
-  "body": " If Calculate   "
-},
-{
-  "id": "my-great-book-11-5-8",
-  "level": "2",
-  "url": "my-great-book-11-5.html#my-great-book-11-5-8",
-  "type": "Checkpoint",
-  "number": "9.4.4",
-  "title": "",
-  "body": " Given find at the point   "
-},
-{
-  "id": "my-great-book-11-5-10",
-  "level": "2",
-  "url": "my-great-book-11-5.html#my-great-book-11-5-10",
-  "type": "Checkpoint",
-  "number": "9.4.5",
-  "title": "",
-  "body": " Find at the point on the surfacw   "
-},
-{
-  "id": "my-great-book-12-2",
-  "level": "1",
-  "url": "my-great-book-12-2.html",
-  "type": "Section",
-  "number": "10.1",
-  "title": "The Gradient",
-  "body": " The Gradient  The definition of differentiability in single variable calculus is that there is a function given by To generalize this to functions of more than one variable, this can be rewritten in the form A function of more than one variable is differentiable if there exists a vector, , called the gradient of , so that where is a unit vector. If it is differentiable the previous equation can be rewritten as The expression is called the directional derivative of in the direction   To find the components of . First take . Then the component of is Similarly the and components are and   "
-},
-{
-  "id": "sec-DirectionalDerivatives",
-  "level": "1",
-  "url": "sec-DirectionalDerivatives.html",
-  "type": "Section",
-  "number": "10.2",
-  "title": "Directional Derivatives",
-  "body": " Directional Derivatives  Given a curve and the graph of a function . The curve induces a curve in the graph The rate of change of along the curve at a point is The directional derivative is defined to be the arc length derivative along the curve where is the unit tangent to the curve   (for accessibility)  If the angle between and is then So the maximum rate of change of is when  and value of the maximum rate is    Find the rate of change of at the point towards the point         Let (a) Find the directional derivative of at the point in the direction given by the vector   (b) In what direction does have the greatest rate of change at ? What is the maximum rate  (a)    (b)    "
-},
-{
-  "id": "sec-DirectionalDerivatives-3",
-  "level": "2",
-  "url": "sec-DirectionalDerivatives.html#sec-DirectionalDerivatives-3",
-  "type": "Example",
-  "number": "10.2.1",
-  "title": "",
-  "body": " Find the rate of change of at the point towards the point       "
-},
-{
-  "id": "sec-DirectionalDerivatives-4",
-  "level": "2",
-  "url": "sec-DirectionalDerivatives.html#sec-DirectionalDerivatives-4",
-  "type": "Example",
-  "number": "10.2.2",
-  "title": "",
-  "body": " Let (a) Find the directional derivative of at the point in the direction given by the vector   (b) In what direction does have the greatest rate of change at ? What is the maximum rate  (a)    (b)   "
-},
-{
-  "id": "sec-Tangentplane",
-  "level": "1",
-  "url": "sec-Tangentplane.html",
-  "type": "Section",
-  "number": "10.3",
-  "title": "The gradient and the tangent plane",
-  "body": " The gradient and the tangent plane  Consider a curve that lies entirely with a level surface then Differentiating this with respect to  so is orthogonal to   (for accessibility)    Since is tangent to the curve, it is also tangent to the level surface. is orthogonal to the tangent to any curve lying in the surface, thus it is orthogonal to the tangent plane.   Find the equation of the tangent plane to the level surface at the point     The equation of the tangent plane is    "
-},
-{
-  "id": "sec-Tangentplane-4",
-  "level": "2",
-  "url": "sec-Tangentplane.html#sec-Tangentplane-4",
-  "type": "Example",
-  "number": "10.3.1",
-  "title": "",
-  "body": " Find the equation of the tangent plane to the level surface at the point     The equation of the tangent plane is   "
-},
-{
-  "id": "sec-Problems-10",
-  "level": "1",
-  "url": "sec-Problems-10.html",
-  "type": "Section",
-  "number": "10.4",
-  "title": "Problems",
-  "body": " Problems   Find the equation of the tangent plane at to the surface      The equation of the tangent plane is     A climber is on a point on the side of a mountain. He notes that the slope of the mountain to the east is and the slope to the north is . What direction should he pick to descend most rapidly? What will the slope of his descent be?           Show that the spheres intersect orthogonally     At the intersection points At the intersection points the tangent planes should be orthogonal, so should their gradients.  But at the intersection poits so     Let be a curve in with and .  Let be a function with and let   (a) What is the angle between and ?  (b) What are the two possible values for ?    (a) So   (b) Rotating counterclockwise gives a vector pointing along the axis in the positive direction. Rotating clockwise gives a vector pointing along the axis in the negative direction. So the two possibilities are    "
-},
-{
-  "id": "sec-Problems-10-2",
-  "level": "2",
-  "url": "sec-Problems-10.html#sec-Problems-10-2",
-  "type": "Checkpoint",
-  "number": "10.4.1",
-  "title": "",
-  "body": " Find the equation of the tangent plane at to the surface   "
-},
-{
-  "id": "sec-Problems-10-4",
-  "level": "2",
-  "url": "sec-Problems-10.html#sec-Problems-10-4",
-  "type": "Checkpoint",
-  "number": "10.4.2",
-  "title": "",
-  "body": " A climber is on a point on the side of a mountain. He notes that the slope of the mountain to the east is and the slope to the north is . What direction should he pick to descend most rapidly? What will the slope of his descent be?  "
-},
-{
-  "id": "sec-Problems-10-6",
-  "level": "2",
-  "url": "sec-Problems-10.html#sec-Problems-10-6",
-  "type": "Checkpoint",
-  "number": "10.4.3",
-  "title": "",
-  "body": " Show that the spheres intersect orthogonally  "
-},
-{
-  "id": "sec-Problems-10-8",
-  "level": "2",
-  "url": "sec-Problems-10.html#sec-Problems-10-8",
-  "type": "Example",
-  "number": "10.4.4",
-  "title": "",
-  "body": " Let be a curve in with and .  Let be a function with and let   (a) What is the angle between and ?  (b) What are the two possible values for ?  "
-},
-{
-  "id": "sec-Critical-points",
-  "level": "1",
-  "url": "sec-Critical-points.html",
-  "type": "Section",
-  "number": "11.1",
-  "title": "Critical points",
-  "body": " Critical points  A quick review of some facts about local extrema (minima and maxima) in single variable calculus   A function, , has a local minimum at if there is an open interval, , containing with for all . It has a local maximum if for all     A point is a critical point of if either or doesn't exist \\item If exists then if has a local minimum or maximum then . The converse isn't true, for example if , but has neither a maximum or minimum at .    If exists then the Taylor series for near the critical point has the form Then for points close to the critical point if and the point is a local minimum or if and the point is local maximum.    If the higher order terms have to be examined to classify the point.      Critical points for functions of two variables   A point is a critical point for a function if doesn't exist or if satisfies Geometrically this means that the tangent plane to the graph of is horizontal (or vertical) at .  A function of two variables has a local maximum at if for all points in a disk with center . It has a local minimum at if for all points in a disk with center .\\ As in single variable calculus, the local extrema (maxima and minima) are critical points but not all critical points are extrema.    Find the critical points of the function    The function has only one critical point and it is a minimum since can be written in the form      Taylor series near a critical point  Suppose that has a critical point at . Then . The Taylor series near the critical point will have the form where and the second derivatives are evaluated at . If we are close enough to i.e. are small enough so the higher order terms can be neglected, then the nature of the critical point is governed by the behavior of the quadratic terms. If the quadratic term, is positive, the critical point is a minimum.  (for accessibility)  If it is negative it is a maximum.  (for accessibility)  If it has no definite sign it is a saddle.  (for accessibility)  The saddle is a new type of critical point. Geometrically in one direction it has a minimimum and in another a maximum.    Second derivative test  By completing the square the quadratic term can be written in the form Let , then the second derivative test is   If and then and is a local maximum    If and then and is a local minimum    If then has an indefinite sign and is a saddle    If the test is inconclusive       Find and classify the critical points of the function    so is a saddle. so is a minimum    Extrema on Bounded Domains  As in single variable calculus, continuous functions on closed domains achieve both their maximum and minimum values. In the two variable case if the maximum (or minimum) don't occur in the interior of the region they must occur on the boundary   Find the maximum and minimum values of the function on the rectangle   The critical points are given by  so is a saddle and the maximum and minimum must lie on the boundary.    (for accessibility)  On  On  On  On  So the absolute maximum is and the absolute minimum is .    "
-},
-{
-  "id": "subsec-Critical-points-two-variables-3",
-  "level": "2",
-  "url": "sec-Critical-points.html#subsec-Critical-points-two-variables-3",
-  "type": "Example",
-  "number": "11.1.1",
-  "title": "",
-  "body": " Find the critical points of the function    The function has only one critical point and it is a minimum since can be written in the form   "
-},
-{
-  "id": "sec-Critical-points-6",
-  "level": "2",
-  "url": "sec-Critical-points.html#sec-Critical-points-6",
-  "type": "Example",
-  "number": "11.1.2",
-  "title": "",
-  "body": " Find and classify the critical points of the function    so is a saddle. so is a minimum  "
-},
-{
-  "id": "subsec-Extrema-on-Bounded-Domains-3",
-  "level": "2",
-  "url": "sec-Critical-points.html#subsec-Extrema-on-Bounded-Domains-3",
-  "type": "Example",
-  "number": "11.1.3",
-  "title": "",
-  "body": " Find the maximum and minimum values of the function on the rectangle   The critical points are given by  so is a saddle and the maximum and minimum must lie on the boundary.    (for accessibility)  On  On  On  On  So the absolute maximum is and the absolute minimum is .  "
-},
-{
-  "id": "sec-Problems-11",
-  "level": "1",
-  "url": "sec-Problems-11.html",
-  "type": "Section",
-  "number": "11.2",
-  "title": "Problems",
-  "body": " Problems   Find and classify the critical points of the function      The critical points are   so is a saddle. so the points are minima    Find and classify the critical points of the function      From the second equation either or . Substititing thse values into the first equations gives the critical points   so is a minimum, so are saddles.    Find and classify the critical points of the function      Substituting gives Factoring   so is a saddle. and so the points are maxima    Find the minimum and maximum values of on the region bounded by the triangle with vertices       (for accessibility)   But isn't in the region, so the maximum and minimum must occur on the boundary.  On  On  On  So the maximum value is and the minimum value is    "
-},
-{
-  "id": "sec-Problems-11-2",
-  "level": "2",
-  "url": "sec-Problems-11.html#sec-Problems-11-2",
-  "type": "Checkpoint",
-  "number": "11.2.1",
-  "title": "",
-  "body": " Find and classify the critical points of the function   "
-},
-{
-  "id": "sec-Problems-11-4",
-  "level": "2",
-  "url": "sec-Problems-11.html#sec-Problems-11-4",
-  "type": "Checkpoint",
-  "number": "11.2.2",
-  "title": "",
-  "body": " Find and classify the critical points of the function   "
-},
-{
-  "id": "sec-Problems-11-6",
-  "level": "2",
-  "url": "sec-Problems-11.html#sec-Problems-11-6",
-  "type": "Checkpoint",
-  "number": "11.2.3",
-  "title": "",
-  "body": " Find and classify the critical points of the function   "
-},
-{
-  "id": "sec-Problems-11-8",
-  "level": "2",
-  "url": "sec-Problems-11.html#sec-Problems-11-8",
-  "type": "Checkpoint",
-  "number": "11.2.4",
-  "title": "",
-  "body": " Find the minimum and maximum values of on the region bounded by the triangle with vertices   "
-},
-{
-  "id": "sec-The-Method-of-Lagrange",
-  "level": "1",
-  "url": "sec-The-Method-of-Lagrange.html",
-  "type": "Section",
-  "number": "12.1",
-  "title": "The Method of Lagrange",
-  "body": " The Method of Lagrange  In the simplest form, the problem is to maximize (or minimize) a function subject to a constraint Lagrange introduced a new variable , called a Lagrange multiplier. The solution to the constrained problem can be found by solving the equations To illustrate why this is the solution consider the diagram  (for accessibility)  At the point the gradients are not parallel. can be increased by moving in the direction of the component of perpendicular to . At the point , where the gradients are parallel any motion along the constraint will decrease the value of .    Find the maximum value of the product of three positive numbers subject to the constraint . So and using gives The first two equations imply . Substituting the second equation into the third gives Substituting into the constraint gives so the maximum value is .     A company finds its production can be expressed in the form where in the number of units of labor and is the units of capital. Units of labor cost $125 and units of capital cost $32. Given a production level of , find the and values that minimize the total cost.  The total cost is and the constraint is Using gives solving for  eliminating  substituting into the constraint gives     Find the absolute maximum and minimum of on the region . First search for local extrema which gives this has three real solutions . So there are three critical points The second derivatives are The second derivative test gives so is a saddle and are minima and . To check for extrema on the boundary look for extrema subject to the constraint using Lagrange's method. Multiplying the first equation by and the second one by and subtracting gives so or . If the substituting into the constraint gives  If , substituting into the constraint gives For these values So the absolute minimum is and the absolute maximum is .   "
-},
-{
-  "id": "sec-The-Method-of-Lagrange-3",
-  "level": "2",
-  "url": "sec-The-Method-of-Lagrange.html#sec-The-Method-of-Lagrange-3",
-  "type": "Example",
-  "number": "12.1.1",
-  "title": "",
-  "body": "  Find the maximum value of the product of three positive numbers subject to the constraint . So and using gives The first two equations imply . Substituting the second equation into the third gives Substituting into the constraint gives so the maximum value is .   "
-},
-{
-  "id": "sec-The-Method-of-Lagrange-4",
-  "level": "2",
-  "url": "sec-The-Method-of-Lagrange.html#sec-The-Method-of-Lagrange-4",
-  "type": "Example",
-  "number": "12.1.2",
-  "title": "",
-  "body": " A company finds its production can be expressed in the form where in the number of units of labor and is the units of capital. Units of labor cost $125 and units of capital cost $32. Given a production level of , find the and values that minimize the total cost.  The total cost is and the constraint is Using gives solving for  eliminating  substituting into the constraint gives   "
-},
-{
-  "id": "sec-The-Method-of-Lagrange-5",
-  "level": "2",
-  "url": "sec-The-Method-of-Lagrange.html#sec-The-Method-of-Lagrange-5",
-  "type": "Example",
-  "number": "12.1.3",
-  "title": "",
-  "body": " Find the absolute maximum and minimum of on the region . First search for local extrema which gives this has three real solutions . So there are three critical points The second derivatives are The second derivative test gives so is a saddle and are minima and . To check for extrema on the boundary look for extrema subject to the constraint using Lagrange's method. Multiplying the first equation by and the second one by and subtracting gives so or . If the substituting into the constraint gives  If , substituting into the constraint gives For these values So the absolute minimum is and the absolute maximum is .  "
-},
-{
-  "id": "sec-Two-Constraints",
-  "level": "1",
-  "url": "sec-Two-Constraints.html",
-  "type": "Section",
-  "number": "12.2",
-  "title": "Two Constraints",
-  "body": " Two Constraints   To find extrema of subject to and . In this case our equations are    Find the maximum of subject to and   Reducing these leads to Substituting into the constraint gives The corresponding values of are . So the maximum is .     "
-},
-{
-  "id": "sec-Two-Constraints-2-2",
-  "level": "2",
-  "url": "sec-Two-Constraints.html#sec-Two-Constraints-2-2",
-  "type": "Example",
-  "number": "12.2.1",
-  "title": "",
-  "body": " Find the maximum of subject to and   Reducing these leads to Substituting into the constraint gives The corresponding values of are . So the maximum is .   "
-},
-{
-  "id": "sec-Problems-12",
-  "level": "1",
-  "url": "sec-Problems-12.html",
-  "type": "Section",
-  "number": "12.3",
-  "title": "Problems",
-  "body": " Problems   Find the point(s) on the surface closest to the origin      The Lagrange equations are The third equation gives    Substituting into the constraint gives Dividing the first two Lagrange equations Since  so  Two critical points are   Substituting into the first two Lagrange equations The constraint gives Two more critial points are  so the closest points are      The material for the bottom of an aquarium costs half as much as the high strength glass for the four sides. Find the shape of the cheapest aquarium with volume 2000 cm      Let and be the length and width of the base and be the height. The cost will be proportional to The constraint is . The Lagrange equations are Multiplying the first equation by the second by and substracting Substituting this into the third Lagrange equation Now substituting this into the second Lagrange equation Using the constraint      Find the maximum and minimum values of in the region     First look for local extrema  So is a local minimum and . The maximum must be on the boundary.  Langrange's equations are Multiplying the first equation by and the second one by and subtracting gives Substituting into the constraint  So the minimum value is and the maximum is     Find the point closest to the origin on the curve of intersection of the surfaces     The Lagrange equations are Setting leads to Dividing the first equation by and adding to the second equation. Dividing the third equation by and solving for  The first constraint becomes Then and the two points closest to the origin are     Prove the Arithmetic-Geometric inequality     Let and consider the region of the plane in the first octant. Since the region is closed and bounded, the function achieves its maximum and minimum in the region. The minimum is clearly . To find the maximum, use Lagrange's method. The equations are     "
-},
-{
-  "id": "sec-Problems-12-2",
-  "level": "2",
-  "url": "sec-Problems-12.html#sec-Problems-12-2",
-  "type": "Checkpoint",
-  "number": "12.3.1",
-  "title": "",
-  "body": " Find the point(s) on the surface closest to the origin  "
-},
-{
-  "id": "sec-Problems-12-4",
-  "level": "2",
-  "url": "sec-Problems-12.html#sec-Problems-12-4",
-  "type": "Checkpoint",
-  "number": "12.3.2",
-  "title": "",
-  "body": " The material for the bottom of an aquarium costs half as much as the high strength glass for the four sides. Find the shape of the cheapest aquarium with volume 2000 cm   "
-},
-{
-  "id": "sec-Problems-12-6",
-  "level": "2",
-  "url": "sec-Problems-12.html#sec-Problems-12-6",
-  "type": "Checkpoint",
-  "number": "12.3.3",
-  "title": "",
-  "body": " Find the maximum and minimum values of in the region   "
-},
-{
-  "id": "sec-Problems-12-8",
-  "level": "2",
-  "url": "sec-Problems-12.html#sec-Problems-12-8",
-  "type": "Checkpoint",
-  "number": "12.3.4",
-  "title": "",
-  "body": " Find the point closest to the origin on the curve of intersection of the surfaces   "
-},
-{
-  "id": "sec-Problems-12-10",
-  "level": "2",
-  "url": "sec-Problems-12.html#sec-Problems-12-10",
-  "type": "Checkpoint",
-  "number": "12.3.5",
-  "title": "",
-  "body": " Prove the Arithmetic-Geometric inequality   "
-},
-{
-  "id": "sec-Integrals-over-Rectangles",
-  "level": "1",
-  "url": "sec-Integrals-over-Rectangles.html",
-  "type": "Section",
-  "number": "13.1",
-  "title": "Integrals over Rectangles",
-  "body": " Integrals over Rectangles  Let be the rectangle given by . If is a function on then the integral of over can be defined using Riemann sums. Partition the rectangle into subrectangles with areas . Choose an arbitrary point, then the integral is given by as long as the limit exists.  (for accessibility)  If is continuous then there is a theorem (Fubini's theorem) that the integral can be calculated by doing the integrations one variable at a time. Either fix and integrate over followed by integrating the result over .  (for accessibility)     or fix the value of and integrate over followed by integrating the result over .  (for accessibility)   The integration order doesn't matter. That is     Calculate for and . If we reversed the order of integration    "
-},
-{
-  "id": "sec-Integrals-over-Rectangles-3",
-  "level": "2",
-  "url": "sec-Integrals-over-Rectangles.html#sec-Integrals-over-Rectangles-3",
-  "type": "Example",
-  "number": "13.1.1",
-  "title": "",
-  "body": " Calculate for and . If we reversed the order of integration   "
-},
-{
-  "id": "sec-Non-Rectangular-Regions",
-  "level": "1",
-  "url": "sec-Non-Rectangular-Regions.html",
-  "type": "Section",
-  "number": "13.2",
-  "title": "Integrals over Non Rectangular Regions",
-  "body": " Integrals over Non Rectangular Regions  Integrals over non rectangular regions can also be calculated by iterating the integrals. In this case the first integration will be between variable bounds. Suppose a region can be specified as or as Then the integral of the region can be calculated as   (for accessibility)  or as   (for accessibility)  and Fubini's theorem states that the two iterated integrals are the same.  Calculate where is the triangle bounded by the axis, the line and the line .  (for accessibility)       Sketch the region of integration and evaluate the integral   (for accessibility)    (for accessibility)       Sketch the region of integration and evaluate the integral   (for accessibility)  In this case the integrand doesn't have a nice antiderivative, so we need to reverse the order of integration. The region can be described as     "
-},
-{
-  "id": "sec-Non-Rectangular-Regions-9",
-  "level": "2",
-  "url": "sec-Non-Rectangular-Regions.html#sec-Non-Rectangular-Regions-9",
-  "type": "Example",
-  "number": "13.2.1",
-  "title": "",
-  "body": " Calculate where is the triangle bounded by the axis, the line and the line .  (for accessibility)     "
-},
-{
-  "id": "sec-Non-Rectangular-Regions-10",
-  "level": "2",
-  "url": "sec-Non-Rectangular-Regions.html#sec-Non-Rectangular-Regions-10",
-  "type": "Example",
-  "number": "13.2.2",
-  "title": "",
-  "body": " Sketch the region of integration and evaluate the integral   (for accessibility)    (for accessibility)     "
-},
-{
-  "id": "sec-Non-Rectangular-Regions-11",
-  "level": "2",
-  "url": "sec-Non-Rectangular-Regions.html#sec-Non-Rectangular-Regions-11",
-  "type": "Example",
-  "number": "13.2.3",
-  "title": "",
-  "body": " Sketch the region of integration and evaluate the integral   (for accessibility)  In this case the integrand doesn't have a nice antiderivative, so we need to reverse the order of integration. The region can be described as    "
-},
-{
-  "id": "sec-Volumes-Area-Integrals",
-  "level": "1",
-  "url": "sec-Volumes-Area-Integrals.html",
-  "type": "Section",
-  "number": "13.3",
-  "title": "Calculating Volumes using Area Integrals",
-  "body": " Calculating Volumes using Area Integrals  The integral represents the volume of the region bounded above by the graph of and below by the region in the plane. The expression represents the volume of a thin column and adding these up gives the volume between the graph and .  (for accessibility)     Find the volume of the solid whose base is the region bounded by and and whose top is bounded by . The intersection points are (-4,-12) and (1,3). The volume is then given by    "
-},
-{
-  "id": "sec-Volumes-Area-Integrals-3",
-  "level": "2",
-  "url": "sec-Volumes-Area-Integrals.html#sec-Volumes-Area-Integrals-3",
-  "type": "Example",
-  "number": "13.3.1",
-  "title": "",
-  "body": " Find the volume of the solid whose base is the region bounded by and and whose top is bounded by . The intersection points are (-4,-12) and (1,3). The volume is then given by   "
-},
-{
-  "id": "sec-Integrals-Polar-Coordinates",
-  "level": "1",
-  "url": "sec-Integrals-Polar-Coordinates.html",
-  "type": "Section",
-  "number": "13.4",
-  "title": "Area Integrals in Polar Coordinates",
-  "body": " Area Integrals in Polar Coordinates    (for accessibility)  To calculate an area integral in polar coordinates, partition the area by polar rectangles with areas To integrate a function over the area, pick a point, in each area, and form a Riemann sum If is given in cartesian form    Calculate where is the region in the first quadrant outside the circle and inside the cardioid   (for accessibility)       Find the volume of the region bounded above by and below by the paraboloid .  (for accessibility)  The integration area is so use polar coordinates. The values vary between and 4. So     Find the area of the region of the disk illustrated.  (for accessibility)  The region can be described in polar coordinates as      Find the volume of the region bounded above by , below by the plane and inside the cylinder   (for accessibility)       "
-},
-{
-  "id": "sec-Integrals-Polar-Coordinates-3",
-  "level": "2",
-  "url": "sec-Integrals-Polar-Coordinates.html#sec-Integrals-Polar-Coordinates-3",
-  "type": "Example",
-  "number": "13.4.1",
-  "title": "",
-  "body": " Calculate where is the region in the first quadrant outside the circle and inside the cardioid   (for accessibility)     "
-},
-{
-  "id": "sec-Integrals-Polar-Coordinates-4",
-  "level": "2",
-  "url": "sec-Integrals-Polar-Coordinates.html#sec-Integrals-Polar-Coordinates-4",
-  "type": "Example",
-  "number": "13.4.2",
-  "title": "",
-  "body": " Find the volume of the region bounded above by and below by the paraboloid .  (for accessibility)  The integration area is so use polar coordinates. The values vary between and 4. So   "
-},
-{
-  "id": "sec-Integrals-Polar-Coordinates-5",
-  "level": "2",
-  "url": "sec-Integrals-Polar-Coordinates.html#sec-Integrals-Polar-Coordinates-5",
-  "type": "Example",
-  "number": "13.4.3",
-  "title": "",
-  "body": " Find the area of the region of the disk illustrated.  (for accessibility)  The region can be described in polar coordinates as    "
-},
-{
-  "id": "sec-Integrals-Polar-Coordinates-6",
-  "level": "2",
-  "url": "sec-Integrals-Polar-Coordinates.html#sec-Integrals-Polar-Coordinates-6",
-  "type": "Example",
-  "number": "13.4.4",
-  "title": "",
-  "body": " Find the volume of the region bounded above by , below by the plane and inside the cylinder   (for accessibility)      "
-},
-{
-  "id": "sec-Problems-13",
-  "level": "1",
-  "url": "sec-Problems-13.html",
-  "type": "Section",
-  "number": "13.5",
-  "title": "Problems",
-  "body": " Problems   Find the area of the region in the plane bounded by and       (for accessibility)    (for accessibility)       Find the volume below the paraboloid and above the triangle in the plane bounded by       (for accessibility)    (for accessibility)       Consider the integral  (a) Sketch the region of integration  (b) Change the order of integration  (c) Compute the integral     (a)  (for accessibility)  (b) The new limits are (c) Let       Let be the triangle bounded by . (a) If is continuous express the integral as an iterated integral in both orders of integration. (b) Find the area of       (for accessibility)  Doing the integration first followed by the integration Doing the integration first (b) Using the second version      Evaluate      The region in polars is   (for accessibility)       Find the volume of the region bounded above by and below by   (for accessibility)      The curve of intersection is      Evaluate     Switching to polars     Find the volume of the region bounded above by and below by   (for accessibility)      The curve of intersection is      Find the area enclosed by the lemniscate   (for accessibility)      By symmetry we can calculate the area in the first quadrant and multiply by 4 So the total area is 16    A cylindrical hole of radius is bored through the center of a sphere of radius as illustrated. Find the volume of the remaining solid.  (for accessibility)      A vertical slice through the object is  (for accessibility)      "
-},
-{
-  "id": "sec-Problems-13-2",
-  "level": "2",
-  "url": "sec-Problems-13.html#sec-Problems-13-2",
-  "type": "Checkpoint",
-  "number": "13.5.1",
-  "title": "",
-  "body": " Find the area of the region in the plane bounded by and   "
-},
-{
-  "id": "sec-Problems-13-4",
-  "level": "2",
-  "url": "sec-Problems-13.html#sec-Problems-13-4",
-  "type": "Checkpoint",
-  "number": "13.5.2",
-  "title": "",
-  "body": " Find the volume below the paraboloid and above the triangle in the plane bounded by   "
-},
-{
-  "id": "sec-Problems-13-6",
-  "level": "2",
-  "url": "sec-Problems-13.html#sec-Problems-13-6",
-  "type": "Checkpoint",
-  "number": "13.5.3",
-  "title": "",
-  "body": " Consider the integral  (a) Sketch the region of integration  (b) Change the order of integration  (c) Compute the integral   "
-},
-{
-  "id": "sec-Problems-13-8",
-  "level": "2",
-  "url": "sec-Problems-13.html#sec-Problems-13-8",
-  "type": "Checkpoint",
-  "number": "13.5.4",
-  "title": "",
-  "body": " Let be the triangle bounded by . (a) If is continuous express the integral as an iterated integral in both orders of integration. (b) Find the area of   "
-},
-{
-  "id": "sec-Problems-13-10",
-  "level": "2",
-  "url": "sec-Problems-13.html#sec-Problems-13-10",
-  "type": "Checkpoint",
-  "number": "13.5.5",
-  "title": "",
-  "body": "  Evaluate    "
-},
-{
-  "id": "sec-Problems-13-12",
-  "level": "2",
-  "url": "sec-Problems-13.html#sec-Problems-13-12",
-  "type": "Checkpoint",
-  "number": "13.5.6",
-  "title": "",
-  "body": " Find the volume of the region bounded above by and below by   (for accessibility)    "
-},
-{
-  "id": "sec-Problems-13-14",
-  "level": "2",
-  "url": "sec-Problems-13.html#sec-Problems-13-14",
-  "type": "Checkpoint",
-  "number": "13.5.7",
-  "title": "",
-  "body": " Evaluate   "
-},
-{
-  "id": "sec-Problems-13-16",
-  "level": "2",
-  "url": "sec-Problems-13.html#sec-Problems-13-16",
-  "type": "Checkpoint",
-  "number": "13.5.8",
-  "title": "",
-  "body": " Find the volume of the region bounded above by and below by   (for accessibility)    "
-},
-{
-  "id": "sec-Problems-13-18",
-  "level": "2",
-  "url": "sec-Problems-13.html#sec-Problems-13-18",
-  "type": "Checkpoint",
-  "number": "13.5.9",
-  "title": "",
-  "body": " Find the area enclosed by the lemniscate   (for accessibility)    "
-},
-{
-  "id": "sec-Problems-13-20",
-  "level": "2",
-  "url": "sec-Problems-13.html#sec-Problems-13-20",
-  "type": "Checkpoint",
-  "number": "13.5.10",
-  "title": "",
-  "body": " A cylindrical hole of radius is bored through the center of a sphere of radius as illustrated. Find the volume of the remaining solid.  (for accessibility)    "
+  "body": " If and . The solution is Using the integral from the second example in the first section gives the general solution Using the initial condition gives the solution   An example plot of the solution is   (for accessibility)   Electrical engineers call the homogeneous solution the transient response since it tends to zero as . The remainder of the solution (the particular integral) is called the steady state response.  "
 },
 {
   "id": "backmatter-2",
